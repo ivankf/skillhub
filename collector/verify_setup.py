@@ -10,6 +10,7 @@
 5. netlify.toml 可解析，发布目录与头配置正确
 """
 
+import ast
 import hashlib
 import json
 import re
@@ -300,6 +301,39 @@ def _():
         return f"{len(need)} 个文件齐备，无源码泄漏"
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
+
+
+@check("README 渲染器：先清洗后渲染，不裸露 HTML 源码")
+def _():
+    app = (ROOT / "assets" / "app.js").read_text(encoding="utf-8")
+
+    # 必须有清洗步骤：esc() 只转义不剥离，直接用等于把源码显示给用户
+    for fn in ("function cleanMd", "function stripTags", "function md("):
+        assert fn in app, f"app.js 缺少 {fn}"
+
+    # 清洗必须在渲染之前，顺序反了就等于没清洗
+    i_clean = app.index("const lines = esc(cleanMd(src))")
+    assert i_clean > 0, "md() 未先 cleanMd 就转义"
+
+    # 危险标签必须连内容一起删，而不是当普通标签剥壳
+    assert "DANGEROUS_BLOCKS" in app, "缺少危险标签整体删除规则"
+    assert "script" in app and "iframe" in app, "危险标签清单不完整"
+
+    # 链接只放行 http/https，防 javascript: 伪协议
+    assert "https?:\\/\\/" in app, "链接未做协议白名单"
+
+    # 采集端也必须过滤 HTML，不能再把 <p align=...> 当正文
+    collect = (ROOT / "collector" / "collect.py").read_text(encoding="utf-8")
+    assert "_readme_points" in collect, "collect.py 未使用 _readme_points"
+    tree = ast.parse(collect)
+    fn = next((n for n in ast.walk(tree)
+               if isinstance(n, ast.FunctionDef) and n.name == "collect_one"), None)
+    assert fn is not None, "未找到 collect_one"
+    src = ast.get_source_segment(collect, fn) or ""
+    assert 'not l.startswith(("---", "#"))' not in src, \
+        "readme 仍在用只排除 ---/# 的粗糙过滤"
+
+    return "清洗 → 转义 → 渲染链路完整，采集端共用判定链"
 
 
 # ---------- 汇总 ----------

@@ -427,14 +427,49 @@
       + '</div>';
 
     // 使用说明
+    // 渲染后的 Markdown 作为正文，原始 SKILL.md 折叠收起。
+    // 参考 PyPI / npm 的做法：正文永远是清洗过的结构化内容，
+    // 想看原文给链接，不把裸 HTML 源码摊在页面上。
+    const rawMd = String(s.skillmd == null ? '' : s.skillmd).trim();
+    const mdHtml = rawMd ? md(rawMd) : '';
+
+    // 有些仓库 README 开头全是徽章墙，渲染后几乎没有有效内容，
+    // 这时退回采集时提取的 readme 摘要（已是纯文本）。
+    const hasBody = mdHtml.replace(/<[^>]+>/g, '').trim().length > 40;
+    const fallbackList = Array.isArray(s.readme) ? s.readme.filter(Boolean) : [];
+    let bodyHtml;
+    if (hasBody) {
+      bodyHtml = '<div class="md-body">' + mdHtml + '</div>';
+    } else if (fallbackList.length) {
+      bodyHtml = '<div class="md-body">' + fallbackList
+        .map(p => '<p>' + mdInline(String(p)) + '</p>').join('') + '</div>';
+    } else {
+      bodyHtml = '<p class="md-empty">该仓库未提供可渲染的说明文档，'
+        + '建议直接查看下方原文链接。</p>';
+    }
+
     main += '<section class="detail-block"><div class="block-head"><span class="block-bar"></span>'
       + '<h2 class="block-title">使用说明</h2></div>'
-      + '<div class="block-body">' + s.readme.map(p => '<p style="margin:0 0 10px">' + esc(p) + '</p>').join('') + '</div>'
-      + '<div class="code-box" style="margin-top:16px">'
-        + '<div class="code-head"><span class="code-name">SKILL.md</span>'
-        + '<button class="code-copy" data-copy-raw="' + esc(s.skillmd) + '">' + iconCopy() + '复制</button></div>'
-        + '<pre class="code-body">' + hl(s.skillmd) + '</pre>'
-      + '</div></section>';
+      + bodyHtml
+      + '<div class="doc-foot">'
+        + '<a class="doc-link" href="' + esc(s.repoUrl || ('https://github.com/' + s.repo)) + '"'
+          + ' target="_blank" rel="noopener noreferrer">'
+          + '在 GitHub 查看完整 README'
+          + '<svg viewBox="0 0 20 20" width="13" height="13" fill="none" stroke="currentColor"'
+          + ' stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+          + '<path d="M7.5 12.5l5-5M8 7h5v5"/></svg></a>'
+        + (rawMd
+            ? '<button class="doc-fold" type="button" aria-expanded="false" data-fold>原始 SKILL.md</button>'
+            : '')
+      + '</div>'
+      + (rawMd
+          ? '<div class="md-raw" id="mdRaw" hidden><div class="code-box">'
+            + '<div class="code-head"><span class="code-name">SKILL.md</span>'
+            + '<button class="code-copy" data-copy-raw="' + esc(rawMd) + '">'
+            + iconCopy() + '复制</button></div>'
+            + '<pre class="code-body">' + hl(rawMd) + '</pre></div></div>'
+          : '')
+      + '</section>';
 
     // 安全扫描
     const sc = s.scan;
@@ -543,6 +578,218 @@
       .replace(/^(\s*)(#.*)$/gm, '<span class="c">$1$2</span>')
       .replace(/\b([a-zA-Z-]+)(:)/g, '<span class="k">$1</span>$2')
       .replace(/(\[[^\]]*\])/g, '<span class="s">$1</span>');
+  }
+
+  /* ---------------- 轻量 Markdown 渲染 ----------------
+   * 采集到的 README 是任意第三方仓库的不可信内容，直接 innerHTML
+   * 等于把 XSS 交给别人。这里照 PyPI readme_renderer 的思路做白名单处理：
+   *
+   *   1. 删掉「整块无文本」的行——徽章墙、图片行，它们只是装饰
+   *   2. 危险块（script/style/iframe）连内容一起删
+   *   3. 无害标签（p/div/a/img…）只剥标签、留内部文本
+   *   4. esc() 转义残余尖括号，此时已无任何标签能存活
+   *   5. 从纯文本重建 Markdown 结构，只输出我们允许的少量标签
+   *
+   * 第4 步是关键：标签此时已只是文本，不是可执行元素，
+   * 因此 XSS、onerror、javascript: 伪协议都不可能生效，
+   * 也不需要维护容易漏项的黑名单。
+   * ---------------------------------------------- */
+
+  // 会连同内容一起删除的标签：里面的文本是代码不是给人读的
+  const DANGEROUS_BLOCKS = /<(script|style|iframe|object|embed|noscript|svg|math)\b[\s\S]*?<\/\1\s*>/gi;
+
+  // 排版类实体解成字符；& & < > " ' 交给 esc 处理，避免二次转义漏洞
+  const HTML_ENTITIES = [
+    [/&nbsp;/gi, ' '], [/&ensp;|&emsp;/gi, ' '],
+    [/&mdash;/gi, '—'], [/&ndash;/gi, '–'], [/&hellip;/gi, '…'],
+    [/&ldquo;|&rdquo;/gi, '”'], [/&lsquo;|&rsquo;/gi, '’'],
+    [/&middot;/gi, '·'], [/&bull;/gi, '•'], [/&times;/gi, '×'],
+    [/&copy;/gi, '©'], [/&reg;/gi, '®'], [/&trade;/gi, '™'],
+  ];
+
+  // 剥掉一行里的 HTML 标签，返回纯文本。用于判断「这行还有没有内容」
+  //
+  // 关键细节：块级标签（p/div/li/h1…）替换成两个换行而不是空格，
+  // 它们在语义上是段落分隔。普通换行会被 md() 合并成同一段，
+  // 只有空行才真正断段，否则整篇会黏成一大坨。
+  const BLOCK_TAGS = 'p|div|li|ul|ol|tr|table|thead|tbody|section|article|header|footer|br|hr|h1|h2|h3|h4|h5|h6|blockquote|pre|center|details|summary|figure';
+
+  function stripTags(line) {
+    return String(line)
+      .replace(DANGEROUS_BLOCKS, ' ')
+      .replace(/<!--[\s\S]*?-->/g, ' ')
+      .replace(/<img\b[^>]*\balt\s*=\s*(?:"([^"]*)"|'([^']*)')[^\>]*>/gi,
+        (m, a, b) => (a || b) ? '\n\n' + (a || b) + '\n\n' : ' ')
+      .replace(new RegExp('</?(' + BLOCK_TAGS + ')\\b[^>]*>', 'gi'), '\n\n')
+      .replace(/<[^>]*>/g, ' ');
+  }
+
+  // 清理 README 原文：去徽章行、去危险块、剥标签、解排版实体
+  function cleanMd(raw) {
+    const lines = String(raw == null ? '' : raw).replace(/\r\n?/g, '\n').split('\n');
+    const kept = [];
+
+    for (const line of lines) {
+      // HTML 注释整行丢弃
+      if (/^\s*<!--/.test(line)) continue;
+
+      // 不含标签的行是纯 Markdown，原样保留
+      if (!/<[a-z!/]/i.test(line)) {
+        kept.push(line);
+        continue;
+      }
+
+      // 含标签的行：剥完还剩文字才留。
+      // 徽章墙 / 居中图片剥完是空的 → 丢掉；
+      // <a href=...>说明文字</a> 剥完剩文字 → 留下。
+      const bare = stripTags(line).replace(/[\s\u00a0|·•|]/g, '').trim();
+      if (bare.length >= 2) kept.push(stripTags(line));
+    }
+
+    let s = kept.join('\n');
+    s = s.replace(DANGEROUS_BLOCKS, ' ');
+    s = s.replace(/<(script|style|iframe|object|embed)\b[^>]*\/?>/gi, ' ');
+
+    // skillmd 只截 README 前 1200 字符，末尾常停在半个标签上
+    // （形如 `<div><a id="the-core`）。这种截断痕迹展示给用户很难看，
+    // 从末尾往前找最后一个未闭合的 '<'，整段丢掉。
+    // 注意只认「再往后没有 '>'」的情况，否则会误伤 mermaid 代码块里
+    // 合法的 <br/> —— 那类内容在围栏内，本该原样保留。
+    const tail = s.slice(-200);
+    const open = tail.lastIndexOf('<');
+    if (open >= 0 && tail.indexOf('>', open) < 0) {
+      s = s.slice(0, s.length - (tail.length - open));
+    }
+
+    // 图片：留alt 文字，丢掉相对路径（本站在必定 404）
+    s = s.replace(/<img\b[^>]*\balt\s*=\s*(?:"([^"]*)"|'([^']*)')[^\>]*>/gi,
+      (m, a, b) => (a || b) ? (a || b) : '');
+    s = s.replace(/<[^>]*>/g, '');
+    for (const [re, ch] of HTML_ENTITIES) s = s.replace(re, ch);
+    return s;
+  }
+
+  // 行内元素：代码 → 粗体 → 斜体 → 链接
+  // 顺序有讲究：代码里的 * _ 不应被当成强调，先用占位符把它挖走。
+  function mdInline(text) {
+    const codes = [];
+    let s = String(text == null ? '' : text);
+
+    // 行内代码优先挖出，后续规则不再碰它内部
+    s = s.replace(/`([^`\n]+)`/g, (m, c) => {
+      codes.push(c);
+      return '\u0000' + (codes.length - 1) + '\u0000';
+    });
+
+    // 图片：相对路径在本站必然 404，只保留 alt 文字当说明
+    s = s.replace(/!\[([^\]]*)\]\([^)]*\)/g, (m, alt) => (alt || '').trim());
+
+    // 链接：只放行 http/https，其余降级为纯文本，避免 javascript: 伪协议
+    s = s.replace(/\[([^\]]+)\]\(\s*([^)\s]+)[^)]*\)/g, (m, label, href) => {
+      const u = /^https?:\/\//i.test(href) ? href : null;
+      return u
+        ? '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + label + '</a>'
+        : label;
+    });
+
+    s = s.replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>')
+         .replace(/(^|[^*\w])\*([^*\n]+)\*/g, '$1<em>$2</em>')
+         .replace(/__([^_\n]+)__/g, '<strong>$1</strong>');
+
+    // 还原行内代码（内容已在 esc 后，保持原样）
+    s = s.replace(/\u0000(\d+)\u0000/g, (m, i) => '<code>' + codes[+i] + '</code>');
+    return s;
+  }
+
+  // 块级渲染。只支持标题 / 列表 / 引用 / 代码块 / 段落 / 分隔线，
+  // 够用且可控；表格这类复杂结构一律降级成段落，不会破坏布局。
+  function md(src) {
+    // cleanMd 先剥掉所有 HTML 标签，esc 再确保没有尖括号能存活
+    const lines = esc(cleanMd(src)).split('\n');
+    const out = [];
+    let para = [];
+    let list = null;   // 'ul' | 'ol'
+    let quote = [];
+
+    const flushPara = () => {
+      if (para.length) {
+        out.push('<p>' + mdInline(para.join(' ')) + '</p>');
+        para = [];
+      }
+    };
+    const flushList = () => {
+      if (list) { out.push('</' + list + '>'); list = null; }
+    };
+    const flushQuote = () => {
+      if (quote.length) {
+        out.push('<blockquote>' + mdInline(quote.join(' ')) + '</blockquote>');
+        quote = [];
+      }
+    };
+    const flushAll = () => { flushPara(); flushList(); flushQuote(); };
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      const t = line.trim();
+
+      // 围栏代码块：原样保留，不做任何行内解析
+      const fence = t.match(/^(`{3,}|~{3,})\s*([\w+-]*)\s*$/);
+      if (fence) {
+        flushAll();
+        const mark = fence[1][0];
+        const buf = [];
+        i++;
+        while (i < lines.length && !new RegExp('^\\s*' + mark + '{3,}\\s*$').test(lines[i])) {
+          buf.push(lines[i]); i++;
+        }
+        i++; // 跳过收尾围栏
+        out.push(
+          '<div class="md-code"><div class="code-head">'
+          + '<span class="code-name">' + esc(fence[2] || 'text') + '</span>'
+          + '<button class="code-copy" data-copy-raw="' + esc(buf.join('\n')) + '">'
+          + iconCopy() + '复制</button></div>'
+          + '<pre class="code-body">' + hl(buf.join('\n')) + '</pre></div>'
+        );
+        continue;
+      }
+
+      if (!t) { flushAll(); continue; }
+
+      // 标题：README 里 h1 层级混乱，统一压到 h3/h4 避免撑破排版
+      const h = t.match(/^(#{1,6})\s+(.*)$/);
+      if (h) {
+        flushAll();
+        const lv = Math.min(4, h[1].length + 1);
+        out.push('<h' + lv + '>' + mdInline(h[2]) + '</h' + lv + '>');
+        continue;
+      }
+
+      // 分隔线
+      if (/^([-*_])\1{2,}$/.test(t)) { flushAll(); out.push('<hr>'); continue; }
+
+      // 引用（esc 后 '>' 变成 &gt;）
+      if (/^&gt;\s?/.test(t)) {
+        flushPara(); flushList();
+        quote.push(t.replace(/^&gt;\s?/, ''));
+        continue;
+      }
+      flushQuote();
+
+      // 列表
+      const li = t.match(/^([-*+]|\d+[.)])\s+(.*)$/);
+      if (li) {
+        flushPara();
+        const kind = /\d/.test(li[1]) ? 'ol' : 'ul';
+        if (list !== kind) { flushList(); out.push('<' + kind + '>'); list = kind; }
+        out.push('<li>' + mdInline(li[2]) + '</li>');
+        continue;
+      }
+      flushList();
+
+      para.push(t);
+    }
+    flushAll();
+    return out.join('');
   }
 
   /* ---------------- 视图：静态页 ---------------- */
@@ -793,6 +1040,16 @@
     }));
     $$('[data-copy-raw]').forEach(btn => btn.addEventListener('click', () => {
       copyCmd(btn.getAttribute('data-copy-raw'), btn);
+    }));
+
+    // 原始 SKILL.md 折叠展开
+    $$('[data-fold]').forEach(btn => btn.addEventListener('click', () => {
+      const box = $('#mdRaw');
+      if (!box) return;
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      box.hidden = open;
+      btn.classList.toggle('on', !open);
     }));
 
     // 表单

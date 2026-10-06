@@ -402,6 +402,46 @@ def _extract_prose(readme, skip_first=False, repo_name_hint=""):
     return ""
 
 
+def _readme_points(body, repo_name_hint="", limit=3):
+    """提取详情页「使用说明」的可读段落。
+
+    早期版本只过滤了 --- 和 # 开头的行，结果把
+    `<p align="center">` 这类徽章 HTML 当成正文抓走，
+    页面上直接暴露源码。这里复用 _is_prose 判定链，
+    只留下真正像人话的段落。
+    """
+    points, seen = [], set()
+    in_fence = False
+    for raw in (body or "").split("\n"):
+        line = raw.strip()
+        if not line:
+            continue
+        if line.startswith("```") or line.startswith("~~~"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        if line.startswith(("#", ">", "|", "<!--", "===", "<")):
+            continue
+        # 去掉行内 Markdown / HTML 后必须还剩可读文字
+        clean = re.sub(r"!?\[[^\]]*\]\([^)]*\)", "", line)
+        clean = re.sub(r"<[^>]+>", "", clean)
+        clean = re.sub(r"&[a-z]{2,6};", " ", clean, flags=re.I)
+        clean = re.sub(r"[*`>#|]", "", clean)
+        clean = re.sub(r"\s{2,}", " ", clean).strip()
+        if not _is_prose(clean) or _is_language_only(clean):
+            continue
+        if _same_as_name(clean, repo_name_hint):
+            continue
+        if clean in seen:
+            continue
+        seen.add(clean)
+        points.append(clean[:200])
+        if len(points) >= limit:
+            break
+    return points or ["该仓库未提供可渲染的说明文档，建议查看原文链接。"]
+
+
 # 纯语言名/语言切换残留，不构成描述
 _LANG_WORDS = re.compile(
     r"^(?:english|chinese|simplified chinese|traditional chinese|japanese|"
@@ -515,11 +555,7 @@ def collect_one(repo):
             "low": result.low,
         },
         "skillmd": (target_text or readme)[:1200],
-        "readme": [
-            re.sub(r"[#*>`\[\]]", "", l.strip())[:160]
-            for l in body.split("\n")
-            if l.strip() and not l.startswith(("---", "#"))
-        ][:3] or ["该仓库未提供 SKILL.md，索引自README 内容。"],
+        "readme": _readme_points(body or readme, repo["name"])[:3],
         # 匿名 API 拿不到 tag 历史（那需要额外请求且配额不够），
         # 这里不编造版本记录，只给最近更新时间作为事实依据
         "versions": [{
