@@ -307,6 +307,119 @@ def extract_skill_def(readme):
     return def_text + "\n" + "\n".join(code_blocks[:8])
 
 
+def _is_prose(text):
+    """判断一段文本是否是给人读的描述，而不是 HTML/代码/徽章。"""
+    t = (text or "").strip()
+    # 太短说不清用途。12 个字符是「能说明是什么」的大致下限。
+    if len(t) < 12:
+        return False
+    # 以标签、注释、分隔符开头 —— 典型是 README 的徽章与 HTML 块
+    if t.startswith(("<", ">", "|", "[", "!", "{", "=", "#", "---", "<!--")):
+        return False
+    # HTML/代码占比过高
+    markup = sum(t.count(c) for c in "<>/{}[]=")
+    if markup / len(t) > 0.12:
+        return False
+    # 中英文都要能识别：英文按单词数，中文按字数
+    words = len(re.findall(r"[A-Za-z]{3,}", t))
+    han = len(re.findall(r"[\u4e00-\u9fff]", t))
+    if not (words >= 2 or han >= 4):
+        return False
+    # 纯引导语（Get the Full Guide / Learn more / 点击查看）不是描述
+    if re.match(r"^(get\s+the\s+)?(full\s+)?(guide|more|info|details?|"
+                r"documentation|docs?|readme)\s*[.!]?$", t, re.I):
+        return False
+    if re.match(r"^(点击|查看|阅读|下载|了解|详情|更多|参见|访问)[^\u4e00-\u9fff]{0,4}$", t):
+        return False
+    return True
+
+
+def _same_as_name(desc, *names):
+    """描述是否只是仓库名的复述——等于没提供信息。"""
+    d = re.sub(r"[^a-z0-9\u4e00-\u9fff]+", "", (desc or "").lower())
+    if not d:
+        return True
+    for n in names:
+        if not n:
+            continue
+        k = re.sub(r"[^a-z0-9\u4e00-\u9fff]+", "", str(n).lower())
+        # 去掉 skills/skill 等后缀后比较
+        k = re.sub(r"(agent)?skills?$", "", k)
+        if k and (d == k or d.startswith(k) and len(d) - len(k) <= 6):
+            return True
+    return False
+
+
+def _extract_prose(readme, skip_first=False, repo_name_hint=""):
+    """从 README 里找出第一段像样的自然语言描述。
+
+    徽章行（连续的 <img> / <a>）、标题、代码块、HTML 标签都要跳过。
+    """
+    in_fence = False
+    found = 0
+    for raw in (readme or "").split("\n"):
+        line = raw.strip()
+        if not line:
+            continue
+        if line.startswith("```") or line.startswith("~~~"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        if line.startswith(("#", ">", "|", "[!", "[![", "<!--", "===")):
+            continue
+        # 徽章墙：一行里img/a 标签超过 2 个，或整行几乎只有标签
+        imgs = len(re.findall(r"<(?:img|a)\b", line, re.I))
+        if imgs >= 2:
+            continue
+        # 去掉行内 Markdown 后若还剩可读文字，才算描述
+        clean = re.sub(r"!?\[[^\]]*\]\([^)]*\)", "", line)      # 图片/链接
+        clean = re.sub(r"<[^>]+>", "", clean)                    # 内联标签
+        # HTML 实体：&nbsp; &amp; 等，残留实体说明这不是人话
+        clean = re.sub(r"&[a-z]{2,6};", " ", clean, flags=re.I)
+        clean = re.sub(r"[*`>#|]", "", clean)
+        # 徽章行常留下国旗 emoji + 语言名（如 "🇮🇩 Bahasa Indonesia"），
+        # 或 "简体中文 ·" 这类语言切换残留，都不是描述。
+        clean = re.sub(r"[\U0001F1E6-\U0001F1FF\u2600-\u27BF\uFE0F]", "", clean)
+        clean = re.sub(r"[·・>»|]", " ", clean)
+        clean = re.sub(r"\s{2,}", " ", clean).strip()
+        if not _is_prose(clean) or _is_language_only(clean):
+            continue
+        # 仓库名复述只算垃圾，但要继续往下找真正可读的描述
+        if _same_as_name(clean, repo_name_hint):
+            continue
+        # "Live site:" 这类引导词后面才是内容，本行不算描述
+        if re.match(r"^(live\s*site|demo|docs?|example|usage|install|"
+                    r"getting\s*started|quick\s*start|see\s|visit|read\s|"
+                    r"get\s+the\s+full|full\s+guide|learn\s+more|"
+                    r"more\s+info|点击|查看)[\s:：]*[\w\s]*$",
+                    clean, re.I):
+            continue
+        found += 1
+        if skip_first and found == 1:
+            continue
+        return clean[:140].strip()
+    return ""
+
+
+# 纯语言名/语言切换残留，不构成描述
+_LANG_WORDS = re.compile(
+    r"^(?:english|chinese|simplified chinese|traditional chinese|japanese|"
+    r"korean|french|german|spanish|portuguese|russian|arabic|hindi|"
+    r"bahasa|indonesia|vietnamese|thai|english|简体中文|繁體中文|"
+    r"简体中文|日本語|한국어|en|zh|ja|ko|fr|de|es|pt|ru|id|vi|th)*$",
+    re.I)
+
+
+def _is_language_only(text):
+    t = (text or "").strip(" .·-—:：")
+    if not t:
+        return True
+    # 去掉所有分隔符与空格后，若只剩语言词，说明是语言切换按钮残留
+    compact = re.sub(r"[\s\-_·・/|]", "", t)
+    return bool(compact) and bool(_LANG_WORDS.match(compact))
+
+
 def collect_one(repo):
     """单个仓库只发一次请求：读根README。
 
@@ -323,6 +436,16 @@ def collect_one(repo):
         return None
 
     target_text = extract_skill_def(readme)
+
+    # 必须真的含 SKILL.md 定义。
+    # 搜索词命中的大量仓库只是普通项目（哪怕star 很高），
+    # 收录它们会让站点退化成「什么仓库都有的导航站」。
+    if not target_text:
+        meta, body = parse_frontmatter(readme)
+        if not (meta.get("name")
+                and _is_prose(meta.get("description") or "")):
+            print(f"[跳过] {full} 无 SKILL.md 定义，不是 Skill 仓库")
+            return None
 
     scan_input = readme[:6000] + "\n" + target_text
     result = scan(scan_input)
@@ -345,12 +468,16 @@ def collect_one(repo):
     name = re.sub(r"[-_]?(agent[-_]?)?skills?$", "", name, flags=re.I) or repo["name"]
 
     desc = (meta.get("description") or "").strip()
-    if not desc or desc in (">", ">-", "|", "|-"):
-        first = next((l.strip() for l in readme.split("\n")
-                      if l.strip() and not l.startswith(("#", "---", ">", "|", "!", "[", "!"))), "")
-        desc = re.sub(r"[#*>`\[\]]", "", first)[:140].strip()
+    if not desc or not _is_prose(desc):
+        desc = _extract_prose(readme, repo_name_hint=repo["name"])
+
+    # 描述退化成仓库名等于没写。这类多出现在 README 只有标题的项目里。
+    if desc and _same_as_name(desc, name, repo["name"]):
+        desc = _extract_prose(readme, skip_first=True,
+                              repo_name_hint=repo["name"])
+
     if not desc:
-        desc = f"{repo['full_name']} 提供的 Skill，暂未提供描述。"
+        desc = f"{repo['full_name']} 的 Skill 集合。"
 
     lic = ((repo.get("license") or {}) or {}).get("spdx_id") or "UNKNOWN"
     if lic in ("NOASSERTION", None):
