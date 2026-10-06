@@ -1,0 +1,18 @@
+# 依赖与缓存
+node_modules/
+.cache/
+
+# 采集服务产出物（由 python run.py 重新生成）
+collector/collected.json
+collector/collect.log
+__pycache__/
+*.pyc
+
+# 本地文件
+.DS_Store
+Thumbs.db
+*.log
+
+# 注意：assets/data.js 需要提交——
+# 它是静态站的数据源，GitHub Pages 没有后端运行采集服务。
+# 每次采集后请执行 git add assets/data.js 并提交。

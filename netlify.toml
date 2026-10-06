@@ -1,0 +1,57 @@
+# SkillHub — Netlify 部署配置
+# 纯静态站，无构建步骤。
+
+[build]
+  publish = "."
+  command = ""
+
+# collector/ 是采集服务源码，push.sh 是本地推送脚本，
+# 都不该暴露到线上。用 headers 做访问拦截。
+[[headers]]
+  for = "/collector/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-store"
+
+[[headers]]
+  for = "/push.sh"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-store"
+
+[[headers]]
+  for = "/*.sh"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-store"
+
+# 全局安全响应头
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# 数据层由采集服务生成（GitHub Actions 每日更新），缓存时间短，
+# 保证用户能较快拿到最新技能库
+[[headers]]
+  for = "/assets/data.js"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
+
+[[headers]]
+  for = "/assets/app.js"
+  [headers.values]
+    Cache-Control = "public, max-age=600, must-revalidate"
+
+[[headers]]
+  for = "/assets/style.css"
+  [headers.values]
+    Cache-Control = "public, max-age=600, must-revalidate"
+
+# 带 hash 的静态资源可长期缓存
+[[headers]]
+  for = "/favicon.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

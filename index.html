@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SkillHub — 找到能用的 Skill，比记住它更快</title>
+<meta name="description" content="聚合全网公开仓库的 AI Skill，标注来源、许可证与安全扫描结论。搜索、一键复制安装命令。">
+<meta name="theme-color" content="#0A0A0B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%235E6AD2'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='17' font-weight='700' fill='%23fff' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ============ 顶栏 ============ -->
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark">S</span>
+      <span class="brand-name">SkillHub</span>
+    </a>
+
+    <nav class="nav" id="navDesktop">
+      <a href="#/">发现</a>
+      <a href="#/search">搜索</a>
+      <a href="#/rank">榜单</a>
+      <a href="#/rules">收录规则</a>
+    </nav>
+
+    <div class="topbar-right">
+      <button class="icon-btn topbar-search-btn" id="topbarSearchBtn" aria-label="搜索">
+        <svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <circle cx="9" cy="9" r="6"/><path d="M13.5 13.5L17 17"/>
+        </svg>
+      </button>
+      <a class="btn btn-ghost btn-sm topbar-submit" href="#/submit">提交 Skill</a>
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 移动端搜索浮层 ============ -->
+<div class="mobile-search-bar" id="mobileSearchBar">
+  <button class="icon-btn" id="mobileSearchBack" aria-label="返回">
+    <svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 4l-6 6 6 6"/>
+    </svg>
+  </button>
+  <div class="search-box search-box-sm">
+    <svg class="search-ico" viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <circle cx="9" cy="9" r="6"/><path d="M13.5 13.5L17 17"/>
+    </svg>
+    <input type="search" id="mobileSearchInput" placeholder="搜索能力、工具链或仓库名" autocomplete="off">
+  </div>
+</div>
+
+<!-- ============ 主体 ============ -->
+<main id="app" class="app"></main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="site-footer" id="siteFooter">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand">
+        <span class="brand-mark">S</span>
+        <span class="brand-name">SkillHub</span>
+      </div>
+      <p class="footer-desc">索引自各 Skill 作者公开仓库。版权与安全结论归原作者所有。</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#/rules">收录规则</a>
+      <a href="#/submit">提交 Skill</a>
+      <a href="#/feedback">问题反馈</a>
+      <a href="#/">服务状态 <span class="dot-ok"></span>正常</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- ============ 移动端底部标签栏 ============ -->
+<nav class="tabbar" id="tabbar">
+  <a href="#/" data-tab="home">
+    <svg viewBox="0 0 22 22" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+      <circle cx="10" cy="10" r="6"/><path d="M14.5 14.5L18 18"/>
+    </svg>
+    <span>发现</span>
+  </a>
+  <a href="#/search" data-tab="search">
+    <svg viewBox="0 0 22 22" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 7h16M3 12h10M3 17h6"/>
+    </svg>
+    <span>搜索</span>
+  </a>
+  <a href="#/rank" data-tab="rank">
+    <svg viewBox="0 0 22 22" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 14V8M11 14V4M16 14v-4"/>
+    </svg>
+    <span>榜单</span>
+  </a>
+  <a href="#/rules" data-tab="rules">
+    <svg viewBox="0 0 22 22" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 2.5l6 2.5v5c0 4-2.5 7.2-6 8.5-3.5-1.3-6-4.5-6-8.5V5z"/><path d="M7.5 10l1.8 1.8L13 8"/>
+    </svg>
+    <span>安全</span>
+  </a>
+</nav>
+
+<!-- ============ 筛选抽屉（移动端） ============ -->
+<div class="drawer-mask" id="drawerMask"></div>
+<aside class="drawer" id="filterDrawer" aria-hidden="true">
+  <div class="drawer-head">
+    <h3>筛选</h3>
+    <button class="icon-btn" id="drawerClose" aria-label="关闭">
+      <svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <path d="M5 5l10 10M15 5L5 15"/>
+      </svg>
+    </button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot">
+    <button class="btn btn-ghost btn-sm" id="drawerReset">清除全部</button>
+    <button class="btn btn-primary btn-sm" id="drawerApply">查看结果</button>
+  </div>
+</aside>
+
+<!-- ============ Toast ============ -->
+<div class="toast-wrap" id="toastWrap" aria-live="polite"></div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

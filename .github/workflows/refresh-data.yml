@@ -1,0 +1,64 @@
+# 定时更新 Skill 库数据
+# 静态站无后端，数据层 assets/data.js 必须由采集服务生成并提交回仓库，
+# Netlify 监听到推送后自动重新部署。
+
+name: Refresh Skill Data
+
+on:
+  schedule:
+    # 每天 UTC 03:10（北京时间 11:10）执行，避开整点高峰
+    - cron: "10 3 * * *"
+  # 手动触发（Actions 页面 Run workflow）
+  workflow_dispatch:
+
+# 同一时间只允许一个任务运行，避免并发提交冲突
+concurrency:
+  group: refresh-skill-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run collector
+        # 采集器仅依赖标准库，无需 pip install。
+        # secrets.GITHUB_TOKEN 由 Actions 自动注入，配额 1000 次/小时。
+        # 若需更高配额，可在仓库 Secrets 中配置 GITHUB_TOKEN 覆盖。
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN || github.token }}
+        run: |
+          cd collector
+          python run.py 2>&1 | tee collect.log
+
+      - name: Check for changes
+        id: check
+        run: |
+          if git diff --quiet -- assets/data.js; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "本次采集结果与仓库一致，无需提交"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git --no-pager diff --stat -- assets/data.js
+          fi
+
+      - name: Commit and push
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data.js
+          git commit -m "chore(data): refresh skill index"
+          git push
