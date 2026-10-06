@@ -149,6 +149,34 @@ def _():
     return f"{len(cases)} 类时间字段均不影响指纹，实质变化可识别"
 
 
+@check("描述质量：无 HTML / 徽章 / 语言残留")
+def _():
+    import json
+    src = (ROOT / "assets" / "data.js").read_text(encoding="utf-8")
+    d = json.loads(re.search(r"window\.SKILLHUB_DATA\s*=\s*(\{.*\});",
+                             src, re.S).group(1))
+    bad_html, bad_short, bad_lang, bad_entity = [], [], [], []
+    for s in d["SKILLS"]:
+        desc = str(s.get("desc", ""))
+        # README 的 HTML 徽章被当描述（用户实际报过这个问题）
+        if desc.startswith(("<", ">", "|", "[", "!")):
+            bad_html.append(s["repo"])
+        if len(desc) < 12:
+            bad_short.append(s["repo"])
+        # 语言切换残留，如 "🇮🇩 Bahasa Indonesia"、"简体中文 ·"
+        if re.search(r"[\U0001F1E6-\U0001F1FF]", desc) or re.match(
+                r"^\s*(english|chinese|简体|繁體|日本語)?\s*[·・]?\s*$", desc, re.I):
+            bad_lang.append(s["repo"])
+        if re.search(r"&[a-z]{2,6};", desc, re.I):
+            bad_entity.append(s["repo"])
+
+    total = len(d["SKILLS"])
+    assert not bad_html, f"{len(bad_html)}/{total} 条描述是 HTML：{bad_html[:3]}"
+    assert not bad_short, f"{len(bad_short)}/{total} 条描述过短：{bad_short[:3]}"
+    assert not bad_entity, f"{len(bad_entity)}/{total} 条含 HTML 实体：{bad_entity[:3]}"
+    return f"{total} 条描述全部为可读文本"
+
+
 @check("采集规模配置合理（防止退回小样本）")
 def _():
     sys.path.insert(0, str(HERE))
