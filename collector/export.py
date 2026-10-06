@@ -9,6 +9,8 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+import hashlib
+
 HERE = Path(__file__).parent
 ROOT = HERE.parent
 
@@ -114,12 +116,52 @@ TEMPLATE = """/* SkillHub — 数据层
  * 本文件由 collector/ 采集服务生成，请勿手工编辑。
  * 生成时间：{generated}
  * 数据来源：GitHub 公开仓库 | 收录 {total} 个 | 安全拦截 {blocked} 个
+ * 内容指纹：{fingerprint}
  */
 
 window.SKILLHUB_DATA = {payload};
 
 window.SKILLHUB_IS_LIVE = true;
 """
+
+# 指纹要排除的易变字段：这些字段每天都会变，但索引内容没变。
+# 若不排除，GitHub Actions 每天都会提交一次 commit，把仓库历史刷满噪声。
+VOLATILE_KEYS = {
+    "generatedAt", "collectedAt",   # 采集时间戳
+    "updated", "updatedDays",        # 「15 天前」随日期推进
+    "scanned",                       # 扫描时间
+}
+VOLATILE_NESTED = {"scan": {"scanned"}}
+VOLATILE_VERSION_KEYS = {"t"}        # versions[].t 同样是相对时间
+
+
+def fingerprint(data):
+    """计算索引内容的稳定指纹。
+
+    排除时间戳与相对天数后，同一份采集结果在任何一天生成都得到相同指纹，
+    供 CI 判断「索引是否真的变了」，避免无意义提交。
+    """
+    def scrub(node, in_version=False):
+        if isinstance(node, dict):
+            out = {}
+            for k, v in node.items():
+                if k in VOLATILE_KEYS:
+                    continue
+                if k in VOLATILE_NESTED and isinstance(v, dict):
+                    out[k] = {kk: vv for kk, vv in v.items()
+                              if kk not in VOLATILE_NESTED[k]}
+                elif in_version and k in VOLATILE_VERSION_KEYS:
+                    continue
+                else:
+                    out[k] = scrub(v, in_version=(k == "versions"))
+            return out
+        if isinstance(node, list):
+            return [scrub(v, in_version) for v in node]
+        return node
+
+    stable = scrub(data)
+    payload = json.dumps(stable, sort_keys=True, ensure_ascii=False)
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:12]
 
 
 def validate(data):
@@ -177,12 +219,14 @@ def main():
     data = build(collected)
     validate(data)
 
+    fp = fingerprint(data)
     js = ROOT / "assets" / "data.js"
     js.write_text(
         TEMPLATE.format(
             generated=data["META"]["generatedAt"],
             total=data["META"]["total"],
             blocked=data["META"]["blocked"],
+            fingerprint=fp,
             payload=json.dumps(data, ensure_ascii=False, indent=2),
         ),
         encoding="utf-8",
@@ -190,6 +234,7 @@ def main():
 
     print(f"已生成 {js}")
     print(f"收录 {data['META']['total']} 个 · 拦截 {data['META']['blocked']} 个")
+    print(f"内容指纹 {fp}")
     from collections import Counter
     print("能力域分布:", dict(Counter(s["domain"] for s in data["SKILLS"])))
     print("许可证分布:", dict(Counter(s["license"] for s in data["SKILLS"])))

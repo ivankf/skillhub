@@ -1,7 +1,8 @@
 /* SkillHub — 数据层
  * 本文件由 collector/ 采集服务生成，请勿手工编辑。
- * 生成时间：2026-10-06T11:01:57.961596+00:00
+ * 生成时间：2026-10-06T13:42:18.562136+00:00
  * 数据来源：GitHub 公开仓库 | 收录 4 个 | 安全拦截 1 个
+ * 内容指纹：275c2c2cf682
  */
 
 window.SKILLHUB_DATA = {
@@ -191,8 +192,8 @@ window.SKILLHUB_DATA = {
       "repo": "mxyhi/ok-skills",
       "repoUrl": "https://github.com/mxyhi/ok-skills",
       "stars": 2890,
-      "updatedDays": 15,
-      "updated": "15 天前",
+      "updatedDays": 16,
+      "updated": "16 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -210,7 +211,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-09-20",
           "d": "索引自最近一次提交",
-          "t": "15 天前",
+          "t": "16 天前",
           "cur": true
         }
       ],
@@ -270,12 +271,12 @@ window.SKILLHUB_DATA = {
   ],
   "META": {
     "source": "github",
-    "collectedAt": "2026-10-06T11:01:56.772792+00:00",
+    "collectedAt": "2026-10-06T13:42:17.714315+00:00",
     "total": 4,
     "blocked": 1,
     "offline": true,
     "rateLimited": false,
-    "generatedAt": "2026-10-06T11:01:57.961596+00:00"
+    "generatedAt": "2026-10-06T13:42:18.562136+00:00"
   }
 };
 

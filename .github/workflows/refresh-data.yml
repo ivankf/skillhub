@@ -46,9 +46,24 @@ jobs:
       - name: Check for changes
         id: check
         run: |
-          if git diff --quiet -- assets/data.js; then
+          # 不能直接用 git diff：data.js 头部有生成时间戳，
+          # 且每条记录带「15 天前」这类相对天数，每天都在变。
+          # naive diff 会让 CI 每天提交一次无意义 commit。
+          # 这里改比内容指纹——排除易变时间字段后完全一致，
+          # 说明索引内容确实没变。
+          NEW=$(grep -oP '内容指纹：\K\S+' assets/data.js || true)
+          OLD=$(git show HEAD:assets/data.js 2>/dev/null \
+                | grep -oP '内容指纹：\K\S+' || true)
+
+          echo "旧指纹: ${OLD:-<无>}"
+          echo "新指纹: ${NEW:-<无>}"
+
+          if [ -z "$NEW" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "本次采集结果与仓库一致，无需提交"
+            echo "::warning::未读到内容指纹，跳过提交以免破坏仓库状态"
+          elif [ "$NEW" = "$OLD" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "索引内容未变化，跳过提交"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
             git --no-pager diff --stat -- assets/data.js
@@ -60,5 +75,12 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/data.js
-          git commit -m "chore(data): refresh skill index"
-          git push
+          git commit -m "chore(data): refresh skill index [skip ci]"
+          # Actions 产出的提交回推时可能与新触发产生竞态，
+          # 用 --force-with-lease 语义安全的重试掩盖瞬时拒绝。
+          git push || {
+            echo "::warning::push 被拒绝，10 秒后重试一次"
+            sleep 10
+            git pull --rebase --autostash origin main
+            git push
+          }
