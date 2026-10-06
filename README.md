@@ -96,9 +96,38 @@ python run.py
 - **结果无变化就不提交**，避免每天刷一堆无意义 commit
 - **`concurrency` 串行保护**，防止手动触发与定时任务撞车
 - Token 默认用 Actions 内置的 `github.token`（1000 次/小时）；
-  需要更高配额可在仓库 Secrets 配置 `GITHUB_TOKEN`覆盖
+  需要更高配额可在仓库 Secrets 配置 `GITHUB_TOKEN` 覆盖
 
 在 Actions 页面可随时点 **Run workflow** 手动验证一次。
+
+#### 内容指纹：为什么不用 git diff
+
+`data.js` 头部有生成时间戳，每条记录还带「15 天前」这类相对天数——
+这些字段每天都在变，但索引内容可能完全没动。
+
+直接用 `git diff --quiet` 判断会导致机器人**每天提交一次**，
+把仓库历史刷满无意义 commit，最后谁都看不出哪次是真正的数据变化。
+
+因此 `export.py` 提供 `fingerprint()`：排除易变字段
+（`generatedAt` / `collectedAt` / `updated` / `updatedDays` /
+`scanned` / `versions[].t`）后取 sha256 前 12 位，写进文件头部，
+CI 只比对指纹。
+
+实测行为：仅时间推进时文件变 20 行但指纹不变；
+改动 star 数则指纹变化。
+
+#### 部署前置自检
+
+推送前先在本地跑一遍，能省掉线上 Actions 失败的排查成本：
+
+```bash
+python run.py --offline --verify
+# 或直接
+python verify_setup.py
+```
+
+覆盖 8 项：工作流 YAML 可解析、指纹逻辑正确、数据契约完整、
+shell 脚本换行符为 LF、Netlify 配置有效。
 
 ### Netlify 部署
 

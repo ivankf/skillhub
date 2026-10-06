@@ -36,6 +36,9 @@ def main():
     step("2/3 导出并校验数据契约", ["export.py"])
     step("3/3 安全扫描器自检", ["scanner.py"])
 
+    if "--verify" in sys.argv:
+        step("附加 部署前置自检", ["verify_setup.py"])
+
     print("\n" + "=" * 52)
     print("  链路完成，assets/data.js 已更新")
     print("  重启本地服务即可看到新数据：")
