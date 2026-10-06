@@ -1,0 +1,23 @@
+# 统一换行符，避免跨平台踩坑：
+# GitHub Actions 跑在 Ubuntu，若 shell 脚本以 CRLF 提交，
+# 执行时会报 `bad interpreter: /bin/bash^M` 或 `$'\r': command not found`。
+
+* text=auto
+
+*.py    text eol=lf
+*.sh    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.js    text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.md    text eol=lf
+*.toml  text eol=lf
+*.json  text eol=lf
+
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.svg   text eol=lf
