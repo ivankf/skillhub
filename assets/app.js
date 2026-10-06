@@ -583,218 +583,173 @@
       .replace(/(\[[^\]]*\])/g, '<span class="s">$1</span>');
   }
 
-  /* ---------------- 轻量 Markdown 渲染 ----------------
+/* ---------------- Markdown 渲染 ----------------
    * 采集到的 README 是任意第三方仓库的不可信内容，直接 innerHTML
-   * 等于把 XSS 交给别人。这里照 PyPI readme_renderer 的思路做白名单处理：
+   * 等于把 XSS 交给别人。marked 默认「原样输出 HTML」——既不转义、
+   * 也不拦 javascript: 伪协议，所以必须配一个自定义 renderer。
    *
-   *   1. 删掉「整块无文本」的行——徽章墙、图片行，它们只是装饰
-   *   2. 危险块（script/style/iframe）连内容一起删
-   *   3. 无害标签（p/div/a/img…）只剥标签、留内部文本
-   *   4. esc() 转义残余尖括号，此时已无任何标签能存活
-   *   5. 从纯文本重建 Markdown 结构，只输出我们允许的少量标签
+   * 职责分成两层：
    *
-   * 第4 步是关键：标签此时已只是文本，不是可执行元素，
-   * 因此 XSS、onerror、javascript: 伪协议都不可能生效，
-   * 也不需要维护容易漏项的黑名单。
+   *   cleanMd()  渲染前的语料清洗，只做 marked 不做的事：
+   *     · 删徽章墙（Markdown 与 HTML 两种写法）
+   *     · 删危险块（script/style/iframe 连内容一起）
+   *     · img 标签降级成 alt 文本
+   *     · 解 HTML 实体——marked 不解，&mdash; 会原样打印给用户
+   *     · 修 1200 字截断留下的半个标签
+   *
+   *   renderer   渲染时的输出白名单，逐类决定「这个 token 变成什么」：
+   *     · html()  → ''，原始 HTML 一律丢弃
+   *     · link()  → 只放行 http/https
+   *     · image() → 降级成 alt 文本（相对路径在本站必然 404）
+   *     · code()  → 包成带复制按钮的代码框
+   *
+   * 关键：以上所有逐行处理都必须跳过围栏代码块。
+   * 早期版本用一条 /<[^>]*>/g 全局剥标签，把 mermaid 的 <br/> 和
+   * 安装命令里的 <skill-name> 一起吃掉了——被毁掉的恰恰是最该
+   * 准确展示的内容。marked 自己会把围栏内容正确转义，不用我们碰。
    * ---------------------------------------------- */
 
   // 会连同内容一起删除的标签：里面的文本是代码不是给人读的
   const DANGEROUS_BLOCKS = /<(script|style|iframe|object|embed|noscript|svg|math)\b[\s\S]*?<\/\1\s*>/gi;
 
-  // 排版类实体解成字符；& & < > " ' 交给 esc 处理，避免二次转义漏洞
+  // 排版类实体解成字符。这一步不能省——实测 marked 不解实体，
+  // &mdash; 会被原样打印到页面上。
+  // &amp; 必须排在最后：否则 &amp;lt; 会被解两次变成裸尖括号。
   const HTML_ENTITIES = [
     [/&nbsp;/gi, ' '], [/&ensp;|&emsp;/gi, ' '],
     [/&mdash;/gi, '—'], [/&ndash;/gi, '–'], [/&hellip;/gi, '…'],
     [/&ldquo;|&rdquo;/gi, '”'], [/&lsquo;|&rsquo;/gi, '’'],
     [/&middot;/gi, '·'], [/&bull;/gi, '•'], [/&times;/gi, '×'],
     [/&copy;/gi, '©'], [/&reg;/gi, '®'], [/&trade;/gi, '™'],
+    [/&larr;/gi, '←'], [/&rarr;/gi, '→'], [/&harr;/gi, '↔'],
+    [/&lt;/gi, '<'], [/&gt;/gi, '>'], [/&quot;/gi, '"'],
+    [/&amp;/gi, '&'],
   ];
 
-  // 剥掉一行里的 HTML 标签，返回纯文本。用于判断「这行还有没有内容」
-  //
-  // 关键细节：块级标签（p/div/li/h1…）替换成两个换行而不是空格，
-  // 它们在语义上是段落分隔。普通换行会被 md() 合并成同一段，
-  // 只有空行才真正断段，否则整篇会黏成一大坨。
-  const BLOCK_TAGS = 'p|div|li|ul|ol|tr|table|thead|tbody|section|article|header|footer|br|hr|h1|h2|h3|h4|h5|h6|blockquote|pre|center|details|summary|figure';
+  // 徽章墙：Markdown 写法整行只有图片/链接，是纯装饰
+  const MD_BADGE_LINE = /^\s*(?:\[!\[[^\]]*\]\([^)]*\)\]\([^)]*\)|!\[[^\]]*\]\([^)]*\))+\s*$/;
 
-  function stripTags(line) {
-    return String(line)
-      .replace(DANGEROUS_BLOCKS, ' ')
-      .replace(/<!--[\s\S]*?-->/g, ' ')
-      .replace(/<img\b[^>]*\balt\s*=\s*(?:"([^"]*)"|'([^']*)')[^\>]*>/gi,
-        (m, a, b) => (a || b) ? '\n\n' + (a || b) + '\n\n' : ' ')
-      .replace(new RegExp('</?(' + BLOCK_TAGS + ')\\b[^>]*>', 'gi'), '\n\n')
-      .replace(/<[^>]*>/g, ' ');
-  }
-
-  // 清理 README 原文：去徽章行、去危险块、剥标签、解排版实体
+  // 清理 README 原文：删徽章墙、危险块、img 标签，解排版实体。
+  // 逐行扫描并跟踪围栏状态——围栏内是代码示例，一个字符都不该动。
   function cleanMd(raw) {
     const lines = String(raw == null ? '' : raw).replace(/\r\n?/g, '\n').split('\n');
     const kept = [];
+    let fence = null;
 
     for (const line of lines) {
-      // HTML 注释整行丢弃
-      if (/^\s*<!--/.test(line)) continue;
+      const t = line.trim();
 
-      // 不含标签的行是纯 Markdown，原样保留
-      if (!/<[a-z!/]/i.test(line)) {
+      // 围栏内部：原样保留。mermaid 的 <br/>、命令里的 <skill-name>
+      // 都是合法内容，剥掉就毁了。
+      if (fence) {
         kept.push(line);
+        if (new RegExp('^\\s*' + fence + '{3,}\\s*$').test(t)) fence = null;
         continue;
       }
 
-      // 含标签的行：剥完还剩文字才留。
-      // 徽章墙 / 居中图片剥完是空的 → 丢掉；
-      // <a href=...>说明文字</a> 剥完剩文字 → 留下。
-      const bare = stripTags(line).replace(/[\s\u00a0|·•|]/g, '').trim();
-      if (bare.length >= 2) kept.push(stripTags(line));
+      // 围栏开始
+      const fenceOpen = t.match(/^(`{3,}|~{3,})/);
+      if (fenceOpen) { fence = fenceOpen[1][0]; kept.push(line); continue; }
+
+      // HTML 注释整行丢弃
+      if (/^\s*<!--/.test(line)) continue;
+
+      // Markdown 徽章墙：整行只有图片，剥完没内容
+      if (MD_BADGE_LINE.test(t)) continue;
+
+      // HTML 徽章墙：<a><img></a> / <img> 独占一行
+      if (/^(?:<(?:a|div|p|span|center)\b[^>]*>\s*)*<img\b[\s\S]*$/i.test(t)
+          && !/<img\b[^>]*\balt\s*=\s*(?:"[^"]{3,}"|'[^']{3,}')/i.test(t)) {
+        continue;
+      }
+
+      // 行内 HTML 危险块连内容一起删。
+      // marked 的 html() 只丢标签、保留文本，
+      // 不在这里删的话 <script>alert(1)</script> 会变成正文里的 "alert(1)"。
+      kept.push(line
+        .replace(DANGEROUS_BLOCKS, ' ')
+        .replace(/<(script|style|iframe|object|embed)\b[^>]*\/?>/gi, ' '));
+
+      // img 标签降级成 alt 文本。相对路径在本站必然 404，
+      // 远程图又不受我们控制（挡不掉追踪像素），统一只留文字。
+      kept[kept.length - 1] = kept[kept.length - 1].replace(
+        /<img\b[^>]*\balt\s*=\s*(?:"([^"]*)"|'([^']*)')[^>]*>/gi,
+        (m, a, b) => (a || b ? a || b : ''));
+
+      // 其余 HTML 实体解成字符
+      for (const [re, ch] of HTML_ENTITIES) {
+        kept[kept.length - 1] = kept[kept.length - 1].replace(re, ch);
+      }
     }
 
     let s = kept.join('\n');
-    s = s.replace(DANGEROUS_BLOCKS, ' ');
-    s = s.replace(/<(script|style|iframe|object|embed)\b[^>]*\/?>/gi, ' ');
 
     // skillmd 只截 README 前 1200 字符，末尾常停在半个标签上
     // （形如 `<div><a id="the-core`）。这种截断痕迹展示给用户很难看，
     // 从末尾往前找最后一个未闭合的 '<'，整段丢掉。
-    // 注意只认「再往后没有 '>'」的情况，否则会误伤 mermaid 代码块里
-    // 合法的 <br/> —— 那类内容在围栏内，本该原样保留。
     const tail = s.slice(-200);
     const open = tail.lastIndexOf('<');
     if (open >= 0 && tail.indexOf('>', open) < 0) {
       s = s.slice(0, s.length - (tail.length - open));
     }
-
-    // 图片：留alt 文字，丢掉相对路径（本站在必定 404）
-    s = s.replace(/<img\b[^>]*\balt\s*=\s*(?:"([^"]*)"|'([^']*)')[^\>]*>/gi,
-      (m, a, b) => (a || b) ? (a || b) : '');
-    s = s.replace(/<[^>]*>/g, '');
-    for (const [re, ch] of HTML_ENTITIES) s = s.replace(re, ch);
     return s;
   }
 
-  // 行内元素：代码 → 粗体 → 斜体 → 链接
-  // 顺序有讲究：代码里的 * _ 不应被当成强调，先用占位符把它挖走。
-  function mdInline(text) {
-    const codes = [];
-    let s = String(text == null ? '' : text);
+  // marked v12 的 renderer 方法全部是位置参数，不是 token 对象。
+  // 这点踩过坑：按 token 写会得到 href="undefined"。
+  const mdRenderer = new marked.Renderer();
 
-    // 行内代码优先挖出，后续规则不再碰它内部
-    s = s.replace(/`([^`\n]+)`/g, (m, c) => {
-      codes.push(c);
-      return '\u0000' + (codes.length - 1) + '\u0000';
-    });
+  // 原始 HTML 一律丢弃。徽章墙、居中块、样式残留都不该出现在正文里。
+  mdRenderer.html = () => '';
 
-    // 图片：相对路径在本站必然 404，只保留 alt 文字当说明
-    s = s.replace(/!\[([^\]]*)\]\([^)]*\)/g, (m, alt) => (alt || '').trim());
+  // 标题：README 里 h1 层级混乱（标题重复、目录当标题），
+  // 统一压到 h3/h4，避免撑破详情页排版。
+  mdRenderer.heading = (text, level) => {
+    const lv = Math.min(4, Math.max(3, level + 1));
+    return '<h' + lv + '>' + text + '</h' + lv + '>\n';
+  };
 
-    // 链接：只放行 http/https，其余降级为纯文本，避免 javascript: 伪协议
-    s = s.replace(/\[([^\]]+)\]\(\s*([^)\s]+)[^)]*\)/g, (m, label, href) => {
-      const u = /^https?:\/\//i.test(href) ? href : null;
-      return u
-        ? '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + label + '</a>'
-        : label;
-    });
+  // 代码块：包成带语言标签和复制按钮的代码框，与 .code-box 同构
+  mdRenderer.code = (code, infostring) => {
+    const lang = String(infostring || '').match(/^\S*/)[0] || 'text';
+    const body = String(code == null ? '' : code).replace(/\n$/, '');
+    return '<div class="md-code"><div class="code-head">'
+      + '<span class="code-name">' + esc(lang) + '</span>'
+      + '<button class="code-copy" data-copy-raw="' + esc(body) + '">'
+      + iconCopy() + '复制</button></div>'
+      + '<pre class="code-body">' + hl(body) + '</pre></div>\n';
+  };
 
-    s = s.replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>')
-         .replace(/(^|[^*\w])\*([^*\n]+)\*/g, '$1<em>$2</em>')
-         .replace(/__([^_\n]+)__/g, '<strong>$1</strong>');
+  // 链接：只放行 http/https，其余降级为纯文本。
+  // marked 自带的 link() 会原样吐出 javascript:，这里必须自己判。
+  mdRenderer.link = (href, title, text) => {
+    const u = String(href == null ? '' : href).trim();
+    if (!/^https?:\/\//i.test(u)) return text || '';
+    return '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">'
+      + (text || '') + '</a>';
+  };
 
-    // 还原行内代码（内容已在 esc 后，保持原样）
-    s = s.replace(/\u0000(\d+)\u0000/g, (m, i) => '<code>' + codes[+i] + '</code>');
-    return s;
-  }
+  // 图片：与 HTML img 同理，只留 alt 文字
+  mdRenderer.image = (href, title, text) =>
+    text ? '<span class="md-alt">' + text + '</span>' : '';
 
-  // 块级渲染。只支持标题 / 列表 / 引用 / 代码块 / 段落 / 分隔线，
-  // 够用且可控；表格这类复杂结构一律降级成段落，不会破坏布局。
+  // 表格：包一层容器做横向滚动。CSS 无法让 table 自身滚动，
+  // 窄屏下参数表会把整页撑出横向滚动条。
+  mdRenderer.table = (header, body) =>
+    '<div class="md-table"><table>\n<thead>\n' + header + '</thead>\n'
+    + (body ? '<tbody>' + body + '</tbody>\n' : '') + '</table></div>\n';
+
+  marked.use({ renderer: mdRenderer, gfm: true, breaks: false });
+
+  // 渲染一段 Markdown。cleanMd 先做语料清洗，再交给 marked 结构化。
   function md(src) {
-    // cleanMd 先剥掉所有 HTML 标签，esc 再确保没有尖括号能存活
-    const lines = esc(cleanMd(src)).split('\n');
-    const out = [];
-    let para = [];
-    let list = null;   // 'ul' | 'ol'
-    let quote = [];
-
-    const flushPara = () => {
-      if (para.length) {
-        out.push('<p>' + mdInline(para.join(' ')) + '</p>');
-        para = [];
-      }
-    };
-    const flushList = () => {
-      if (list) { out.push('</' + list + '>'); list = null; }
-    };
-    const flushQuote = () => {
-      if (quote.length) {
-        out.push('<blockquote>' + mdInline(quote.join(' ')) + '</blockquote>');
-        quote = [];
-      }
-    };
-    const flushAll = () => { flushPara(); flushList(); flushQuote(); };
-
-    for (let i = 0; i < lines.length; i++) {
-      const line = lines[i];
-      const t = line.trim();
-
-      // 围栏代码块：原样保留，不做任何行内解析
-      const fence = t.match(/^(`{3,}|~{3,})\s*([\w+-]*)\s*$/);
-      if (fence) {
-        flushAll();
-        const mark = fence[1][0];
-        const buf = [];
-        i++;
-        while (i < lines.length && !new RegExp('^\\s*' + mark + '{3,}\\s*$').test(lines[i])) {
-          buf.push(lines[i]); i++;
-        }
-        i++; // 跳过收尾围栏
-        out.push(
-          '<div class="md-code"><div class="code-head">'
-          + '<span class="code-name">' + esc(fence[2] || 'text') + '</span>'
-          + '<button class="code-copy" data-copy-raw="' + esc(buf.join('\n')) + '">'
-          + iconCopy() + '复制</button></div>'
-          + '<pre class="code-body">' + hl(buf.join('\n')) + '</pre></div>'
-        );
-        continue;
-      }
-
-      if (!t) { flushAll(); continue; }
-
-      // 标题：README 里 h1 层级混乱，统一压到 h3/h4 避免撑破排版
-      const h = t.match(/^(#{1,6})\s+(.*)$/);
-      if (h) {
-        flushAll();
-        const lv = Math.min(4, h[1].length + 1);
-        out.push('<h' + lv + '>' + mdInline(h[2]) + '</h' + lv + '>');
-        continue;
-      }
-
-      // 分隔线
-      if (/^([-*_])\1{2,}$/.test(t)) { flushAll(); out.push('<hr>'); continue; }
-
-      // 引用（esc 后 '>' 变成 &gt;）
-      if (/^&gt;\s?/.test(t)) {
-        flushPara(); flushList();
-        quote.push(t.replace(/^&gt;\s?/, ''));
-        continue;
-      }
-      flushQuote();
-
-      // 列表
-      const li = t.match(/^([-*+]|\d+[.)])\s+(.*)$/);
-      if (li) {
-        flushPara();
-        const kind = /\d/.test(li[1]) ? 'ol' : 'ul';
-        if (list !== kind) { flushList(); out.push('<' + kind + '>'); list = kind; }
-        out.push('<li>' + mdInline(li[2]) + '</li>');
-        continue;
-      }
-      flushList();
-
-      para.push(t);
-    }
-    flushAll();
-    return out.join('');
+    return marked.parse(cleanMd(src));
   }
 
+  // 行内渲染：用于采集端提取的纯文本摘要段落
+  function mdInline(text) {
+    return marked.parseInline(cleanMd(text));
+  }
   /* ---------------- 视图：静态页 ---------------- */
 
   function viewRules() {

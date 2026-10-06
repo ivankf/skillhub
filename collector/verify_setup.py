@@ -334,39 +334,195 @@ def _():
 def _():
     import shutil
     import tempfile
-    need = ["index.html", "assets/app.js", "assets/data.js", "assets/style.css"]
+    # 必须显式列出 marked.min.js。cp -r 会带上整个 assets 目录，
+    # 但这个检查的价值就在于「漏了也能发现」——
+    # 早先只列了 4 个文件，marked 缺失时照样绿灯。
+    need = [
+        "index.html",
+        "assets/app.js",
+        "assets/data.js",
+        "assets/style.css",
+        "assets/marked.min.js",
+    ]
     tmp = Path(tempfile.mkdtemp())
     try:
         shutil.copy(ROOT / "index.html", tmp)
         shutil.copytree(ROOT / "assets", tmp / "assets")
         missing = [f for f in need if not (tmp / f).exists()]
         assert not missing, f"缺少 {missing}"
+
+        # 反向校验：index.html 引用的每个本地资源都必须真的在产物里。
+        # 引用了但没发布，线上就是白屏，而 headers 拦不住这种情况。
+        html = (tmp / "index.html").read_text(encoding="utf-8")
+        for ref in re.findall(r'(?:src|href)="(assets/[^"]+)"', html):
+            assert (tmp / ref).exists(), f"index.html 引用了 {ref}，但产物里没有"
+
         # 站点所需文件齐备，且不含应被排除的源码
         assert not (tmp / "collector").exists(), "产物含collector"
         assert not (tmp / "push.sh").exists(), "产物含 push.sh"
-        return f"{len(need)} 个文件齐备，无源码泄漏"
+        return f"{len(need)} 个文件齐备，引用与产物一致，无源码泄漏"
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
 
-@check("README 渲染器：先清洗后渲染，不裸露 HTML 源码")
+@check("README 渲染行为实测（围栏内容与实体解码）")
+def _():
+    """真正跑一次渲染，验证行为而不是源码文本。
+
+    这里刻意不用「app.js 里有没有某段字符串」来判断：
+    实测发现那种写法在围栏豁免分支被整个删掉时依然绿灯，
+    因为声明行还在。它测的是文本存在性，不是行为。
+
+    用 node 把 app.js 的渲染层原样抽出来执行，避免测一个复刻版。
+    node 缺失时降级为 WARN——CI 里 node 是自带的，本地缺失不该拦住推送。
+    """
+    import shutil
+    import subprocess
+    import tempfile
+
+    node = shutil.which("node")
+    if not node:
+        warnings.append("未找到 node，跳过渲染行为实测")
+        return "跳过（无 node）"
+
+    app = (ROOT / "assets" / "app.js").read_text(encoding="utf-8")
+    head = app.index("const esc = ")
+    # 锚定完整终结符 "&#39;');"（8 个字符）。
+    # 按第一个 ';' 截会切在替换串 '&amp;' 里，只取 "+6" 又会切在
+    # '&#39;' 中间——两种截法都会让 esc 语法不完整，
+    # 而 new Function 报错发生在探测脚本里，上面这层检查抓不到，
+    # 结果就是「实测永远绿灯」。这里显式校验语法。
+    esc_tail = "&#39;');"
+    esc_src = app[head:app.index(esc_tail, head) + len(esc_tail)]
+    layer = app[app.index("/* ---------------- Markdown 渲染"):
+                app.index("/* ---------------- 视图：静态页")]
+
+    # 提取本身必须先能编译。上面这层Python 检查抓不到 JS 语法错误，
+    # 真正的编译校验放在后面的 node 探测里（returncode != 0 即失败）。
+    esc_tail = "&#39;');"
+    if esc_tail not in app:
+        raise AssertionError("未找到 esc 的完整终结符，提取会截断")
+
+    driver = f"""
+const markedSrc = require('fs').readFileSync({str(ROOT / 'assets' / 'marked.min.js')!r}, 'utf8');
+const factory = new Function('require', markedSrc + '\\n' + {esc_src!r}
+  + '\\nfunction iconCopy(){{return "";}}'
+  + '\\nfunction hl(c){{return esc(c);}}'
+  + '\\n' + {layer!r} + '\\nreturn {{md, cleanMd}};');
+const {{md, cleanMd}} = factory();
+
+// 1) 围栏内的代码示例必须逐字保留。
+//    cleanMd 逐行做实体解码、img 降级、危险块删除，围栏分支的作用
+//    就是让这些规则整体跳过围栏——README 里的 HTML 示例、
+//    shell 占位符都在围栏内，被改一次内容就错了。
+//    这里直接断言 cleanMd 的输出，不经过 marked 也不做反转义，
+//    避免「断言写错导致永远绿灯」。
+const fences = [
+  ['```html\\n<a href="x"><img src="y.png" alt="徽章"></a>\\n```', '围栏内 HTML 示例'],
+  ['```html\\n&nbsp;&mdash;\\n```', '围栏内 HTML 实体'],
+  ['```bash\\nnpx skills add <owner>/<skill-name> -g\\n```', '围栏内占位符'],
+  ['```mermaid\\nA[Step<br/>Next] --> B[X]\\n```', '围栏内 mermaid 标签'],
+];
+const bad = [];
+for (const [input, label] of fences) {{
+  const out = cleanMd(input);
+  const inner = input.replace(/^```[a-z]*\\n/, '').replace(/\\n```\$/, '');
+  if (out.replace(/^```[a-z]*\\n/, '').replace(/\\n```\$/, '') !== inner) {{
+    bad.push(label + ' 被改写: ' + JSON.stringify(out));
+  }}
+}}
+
+// 2) marked 不解HTML 实体，解码必须由 cleanMd兜住
+const ent = md('A &mdash; B &ldquo;q&rdquo; D &rarr; E');
+if (!ent.includes('—') || !ent.includes('”') || !ent.includes('→')) {{
+  bad.push('HTML 实体未解码(marked 不解实体): ' + ent.slice(0, 140));
+}}
+
+// 3) XSS：剥离所有标签后不应残留可执行特征
+for (const [payload, label] of [
+  ['<img src=x onerror=alert(1)>', 'onerror'],
+  ['<script>alert(1)</script>', 'script'],
+  ['[x](javascript:alert(1))', 'javascript:'],
+  ['<iframe src=//evil.com></iframe>', 'iframe'],
+  ['<svg onload=alert(1)>', 'svg'],
+  ['<a href="javascript:alert(1)">x</a>', 'HTML 内 javascript:'],
+]) {{
+  const out = md(payload).replace(/<[^>]*>/g, '');
+  if (/onerror|onload|alert\\(1\\)|javascript:|<script|iframe|svg/i.test(out)) {{
+    bad.push('XSS 未拦截(' + label + '): ' + out.slice(0, 140));
+  }}
+}}
+
+// 4) 围栏外仍必须清洗：徽章墙不该出现在正文
+const badge = md('[![Build](https://ci.com/b.svg)](https://ci.com/x)\\n\\n真正的正文段落。');
+if (badge.includes('ci.com') || !badge.includes('真正的正文段落')) {{
+  bad.push('徽章墙未剔除: ' + JSON.stringify(badge.slice(0, 140)));
+}}
+
+console.log(JSON.stringify(bad));
+process.exit(bad.length ? 1 : 0);
+"""
+    tmp = Path(tempfile.mkdtemp()) / "probe.js"
+    try:
+        tmp.write_text(driver, encoding="utf-8")
+        r = subprocess.run([node, str(tmp)], capture_output=True,
+                           text=True, timeout=60, cwd=str(ROOT))
+        if r.returncode != 0:
+            raise AssertionError("渲染行为不符预期：" + (r.stdout or r.stderr).strip()[:400])
+        return "围栏内容完好、实体已解码、5 类 XSS 向量全部拦截"
+    finally:
+        shutil.rmtree(tmp.parent, ignore_errors=True)
+
+
+@check("README 渲染器：marked + 自定义 renderer，清洗与转义分层")
 def _():
     app = (ROOT / "assets" / "app.js").read_text(encoding="utf-8")
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
 
-    # 必须有清洗步骤：esc() 只转义不剥离，直接用等于把源码显示给用户
-    for fn in ("function cleanMd", "function stripTags", "function md("):
-        assert fn in app, f"app.js 缺少 {fn}"
+    # marked 必须真的引进来，且在 app.js 之前——app.js 构造 renderer 时要用它
+    assert "assets/marked.min.js" in html, "index.html 未引入 marked"
+    i_marked = html.index("assets/marked.min.js")
+    i_app = html.index("assets/app.js")
+    assert i_marked < i_app, "marked 必须在 app.js 之前引入，否则 renderer 拿不到 marked"
+    assert (ROOT / "assets" / "marked.min.js").exists(), "marked.min.js 不在 assets/"
 
-    # 清洗必须在渲染之前，顺序反了就等于没清洗
-    i_clean = app.index("const lines = esc(cleanMd(src))")
-    assert i_clean > 0, "md() 未先 cleanMd 就转义"
+    # 渲染入口：cleanMd 负责语料清洗，marked 负责结构化
+    assert "function cleanMd" in app, "缺少 cleanMd"
+    assert "marked.parse(cleanMd(src))" in app, \
+        "md() 未把清洗后的语料交给 marked"
+    assert "marked.parseInline(cleanMd(text))" in app, \
+        "mdInline() 未走同一条清洗链路"
+
+    # marked 默认原样输出 HTML、且不拦 javascript:，renderer 必须逐类接管。
+    # 这些接管点缺一个，README 里的原始 HTML 就会直接进 innerHTML。
+    for hook, why in (
+        ("mdRenderer.html = () => ''", "原始 HTML 未被丢弃"),
+        ("mdRenderer.link", "链接未接管，javascript: 伪协议会漏"),
+        ("mdRenderer.image", "图片未降级，相对路径必然 404"),
+        ("mdRenderer.code", "代码块未接管，复制按钮会失效"),
+        ("mdRenderer.heading", "标题层级未收敛，会撑破排版"),
+    ):
+        assert hook in app, f"renderer 缺少接管点 {hook}——{why}"
+
+    # 协议白名单必须落在 link 里
+    assert "https?:\\/\\/" in app, "链接未做协议白名单"
+
+    # cleanMd 必须跳过围栏。这里踩过真实坑：早期版本用一条
+    # /<[^>]*>/g 全局剥标签，把 mermaid 的 <br/> 和安装命令里的
+    # <skill-name> 一起吃掉了——被毁掉的恰恰是最该准确展示的内容。
+    #
+    # 注意不能只断言 "let fence = null" in app 那种文本存在性：
+    # 把整个围栏分支删掉、只留下这行声明，检查照样绿灯。
+    # 真正要验的是行为，所以下面用 node 实跑 cleanMd。
+    assert "let fence = null" in app, \
+        "cleanMd 未跟踪围栏状态，会剥掉代码块里的合法尖括号"
+
+    # marked 不解 HTML 实体，&mdash; 会被原样打印；解码步骤不能省
+    assert "&mdash;" in app, "缺少 HTML 实体解码（marked 不解实体）"
 
     # 危险标签必须连内容一起删，而不是当普通标签剥壳
     assert "DANGEROUS_BLOCKS" in app, "缺少危险标签整体删除规则"
     assert "script" in app and "iframe" in app, "危险标签清单不完整"
-
-    # 链接只放行 http/https，防 javascript: 伪协议
-    assert "https?:\\/\\/" in app, "链接未做协议白名单"
 
     # 采集端也必须过滤 HTML，不能再把 <p align=...> 当正文
     collect = (ROOT / "collector" / "collect.py").read_text(encoding="utf-8")
@@ -379,7 +535,7 @@ def _():
     assert 'not l.startswith(("---", "#"))' not in src, \
         "readme 仍在用只排除 ---/# 的粗糙过滤"
 
-    return "清洗 → 转义 → 渲染链路完整，采集端共用判定链"
+    return "marked 接入 + renderer 白名单接管，围栏豁免已生效"
 
 
 # ---------- 汇总 ----------

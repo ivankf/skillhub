@@ -34,3 +34,9 @@
   for = "/assets/style.css"
   [headers.values]
     Cache-Control = "public, max-age=600, must-revalidate"
+
+# 第三方库，版本固定（文件名不带版本号，靠内容指纹发布）
+[[headers]]
+  for = "/assets/marked.min.js"
+  [headers.values]
+    Cache-Control = "public, max-age=600, must-revalidate"

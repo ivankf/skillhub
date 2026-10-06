@@ -514,31 +514,76 @@ svg{display:block;flex:none}
 .code-body .s{color:#4FC3BC}
 .code-body .c{color:var(--text-3)}
 
-/* 详情页正文：Markdown 渲染结果 */
+/* 详情页正文：Markdown 渲染结果
+ *
+ * 这里一律用后代选择器而非 `>`：marked 渲染出的结构天然是嵌套的
+ * （ul 嵌在 li 里、p 嵌在 blockquote 里），用子代选择器会漏掉这些。 */
 .md-body{font-size:14.5px;line-height:1.85;color:var(--text-2)}
-.md-body>p{margin:0 0 14px}
-.md-body>h3,.md-body>h4{
+.md-body p{margin:0 0 14px}
+.md-body h1,.md-body h2,.md-body h3,.md-body h4,.md-body h5,.md-body h6{
   margin:26px 0 10px;font-weight:600;color:var(--text-1);letter-spacing:-.01em;
+  line-height:1.4;
 }
-.md-body>h3{font-size:15.5px}
-.md-body>h4{font-size:14px}
-.md-body>h3:first-child,.md-body>h4:first-child{margin-top:4px}
-.md-body>ul,.md-body>ol{margin:0 0 14px;padding-left:22px}
-.md-body>li{margin:5px 0}
-.md-body>li::marker{color:var(--text-3)}
-.md-body>strong{color:var(--text-1);font-weight:600}
-.md-body>a{color:var(--accent-text);text-decoration:none;border-bottom:1px solid rgba(168,175,242,.32)}
-.md-body>a:hover{border-bottom-color:var(--accent-text)}
-.md-body>code{
+.md-body h3{font-size:15.5px}
+.md-body h4{font-size:14px}
+.md-body h5,.md-body h6{font-size:13.5px;color:var(--text-2)}
+.md-body h3:first-child,.md-body h4:first-child{margin-top:4px}
+.md-body ul,.md-body ol{margin:0 0 14px;padding-left:22px}
+.md-body li{margin:5px 0}
+.md-body li::marker{color:var(--text-3)}
+/* 嵌套列表：靠缩进体现层级，否则三层以上会糊成一片 */
+.md-body li>ul,.md-body li>ol{margin:5px 0 6px}
+.md-body li>ul{padding-left:18px}
+.md-body li>ol{padding-left:20px}
+/* 任务列表：隐藏原生 checkbox，用左侧标记代替 */
+.md-body input[type=checkbox]{
+  margin:0 7px 0 -20px;vertical-align:-1px;
+  width:13px;height:13px;accent-color:var(--accent);
+}
+.md-body strong{color:var(--text-1);font-weight:600}
+.md-body em{font-style:italic}
+.md-body del{color:var(--text-3)}
+.md-body a{color:var(--accent-text);text-decoration:none;border-bottom:1px solid rgba(168,175,242,.32)}
+.md-body a:hover{border-bottom-color:var(--accent-text)}
+.md-body code{
   font-family:var(--mono);font-size:12.5px;
   background:var(--surface-raised);border:1px solid var(--border);
   border-radius:4px;padding:1.5px 5px;color:#B9BEE8;
 }
-.md-body>blockquote{
+.md-body blockquote{
   margin:0 0 14px;padding:2px 0 2px 14px;
   border-left:2px solid var(--border-strong);color:var(--text-3);
 }
-.md-body>hr{margin:22px 0;border:0;border-top:1px solid var(--border)}
+.md-body blockquote p:last-child{margin-bottom:0}
+.md-body hr{margin:22px 0;border:0;border-top:1px solid var(--border)}
+
+/* 表格：README 里参数表很常见，窄屏必须能横向滚，
+   否则整页会被撑出横向滚动条 */
+.md-body .md-table{
+  margin:0 0 16px;border:1px solid var(--border);
+  border-radius:8px;overflow-x:auto;
+}
+.md-body table{
+  width:100%;border-collapse:collapse;
+  font-size:13px;line-height:1.6;
+}
+.md-body th,.md-body td{
+  padding:8px 12px;text-align:left;
+  border-bottom:1px solid var(--border);vertical-align:top;
+}
+.md-body th{
+  background:var(--surface-raised);color:var(--text-1);
+  font-weight:600;white-space:nowrap;
+}
+.md-body tbody tr:last-child td{border-bottom:0}
+.md-body tbody tr:nth-child(even){background:rgba(255,255,255,.015)}
+
+/* 图片降级后的 alt 文本：需要一眼看出「这是图，不是正文」 */
+.md-body .md-alt{
+  display:inline-block;color:var(--text-3);font-size:12.5px;
+  border:1px dashed var(--border-strong);border-radius:5px;
+  padding:1px 7px;margin:0 1px;
+}
 
 /* 正文里的代码块：与独立代码框区分，用左竖线强调「这是代码」 */
 .md-code{
@@ -1095,9 +1140,14 @@ svg{display:block;flex:none}
   .code-body{font-size:11.5px;padding:14px}
 
   .md-body{font-size:14px;line-height:1.8}
-  .md-body>h3{font-size:15px}
+  .md-body h3{font-size:15px}
   .md-code .code-body{font-size:11px}
   .doc-foot{gap:14px}
+  /* 窄屏下表格只横向滚，不压缩列宽——挤扁的参数表比滚动更难读 */
+  .md-body .md-table{margin-left:-16px;margin-right:-16px;border-radius:0;border-left:0;border-right:0}
+  .md-body th,.md-body td{padding:7px 10px;font-size:12.5px}
+  .md-body ul,.md-body ol{padding-left:19px}
+  .md-body li>ul{padding-left:16px}
 
   /* 吸底 CTA */
   .sticky-cta{display:flex}
