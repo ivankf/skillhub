@@ -149,6 +149,53 @@ def _():
     return f"{len(cases)} 类时间字段均不影响指纹，实质变化可识别"
 
 
+@check("采集规模配置合理（防止退回小样本）")
+def _():
+    sys.path.insert(0, str(HERE))
+    import collect
+    assert len(collect.QUERIES) >= 8, \
+        f"搜索词仅 {len(collect.QUERIES)} 个，覆盖面太窄"
+    assert collect.MAX_TOTAL_REPOS >= 200, \
+        f"全局上限仅 {collect.MAX_TOTAL_REPOS}，采不出足够数据"
+    assert collect.MAX_REPOS_PER_QUERY >= 30, \
+        f"单词上限仅 {collect.MAX_REPOS_PER_QUERY}，太小"
+    assert collect.MAX_PAGES_PER_QUERY >= 2, \
+        "未启用分页，只能拿到第一页"
+    return (f"{len(collect.QUERIES)} 词× 最多 {collect.MAX_PAGES_PER_QUERY} 页"
+            f" · 上限 {collect.MAX_TOTAL_REPOS}")
+
+
+@check("search 限流与核心配额分开处理")
+def _():
+    import ast
+    src = (HERE / "collect.py").read_text(encoding="utf-8")
+    tree = ast.parse(src)
+
+    # 定位 _get 中处理 403/429 的分支，检查 search 是否走独立处理
+    fn = next(n for n in ast.walk(tree)
+              if isinstance(n, ast.FunctionDef) and n.name == "_get")
+
+    search_branch_ok = False
+    for node in ast.walk(fn):
+        # 只看 if e.code in (403, 429) 这一层的 body
+        if not isinstance(node, ast.If):
+            continue
+        test = ast.unparse(node.test)
+        if "403" not in test or "429" not in test:
+            continue
+        body_src = ast.unparse(node.body[0]) if node.body else ""
+        # search 分支必须先于核心配额分支返回
+        if "/search/" in body_src:
+            search_branch_ok = ("SEARCH_PAGING" in body_src
+                                and "RATE_LIMITED" not in body_src)
+            break
+
+    assert search_branch_ok, \
+        "search 限流分支未走 SEARCH_PAGING（会误中断整轮采集）"
+    assert "SEARCH_PAGING" in src, "未声明 SEARCH_PAGING 状态"
+    return "search 限流仅停止翻页，不中断整轮"
+
+
 # ---------- 4. 换行符 ----------
 
 @check("shell 脚本为 LF（CRLF 会让 Ubuntu runner 报错）")
