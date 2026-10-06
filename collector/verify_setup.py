@@ -104,6 +104,52 @@ def _():
     return m.group(1)
 
 
+@check("静态数据结构与前端模板一致（防 undefined）")
+def _():
+    """RULES 曾是纯字符串数组，前端按 {icon,title,desc} 渲染，
+    页面上三项全是 undefined，而旧校验只查「非空字符串」完全放行。
+
+    这类 bug 的本质是数据契约与模板字段不匹配，
+    因此这里把前端实际读取的每个字段都断言一遍。
+    """
+    src = (ROOT / "assets" / "data.js").read_text(encoding="utf-8")
+    data = json.loads(re.search(
+        r"window\.SKILLHUB_DATA\s*=\s*(\{.*\});", src, re.S).group(1))
+
+    # 字段清单与应用层渲染代码一一对应，改模板时这里会先失败
+    contract = {
+        "RULES": ["icon", "title", "desc"],   # viewRules 规则卡
+        "TROUBLES": ["code", "cause", "fix"], # 详情页安装排查
+        "DOMAINS": ["id", "name", "desc", "count", "icon"],
+        "LICENSES": ["id", "count"],
+    }
+    for key, fields in contract.items():
+        arr = data.get(key) or []
+        assert arr, f"{key} 为空"
+        for i, item in enumerate(arr):
+            assert isinstance(item, dict), (
+                f"{key}[{i}] 应为对象，实际为 {type(item).__name__}——"
+                f"前端按字段名读取，纯字符串会渲染成 undefined")
+            for f in fields:
+                assert f in item, f"{key}[{i}] 缺字段 {f}"
+
+    # 直接模拟前端渲染，确认不会吐出 undefined 字面量
+    for i, r in enumerate(data["RULES"]):
+        h = str(r.get("icon")) + str(r.get("title")) + str(r.get("desc"))
+        assert "undefined" not in h, f"RULES[{i}] 渲染出 undefined"
+
+    # 反向检查：前端若读了数据里没有的字段，同样会显示 undefined
+    app = (ROOT / "assets" / "app.js").read_text(encoding="utf-8")
+    for key in contract:
+        for item in (data.get(key) or [])[:1]:
+            for f in contract[key]:
+                assert f in app, (
+                    f"app.js 未见字段 {key}.{f}，"
+                    f"若模板已改名需同步更新本检查")
+
+    return f"{len(data['RULES'])} 条规则 / {len(data['TROUBLES'])} 条排查项字段齐备"
+
+
 # ---------- 3. 指纹逻辑 ----------
 
 @check("fingerprint() 排除易变时间字段")

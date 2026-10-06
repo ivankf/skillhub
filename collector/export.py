@@ -41,13 +41,46 @@ TROUBLES = [
     },
 ]
 
+# 收录规则。前端按 {icon, title, desc} 渲染成规则卡，
+# 早期版本这里是纯字符串数组，导致三项全渲染成 undefined。
+# 每条给一个标题便于扫读，desc 补上这条规则「为什么存在」。
 RULES = [
-    "仓库必须公开可访问，无需登录、无授权码。",
-    "必须包含 SKILL.md，且 frontmatter 至少提供 name 与 description。",
-    "安全扫描命中高危规则时不收录，包括动态执行、下载即执行、凭证外传与破坏性操作。",
-    "许可证需明确标注；未声明许可证的仓库会被标记为 UNKNOWN。",
-    "来源失效或作者删除时自动下架，不做历史快照保留。",
-    "被拦截或下架的 Skill 可通过反馈页申诉，申诉会附带当时的规则命中详情。",
+    {
+        "icon": "◉",
+        "title": "来源可公开访问",
+        "desc": "仓库必须公开可访问，无需登录、无授权码。"
+                "我们不持有任何凭据，也不代用户授权。",
+    },
+    {
+        "icon": "◈",
+        "title": "具备完整 SKILL.md",
+        "desc": "必须包含 SKILL.md，且 frontmatter 至少提供 name 与 description。"
+                "缺任一字段视为非Skill 仓库，不予收录。",
+    },
+    {
+        "icon": "◉",
+        "title": "安全扫描无高危命中",
+        "desc": "命中高危规则时不收录，包括动态执行、下载即执行、"
+                "凭证外传与破坏性操作。低危提示会正常收录并在详情页标注。",
+    },
+    {
+        "icon": "◇",
+        "title": "许可证已声明",
+        "desc": "许可证需明确标注；未声明许可证的仓库会被标记为 UNKNOWN，"
+                "安装前请自行确认授权范围。",
+    },
+    {
+        "icon": "◫",
+        "title": "来源失效即下架",
+        "desc": "来源失效或作者删除时自动下架，不做历史快照保留——"
+                "索引里的每一条都应指向一个此刻真实存在的仓库。",
+    },
+    {
+        "icon": "◎",
+        "title": "可申诉",
+        "desc": "被拦截或下架的 Skill 可通过反馈页申诉，"
+                "申诉会附带当时的规则命中详情。",
+    },
 ]
 
 
@@ -200,9 +233,17 @@ def validate(data):
             if not t.get(k):
                 problems.append(f"TROUBLES[{i}] 缺字段 {k}")
 
+    # RULES 前端按 {icon,title,desc} 渲染成规则卡。
+    # 早期这里是纯字符串数组，校验只查「非空字符串」，
+    # 类型与前端不匹配也没人发现，页面上三项全渲染成 undefined。
+    # 因此这里逐字段断言，类型不符直接拦下。
     for i, r in enumerate(data.get("RULES", [])):
-        if not isinstance(r, str) or not r.strip():
-            problems.append(f"RULES[{i}] 应为非空字符串")
+        if not isinstance(r, dict):
+            problems.append(f"RULES[{i}] 应为对象，实际为 {type(r).__name__}")
+            continue
+        for k in ("icon", "title", "desc"):
+            if not str(r.get(k) or "").strip():
+                problems.append(f"RULES[{i}] 缺字段 {k}")
 
     if problems:
         raise SystemExit("导出校验失败：\n  - " + "\n  - ".join(problems))

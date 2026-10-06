@@ -14,7 +14,10 @@
 
   /* ---------------- 工具 ---------------- */
 
-  const esc = (s) => String(s == null ? '' : s)
+  // esc(s) 只负责转义。额外把 undefined / null 收敛成空串——
+  // 否则 String(undefined) 会把字面量 "undefined" 印到页面上，
+  // 静态数据字段名一旦对不上就会整片显示 undefined，很难排查。
+  const esc = (s) => String(s == null || s === undefined ? '' : s)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
@@ -800,7 +803,7 @@
       + '<p class="lede">所有 Skill 在进入索引前都会经过自动化安全扫描。命中高危规则的 Skill 一律不予收录，判定依据公开可查。</p>'
       + '<div class="callout"><p>我们索引的是别人写的代码，它会在你的机器上执行。因此安全扫描是硬门槛，不是可选项。</p></div>'
       + '<h2>扫描项</h2>'
-      + D.RULES.map(r => '<div class="rule-item"><h3>' + r.icon + ' ' + esc(r.title) + '</h3><p>' + esc(r.desc) + '</p></div>').join('')
+      + D.RULES.map(r => '<div class="rule-item"><h3>' + esc(r.icon) + ' ' + esc(r.title) + '</h3><p>' + esc(r.desc) + '</p></div>').join('')
       + '<h2>判定结果</h2>'
       + '<ul>'
       + '<li><b>高危</b> — 直接不收录，站内不可见，保留判定记录</li>'
