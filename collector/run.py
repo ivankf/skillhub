@@ -39,7 +39,7 @@ def main():
     print("\n" + "=" * 52)
     print("  链路完成，assets/data.js 已更新")
     print("  重启本地服务即可看到新数据：")
-    print("    python -m http.server 8420")
+    print("    python -m http.server 4173 --bind 127.0.0.1")
     print("=" * 52)
 
 

@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-# 推送到 GitHub 并启用 GitHub Pages
+# 推送到 GitHub（Netlify 会自动构建部署）
 #
 # 前提：需要一个带 repo 权限的 Personal Access Token。
 # 获取地址：https://github.com/settings/tokens
 # 勾选 repo 即可（public repo 用 public_repo 也行）。
 #
 # 用法：
-#   git remote add origin https://github.com/ivankf/skillhub.git
 #   ./push.sh
 #
 # Token 不在命令行里传，避免进入 shell 历史。
+# 首次推送会提示输入用户名（ivankf）与 Token。
 
 set -euo pipefail
 
@@ -38,22 +38,24 @@ if git diff --cached --quiet; then
   echo "没有需要提交的变化"
 else
   echo "==> 提交"
-  git commit -q -m "feat: SkillHub 静态站与采集服务"
+  git commit -q -m "feat: update skillhub"
 fi
 
 echo "==> 推送（需要 GitHub 凭据）"
-# 首次推送会提示输入用户名与 Token
 git push -u origin "$BRANCH"
 
 cat <<'EOF'
 
-推送完成。还剩一步需要手动操作（连接器无仓库设置权限）：
+推送完成。接下来：
 
-  1. 打开 https://github.com/ivankf/skillhub/settings/pages
-  2. Source 选 "Deploy from a branch"
-  3. Branch 选 main，目录选 / (root)
-  4. Save
+  1. 打开 https://app.netlify.com/start
+  2. 选择 "Import an existing project"，连接 GitHub 后选 ivankf/skillhub
+  3. Build command 留空，Publish directory 填 "."
+  4. 点 Deploy
 
-约一分钟后站点上线：https://ivankf.github.io/skillhub/
+部署完成后可在 Site settings → Domain management 绑定自定义域名。
+
+后续无需手动操作：Actions 每天更新 data.js 并推送，
+Netlify 检测到推送会自动重新部署。
 
 EOF
