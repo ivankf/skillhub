@@ -18,7 +18,17 @@ from scanner import scan
 
 API = "https://api.github.com"
 TIMEOUT = 20
-MAX_REPOS_PER_QUERY = 6
+
+# GitHub 有两套独立配额，不能混为一谈：
+#   search/repositories : 30 次/分钟（认证用户），是真正的瓶颈
+#   其余接口           : 5000 次/小时（配了 token）
+# 所以搜索请求要节流，而逐仓库读 README 可以放开跑。
+SEARCH_RATE_PER_MIN = 30
+SEARCH_PAGE_SIZE = 100# search API 单页上限
+MAX_PAGES_PER_QUERY = 3           # 每词最多翻 3 页= 300 个候选
+MAX_REPOS_PER_QUERY = 60          # 去重前单词保留上限，防止词表互相重叠浪费
+MAX_TOTAL_REPOS = 400# 全局总量上限，按 star 排序后截断
+REPO_DELAY = 0.3                  # 逐仓库读取间隔
 
 # 能力域映射：(域名, 关键词, 权重)
 # 强特征词权重高，避免"description里提到code"就把一切归为code
@@ -73,6 +83,7 @@ def guess_domain(name, desc, text):
 
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 RATE_LIMITED = False
+SEARCH_PAGING = False    # search API 独立限流，仅影响分页，不中断整轮
 
 
 def _headers():
@@ -88,11 +99,13 @@ def _headers():
 def _get(url, retry=1):
     """带限流感知的请求。
 
-    匿名 API 配额是 60 次/小时，一旦触发 403 就停止重试——
-    退避等待并不能让配额恢复，只会拖慢整轮采集。
-    建议配置 GITHUB_TOKEN 环境变量把配额提到 5000 次/小时。
+    GitHub 有两套配额：
+      - search/repositories : 30 次/分钟，触顶只停止翻页，不影响本轮结果
+      - 其余接口             : 5000 次/小时（配了 token），耗尽才中断整轮
+
+    退避重试对配额恢复无帮助，只会拖慢整轮，因此一律快速失败。
     """
-    global RATE_LIMITED
+    global RATE_LIMITED, SEARCH_PAGING
     if RATE_LIMITED:
         return None
 
@@ -103,9 +116,16 @@ def _get(url, retry=1):
                 return json.loads(r.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
             if e.code in (403, 429):
+                # search 接口限流是 30次/分钟，独立于常规配额。
+                # 触到它只需停止分页，本轮已取到的数据仍然有效。
+                if "/search/" in url:
+                    SEARCH_PAGING = True
+                    print("[限流] search 接口 30 次/分钟已触顶，停止翻页")
+                    print("       本轮已取得的数据仍然有效，不影响采集完整性")
+                    return None
                 RATE_LIMITED = True
-                print(f"[限流] 匿名配额已耗尽，停止本轮剩余请求")
-                print("       配置 GITHUB_TOKEN 环境变量可提升到 5000 次/小时")
+                print("[限流] 核心配额已耗尽，停止本轮剩余请求")
+                print("       确认已配置 GITHUB_TOKEN 环境变量")
                 return None
             if e.code == 404:
                 return None
@@ -117,11 +137,27 @@ def _get(url, retry=1):
     return None
 
 
-def search_repos(query, per_page=MAX_REPOS_PER_QUERY):
+def search_repos(query, max_pages=MAX_PAGES_PER_QUERY):
+    """分页搜索仓库。
+
+    search API 限流 30 次/分钟，是整条链路的瓶颈。
+    这里每页之间留 2.5 秒，10 页才用 25 秒配额，不会触发限流。
+    """
     q = urllib.parse.quote(query)
-    url = f"{API}/search/repositories?q={q}&sort=stars&order=desc&per_page={per_page}"
-    data = _get(url)
-    return (data or {}).get("items", [])
+    out = []
+    for page in range(1, max_pages + 1):
+        url = (f"{API}/search/repositories?q={q}&sort=stars&order=desc"
+               f"&per_page={SEARCH_PAGE_SIZE}&page={page}")
+        data = _get(url)
+        items = (data or {}).get("items", [])
+        if not items:
+            break
+        out.extend(items)
+        if len(out) >= MAX_REPOS_PER_QUERY or len(items) < SEARCH_PAGE_SIZE:
+            break
+        if SEARCH_PAGING:
+            time.sleep(2.5)
+    return out[:MAX_REPOS_PER_QUERY]
 
 
 def readme_of(full_name, branch):
@@ -371,10 +407,18 @@ def collect_one(repo):
 
 
 QUERIES = [
-    "SKILL.md claude skills",
-    "topic:claude-skills",
-    "ai agent skills SKILL.md",
+    # topic 类查询命中量最大，优先
     "topic:agent-skills",
+    "topic:claude-skills",
+    "topic:ai-skills",
+    "topic:claude-code-skills",
+    # 关键词类补充 topic 覆盖不到的长尾
+    "SKILL.md claude skills",
+    "ai agent skills SKILL.md",
+    "claude code skill",
+    "SKILL.md in:name",
+    "agent skill in:name,description",
+    "awesome claude skills",
 ]
 
 
@@ -387,10 +431,14 @@ def main():
         if RATE_LIMITED:
             print(f"\n[跳过] 已触发限流，跳过查询: {q}")
             continue
+        # 总量上限：防止长尾词把采集拖得过久
+        if len(seen) >= MAX_TOTAL_REPOS:
+            print(f"\n[上限] 已达{MAX_TOTAL_REPOS} 个候选，跳过查询: {q}")
+            break
 
         print(f"\n=== 搜索: {q} ===")
         repos = search_repos(q)
-        print(f"  命中 {len(repos)} 个仓库")
+        print(f"  命中 {len(repos)} 个候选")
         for repo in repos:
             if RATE_LIMITED:
                 print("[限流] 中断本轮采集")
@@ -415,12 +463,16 @@ def main():
             collected[sid] = r
             print(f"  [收录] {full} · {r['domain']} · {r['license']}")
 
-            time.sleep(0.4)
+            time.sleep(REPO_DELAY)
 
     print(f"\n收录 {len(collected)} 个，拦截 {len(blocked)} 个")
+    print(f"候选总数 {len(seen)} · 搜索词 {len(QUERIES)} 个")
+    if SEARCH_PAGING:
+        print("提示：search 接口触到 30 次/分钟上限，已停止翻页。")
+        print("      数据本身完整，只是没能覆盖更长的长尾。")
     if RATE_LIMITED:
-        print("注意：本轮因API 限流提前结束，结果不完整。")
-        print("      配置 GITHUB_TOKEN 环境变量后重跑可获得完整数据。")
+        print("注意：本轮因核心配额提前结束，结果不完整。")
+        print("      确认已配置 GITHUB_TOKEN 环境变量。")
 
     payload = {
         "collectedAt": datetime.now(timezone.utc).isoformat(),
