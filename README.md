@@ -133,8 +133,34 @@ shell 脚本换行符为 LF、Netlify 配置有效。
 
 1. Netlify 控制台 → Add new site → Import an existing project
 2. 仓库选 `ivankf/skillhub`
-3. Build command 留空，Publish directory 填 `.`
+3. Build settings 按下表填（`netlify.toml` 已声明，留空即可）
+
+   | 字段 | 值 |
+   |---|---|
+   | Branch to deploy | `main` |
+   | Base directory | 留空 |
+   | Build command | 留空（用 `netlify.toml` 里的） |
+   | Publish directory | 留空或 `dist` |
+   | Functions directory | **清空**（默认占位符，纯静态站用不到） |
+
 4. 部署后自动拿到域名，可在 Site settings → Domain management 改名
+
+#### 发布范围：只发站点，不发源码
+
+`netlify.toml` 的构建命令先把需要的文件拷进 `dist/`，Netlify 只发布 `dist/`：
+
+```toml
+publish = "dist"
+command = "rm -rf dist && mkdir -p dist && cp -r index.html assets dist/"
+```
+
+这样 `collector/*.py`、`*.sh`、`README.md`、`netlify.toml` 都不会上线。
+
+之前用 `publish = "."` 时，这些文件虽然能被 headers 标记 `noindex`，
+但**文件本身依然可访问** —— headers 只控制响应头和缓存策略，拦不住访问。
+文件不存在才是真拦截。
+
+`dist/` 是构建产物，已加入 `.gitignore`。
 
 之后每次 Actions 推送 `assets/data.js`，Netlify 会自动重新部署，无需手动操作。
 

@@ -187,13 +187,44 @@ def _():
         print(f"{WARN} tomllib 不可用（需 Python 3.11+），跳过解析")
         return "仅存在性检查"
     d = tomllib.loads(nt.read_text(encoding="utf-8"))
-    assert d["build"]["publish"] == ".", "publish 应为当前目录"
+    build = d["build"]
+    assert build["publish"] == "dist", \
+        f"publish 应为 dist（当前 {build['publish']}）"
+    cmd = build["command"]
+    # 只发布站点所需文件，源码不落线上
+    assert "index.html" in cmd and "assets" in cmd, \
+        "构建命令未拷贝 index.html 与 assets"
+    assert "collector" not in cmd, "构建命令不应拷贝 collector"
     headers = d.get("headers", [])
     paths = [h["for"] for h in headers]
     assert "/assets/data.js" in paths, "缺少 data.js 缓存配置"
-    assert any("/collector/*" in p for p in paths), \
-        "collector/ 源码未拦截，会暴露到线上"
-    return f"{len(headers)} 组 headers"
+    return f"publish=dist, {len(headers)} 组 headers"
+
+
+@check("dist/ 已忽略，不入版本库")
+def _():
+    gi = (ROOT / ".gitignore").read_text(encoding="utf-8")
+    assert "dist/" in gi, "dist/ 未加入 .gitignore"
+    return "已忽略"
+
+
+@check("构建命令在本地可产出完整站点")
+def _():
+    import shutil
+    import tempfile
+    need = ["index.html", "assets/app.js", "assets/data.js", "assets/style.css"]
+    tmp = Path(tempfile.mkdtemp())
+    try:
+        shutil.copy(ROOT / "index.html", tmp)
+        shutil.copytree(ROOT / "assets", tmp / "assets")
+        missing = [f for f in need if not (tmp / f).exists()]
+        assert not missing, f"缺少 {missing}"
+        # 站点所需文件齐备，且不含应被排除的源码
+        assert not (tmp / "collector").exists(), "产物含collector"
+        assert not (tmp / "push.sh").exists(), "产物含 push.sh"
+        return f"{len(need)} 个文件齐备，无源码泄漏"
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
 
 
 # ---------- 汇总 ----------

@@ -1,29 +1,14 @@
 # SkillHub — Netlify 部署配置
 # 纯静态站，无构建步骤。
+#
+# 用构建命令把真正需要的文件拷到 dist/ 再发布，
+# 而不是直接 publish = "."。后者会把 collector/*.py、
+# deploy.sh、push.sh、README.md 全部暴露到线上——headers 只能加
+# 响应头和缓存策略，拦不住文件访问。文件不存在才是真拦截。
 
 [build]
-  publish = "."
-  command = ""
-
-# collector/ 是采集服务源码，push.sh 是本地推送脚本，
-# 都不该暴露到线上。用 headers 做访问拦截。
-[[headers]]
-  for = "/collector/*"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"
-    Cache-Control = "no-store"
-
-[[headers]]
-  for = "/push.sh"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"
-    Cache-Control = "no-store"
-
-[[headers]]
-  for = "/*.sh"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"
-    Cache-Control = "no-store"
+  publish = "dist"
+  command = "rm -rf dist && mkdir -p dist && cp -r index.html assets dist/"
 
 # 全局安全响应头
 [[headers]]
@@ -49,9 +34,3 @@
   for = "/assets/style.css"
   [headers.values]
     Cache-Control = "public, max-age=600, must-revalidate"
-
-# 带 hash 的静态资源可长期缓存
-[[headers]]
-  for = "/favicon.svg"
-  [headers.values]
-    Cache-Control = "public, max-age=86400"

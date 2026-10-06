@@ -50,7 +50,12 @@ cat <<'EOF'
 
   1. 打开 https://app.netlify.com/start
   2. 选择 "Import an existing project"，连接 GitHub 后选 ivankf/skillhub
-  3. Build command 留空，Publish directory 填 "."
+  3. Functions directory 清空（默认占位符，纯静态站用不到）
+     其余 Build settings 留空即可 —— netlify.toml 已声明完整配置
+
+注意：Publish directory 不要手动填 "."，netlify.toml 里配置的是 dist/，
+由构建命令生成，只含 index.html 与 assets/。
+若在界面填 "." 会覆盖 netlify.toml，导致 collector/ 等源码被发布上线。
   4. 点 Deploy
 
 部署完成后可在 Site settings → Domain management 绑定自定义域名。
