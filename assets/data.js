@@ -1,8 +1,8 @@
 /* SkillHub — 数据层
  * 本文件由 collector/ 采集服务生成，请勿手工编辑。
- * 生成时间：2026-11-16T11:06:30.120270+00:00
- * 数据来源：GitHub 公开仓库 | 收录 347 个 | 安全拦截 24 个
- * 内容指纹：2200b9e4f945
+ * 生成时间：2026-11-17T11:48:14.995920+00:00
+ * 数据来源：GitHub 公开仓库 | 收录 346 个 | 安全拦截 24 个
+ * 内容指纹：2ba671c04c34
  */
 
 window.SKILLHUB_DATA = {
@@ -11,21 +11,21 @@ window.SKILLHUB_DATA = {
       "id": "code",
       "name": "代码开发",
       "desc": "代码审查、重构、依赖分析与提交规范检查",
-      "count": 148,
+      "count": 145,
       "icon": "⌘"
     },
     {
       "id": "doc",
       "name": "文档与内容",
       "desc": "写作、改写、翻译与技术文档排版",
-      "count": 75,
+      "count": 76,
       "icon": "▤"
     },
     {
       "id": "data",
       "name": "数据与分析",
       "desc": "清洗、迁移、可视化与查询优化",
-      "count": 41,
+      "count": 42,
       "icon": "◫"
     },
     {
@@ -53,15 +53,15 @@ window.SKILLHUB_DATA = {
   "LICENSES": [
     {
       "id": "MIT",
-      "count": 213
+      "count": 212
     },
     {
       "id": "UNKNOWN",
-      "count": 72
+      "count": 73
     },
     {
       "id": "Apache-2.0",
-      "count": 48
+      "count": 47
     },
     {
       "id": "AGPL-3.0",
@@ -95,11 +95,11 @@ window.SKILLHUB_DATA = {
       "domain": "doc",
       "desc": "See a feature you like. Understand how it works, down to the binary level.",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "morluto",
       "repo": "morluto/rea",
       "repoUrl": "https://github.com/morluto/rea",
-      "stars": 462980,
+      "stars": 465218,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -119,7 +119,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -130,7 +130,7 @@ window.SKILLHUB_DATA = {
         "academic-research",
         "librechat"
       ],
-      "installs": 277788,
+      "installs": 279130,
       "rank": 1
     },
     {
@@ -139,13 +139,13 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "My agent skills that I use every day to do real engineering - not vibe coding.",
       "license": "MIT",
-      "version": "2026-11-13",
+      "version": "2026-11-17",
       "author": "mattpocock",
       "repo": "mattpocock/skills",
       "repoUrl": "https://github.com/mattpocock/skills",
-      "stars": 325568,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "stars": 326356,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -163,9 +163,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-13",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -174,7 +174,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy",
         "my-skill-name"
       ],
-      "installs": 195340,
+      "installs": 195813,
       "rank": 2
     },
     {
@@ -187,9 +187,9 @@ window.SKILLHUB_DATA = {
       "author": "obra",
       "repo": "obra/superpowers",
       "repoUrl": "https://github.com/obra/superpowers",
-      "stars": 318296,
-      "updatedDays": 12,
-      "updated": "12 天前",
+      "stars": 318930,
+      "updatedDays": 13,
+      "updated": "13 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -209,7 +209,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-03",
           "d": "索引自最近一次提交",
-          "t": "12 天前",
+          "t": "13 天前",
           "cur": true
         }
       ],
@@ -218,7 +218,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy",
         "my-skill-name"
       ],
-      "installs": 190977,
+      "installs": 191358,
       "rank": 3
     },
     {
@@ -227,11 +227,11 @@ window.SKILLHUB_DATA = {
       "domain": "ops",
       "desc": "Reviews code for quality, security, and maintainability",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "affaan-m",
       "repo": "affaan-m/ECC",
       "repoUrl": "https://github.com/affaan-m/ECC",
-      "stars": 304110,
+      "stars": 304965,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -251,7 +251,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -262,7 +262,7 @@ window.SKILLHUB_DATA = {
         "cowagent",
         "reverse"
       ],
-      "installs": 182466,
+      "installs": 182979,
       "rank": 4
     },
     {
@@ -275,8 +275,8 @@ window.SKILLHUB_DATA = {
       "author": "multica-ai",
       "repo": "multica-ai/andrej-karpathy-skills",
       "repoUrl": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "stars": 233600,
-      "updatedDays": 210,
+      "stars": 233873,
+      "updatedDays": 211,
       "updated": "7 个月前",
       "scan": {
         "state": "pass",
@@ -306,7 +306,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "my-skill-name"
       ],
-      "installs": 140160,
+      "installs": 140323,
       "rank": 5
     },
     {
@@ -315,13 +315,13 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "A clear description of what this skill does and when to use it",
       "license": "UNKNOWN",
-      "version": "2026-11-14",
+      "version": "2026-11-16",
       "author": "anthropics",
       "repo": "anthropics/skills",
       "repoUrl": "https://github.com/anthropics/skills",
-      "stars": 195630,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 196390,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -339,9 +339,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-14",
+          "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -350,7 +350,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 117378,
+      "installs": 117834,
       "rank": 6
     },
     {
@@ -363,9 +363,9 @@ window.SKILLHUB_DATA = {
       "author": "DietrichGebert",
       "repo": "DietrichGebert/ponytail",
       "repoUrl": "https://github.com/DietrichGebert/ponytail",
-      "stars": 191755,
-      "updatedDays": 17,
-      "updated": "17 天前",
+      "stars": 192528,
+      "updatedDays": 18,
+      "updated": "18 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -385,7 +385,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-29",
           "d": "索引自最近一次提交",
-          "t": "17 天前",
+          "t": "18 天前",
           "cur": true
         }
       ],
@@ -394,7 +394,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 115053,
+      "installs": 115516,
       "rank": 7
     },
     {
@@ -407,9 +407,9 @@ window.SKILLHUB_DATA = {
       "author": "nextlevelbuilder",
       "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
       "repoUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
-      "stars": 150189,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 150673,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -429,7 +429,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -438,7 +438,7 @@ window.SKILLHUB_DATA = {
         "cherry-studio",
         "frontend-slides"
       ],
-      "installs": 90113,
+      "installs": 90403,
       "rank": 8
     },
     {
@@ -451,9 +451,9 @@ window.SKILLHUB_DATA = {
       "author": "Shubhamsaboo",
       "repo": "Shubhamsaboo/awesome-llm-apps",
       "repoUrl": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "stars": 144830,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 144920,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -473,7 +473,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -482,7 +482,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 86898,
+      "installs": 86952,
       "rank": 9
     },
     {
@@ -491,11 +491,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "The most efficient coding agent. Same model, same work, smaller bill.",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "JuliusBrussee",
       "repo": "JuliusBrussee/caveman",
       "repoUrl": "https://github.com/JuliusBrussee/caveman",
-      "stars": 120598,
+      "stars": 120904,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -515,7 +515,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -526,7 +526,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 72358,
+      "installs": 72542,
       "rank": 10
     },
     {
@@ -539,9 +539,9 @@ window.SKILLHUB_DATA = {
       "author": "addyosmani",
       "repo": "addyosmani/agent-skills",
       "repoUrl": "https://github.com/addyosmani/agent-skills",
-      "stars": 118125,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "stars": 118506,
+      "updatedDays": 3,
+      "updated": "3 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -561,7 +561,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-14",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "3 天前",
           "cur": true
         }
       ],
@@ -570,7 +570,7 @@ window.SKILLHUB_DATA = {
         "agents",
         "performing-memory-forensics-with-volatility3"
       ],
-      "installs": 70875,
+      "installs": 71103,
       "rank": 11
     },
     {
@@ -583,9 +583,9 @@ window.SKILLHUB_DATA = {
       "author": "Leonxlnx",
       "repo": "Leonxlnx/taste-skill",
       "repoUrl": "https://github.com/Leonxlnx/taste-skill",
-      "stars": 116522,
-      "updatedDays": 7,
-      "updated": "7 天前",
+      "stars": 117311,
+      "updatedDays": 8,
+      "updated": "8 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -605,7 +605,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-08",
           "d": "索引自最近一次提交",
-          "t": "7 天前",
+          "t": "8 天前",
           "cur": true
         }
       ],
@@ -614,7 +614,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 69913,
+      "installs": 70386,
       "rank": 12
     },
     {
@@ -623,11 +623,11 @@ window.SKILLHUB_DATA = {
       "domain": "data",
       "desc": "Sign up for the Paperclip Cloud waitlist →",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "paperclipai",
       "repo": "paperclipai/paperclip",
       "repoUrl": "https://github.com/paperclipai/paperclip",
-      "stars": 114236,
+      "stars": 114461,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -647,7 +647,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -658,7 +658,7 @@ window.SKILLHUB_DATA = {
         "understand-anything",
         "scientific"
       ],
-      "installs": 68541,
+      "installs": 68676,
       "rank": 13
     },
     {
@@ -667,11 +667,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, and catch AI slop before it ships",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "pbakaus",
       "repo": "pbakaus/impeccable",
       "repoUrl": "https://github.com/pbakaus/impeccable",
-      "stars": 111064,
+      "stars": 111765,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -691,7 +691,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -702,7 +702,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 66638,
+      "installs": 67059,
       "rank": 14
     },
     {
@@ -711,11 +711,11 @@ window.SKILLHUB_DATA = {
       "domain": "data",
       "desc": "Turn anything you want to understand, plan, or share into an interactive visual.",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "tt-a1i",
       "repo": "tt-a1i/archify",
       "repoUrl": "https://github.com/tt-a1i/archify",
-      "stars": 96998,
+      "stars": 97323,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -735,7 +735,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -746,7 +746,7 @@ window.SKILLHUB_DATA = {
         "understand-anything",
         "scientific"
       ],
-      "installs": 58198,
+      "installs": 58393,
       "rank": 15
     },
     {
@@ -759,9 +759,9 @@ window.SKILLHUB_DATA = {
       "author": "Egonex-AI",
       "repo": "Egonex-AI/Understand-Anything",
       "repoUrl": "https://github.com/Egonex-AI/Understand-Anything",
-      "stars": 92791,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 92948,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -781,7 +781,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -790,7 +790,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "scientific"
       ],
-      "installs": 55674,
+      "installs": 55768,
       "rank": 16
     },
     {
@@ -799,11 +799,11 @@ window.SKILLHUB_DATA = {
       "domain": "design",
       "desc": "The open-source AI job search agent.",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "career-ops-hq",
       "repo": "career-ops-hq/career-ops",
       "repoUrl": "https://github.com/career-ops-hq/career-ops",
-      "stars": 82913,
+      "stars": 83199,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -823,7 +823,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -834,7 +834,7 @@ window.SKILLHUB_DATA = {
         "cherry-studio",
         "frontend-slides"
       ],
-      "installs": 49747,
+      "installs": 49919,
       "rank": 17
     },
     {
@@ -847,9 +847,9 @@ window.SKILLHUB_DATA = {
       "author": "OpenMontageInc",
       "repo": "OpenMontageInc/OpenMontage",
       "repoUrl": "https://github.com/OpenMontageInc/OpenMontage",
-      "stars": 80841,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 81180,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -869,7 +869,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -878,7 +878,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 48504,
+      "installs": 48708,
       "rank": 18
     },
     {
@@ -891,8 +891,8 @@ window.SKILLHUB_DATA = {
       "author": "cloudflare",
       "repo": "cloudflare/security-audit-skill",
       "repoUrl": "https://github.com/cloudflare/security-audit-skill",
-      "stars": 73497,
-      "updatedDays": 62,
+      "stars": 74338,
+      "updatedDays": 63,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -922,7 +922,7 @@ window.SKILLHUB_DATA = {
         "cowagent",
         "reverse"
       ],
-      "installs": 44098,
+      "installs": 44602,
       "rank": 19
     },
     {
@@ -935,9 +935,9 @@ window.SKILLHUB_DATA = {
       "author": "blader",
       "repo": "blader/humanizer",
       "repoUrl": "https://github.com/blader/humanizer",
-      "stars": 69679,
-      "updatedDays": 6,
-      "updated": "6 天前",
+      "stars": 70132,
+      "updatedDays": 7,
+      "updated": "7 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -957,7 +957,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-10",
           "d": "索引自最近一次提交",
-          "t": "6 天前",
+          "t": "7 天前",
           "cur": true
         }
       ],
@@ -966,7 +966,7 @@ window.SKILLHUB_DATA = {
         "academic-research",
         "librechat"
       ],
-      "installs": 41807,
+      "installs": 42079,
       "rank": 20
     },
     {
@@ -975,11 +975,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "from vibe coding to agentic engineering - practice makes claude perfect",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "shanraisshan",
       "repo": "shanraisshan/claude-code-best-practice",
       "repoUrl": "https://github.com/shanraisshan/claude-code-best-practice",
-      "stars": 69096,
+      "stars": 69145,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -997,7 +997,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -1008,7 +1008,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 41457,
+      "installs": 41487,
       "rank": 21
     },
     {
@@ -1017,11 +1017,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "An AI agent-led search engine scored by upvotes, likes, and real money - not editors.",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "mvanhorn",
       "repo": "mvanhorn/last30days-skill",
       "repoUrl": "https://github.com/mvanhorn/last30days-skill",
-      "stars": 67820,
+      "stars": 68540,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -1029,7 +1029,7 @@ window.SKILLHUB_DATA = {
         "scanned": "刚刚",
         "ruleSet": "r2026.10",
         "high": 0,
-        "ext": 0,
+        "ext": 1,
         "cred": 0,
         "low": 0
       },
@@ -1041,7 +1041,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -1052,7 +1052,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 40692,
+      "installs": 41124,
       "rank": 22
     },
     {
@@ -1065,9 +1065,9 @@ window.SKILLHUB_DATA = {
       "author": "cathrynlavery",
       "repo": "cathrynlavery/diagram-design",
       "repoUrl": "https://github.com/cathrynlavery/diagram-design",
-      "stars": 67515,
-      "updatedDays": 3,
-      "updated": "3 天前",
+      "stars": 67784,
+      "updatedDays": 4,
+      "updated": "4 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -1087,7 +1087,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-12",
           "d": "索引自最近一次提交",
-          "t": "3 天前",
+          "t": "4 天前",
           "cur": true
         }
       ],
@@ -1096,7 +1096,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 40509,
+      "installs": 40670,
       "rank": 23
     },
     {
@@ -1109,9 +1109,9 @@ window.SKILLHUB_DATA = {
       "author": "ayghri",
       "repo": "ayghri/i-have-adhd",
       "repoUrl": "https://github.com/ayghri/i-have-adhd",
-      "stars": 61350,
-      "updatedDays": 27,
-      "updated": "27 天前",
+      "stars": 61442,
+      "updatedDays": 28,
+      "updated": "28 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -1131,7 +1131,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-19",
           "d": "索引自最近一次提交",
-          "t": "27 天前",
+          "t": "28 天前",
           "cur": true
         }
       ],
@@ -1140,7 +1140,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 36810,
+      "installs": 36865,
       "rank": 24
     },
     {
@@ -1153,9 +1153,9 @@ window.SKILLHUB_DATA = {
       "author": "coreyhaines31",
       "repo": "coreyhaines31/marketingskills",
       "repoUrl": "https://github.com/coreyhaines31/marketingskills",
-      "stars": 60687,
-      "updatedDays": 4,
-      "updated": "4 天前",
+      "stars": 60922,
+      "updatedDays": 5,
+      "updated": "5 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -1175,7 +1175,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-11",
           "d": "索引自最近一次提交",
-          "t": "4 天前",
+          "t": "5 天前",
           "cur": true
         }
       ],
@@ -1184,7 +1184,7 @@ window.SKILLHUB_DATA = {
         "agents",
         "performing-memory-forensics-with-volatility3"
       ],
-      "installs": 36412,
+      "installs": 36553,
       "rank": 25
     },
     {
@@ -1193,11 +1193,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "_A hand-picked collection of the finest of resources for the most awesome of agents, , the undisputed champion of coding companions, from th",
       "license": "UNKNOWN",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "hesreallyhim",
       "repo": "hesreallyhim/awesome-claude-code",
       "repoUrl": "https://github.com/hesreallyhim/awesome-claude-code",
-      "stars": 58119,
+      "stars": 58205,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -1215,7 +1215,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -1226,7 +1226,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 34871,
+      "installs": 34923,
       "rank": 26
     },
     {
@@ -1239,9 +1239,9 @@ window.SKILLHUB_DATA = {
       "author": "K-Dense-AI",
       "repo": "K-Dense-AI/scientific-agent-skills",
       "repoUrl": "https://github.com/K-Dense-AI/scientific-agent-skills",
-      "stars": 57396,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 57539,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -1261,7 +1261,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -1270,7 +1270,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 34437,
+      "installs": 34523,
       "rank": 27
     },
     {
@@ -1279,13 +1279,13 @@ window.SKILLHUB_DATA = {
       "domain": "doc",
       "desc": "A comprehensive suite of Claude Code skills for academic research, covering the full pipeline from research to publication.",
       "license": "UNKNOWN",
-      "version": "2026-11-15",
+      "version": "2026-11-17",
       "author": "Imbad0202",
       "repo": "Imbad0202/academic-research-skills",
       "repoUrl": "https://github.com/Imbad0202/academic-research-skills",
-      "stars": 57095,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 57245,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -1303,9 +1303,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-15",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -1314,7 +1314,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "librechat"
       ],
-      "installs": 34257,
+      "installs": 34347,
       "rank": 28
     },
     {
@@ -1327,9 +1327,9 @@ window.SKILLHUB_DATA = {
       "author": "Nutlope",
       "repo": "Nutlope/hallmark",
       "repoUrl": "https://github.com/Nutlope/hallmark",
-      "stars": 55806,
-      "updatedDays": 4,
-      "updated": "4 天前",
+      "stars": 56522,
+      "updatedDays": 5,
+      "updated": "5 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -1348,7 +1348,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-11",
           "d": "索引自最近一次提交",
-          "t": "4 天前",
+          "t": "5 天前",
           "cur": true
         }
       ],
@@ -1357,7 +1357,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 33483,
+      "installs": 33913,
       "rank": 29
     },
     {
@@ -1370,9 +1370,9 @@ window.SKILLHUB_DATA = {
       "author": "VoltAgent",
       "repo": "VoltAgent/awesome-openclaw-skills",
       "repoUrl": "https://github.com/VoltAgent/awesome-openclaw-skills",
-      "stars": 53813,
-      "updatedDays": 16,
-      "updated": "16 天前",
+      "stars": 53837,
+      "updatedDays": 17,
+      "updated": "17 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -1390,7 +1390,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-30",
           "d": "索引自最近一次提交",
-          "t": "16 天前",
+          "t": "17 天前",
           "cur": true
         }
       ],
@@ -1399,7 +1399,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 32287,
+      "installs": 32302,
       "rank": 30
     },
     {
@@ -1408,11 +1408,11 @@ window.SKILLHUB_DATA = {
       "domain": "design",
       "desc": "Cherry Studio is an AI workstation for Windows, macOS, and Linux. Chat with multiple models, work with agents, build knowledge bases, create",
       "license": "AGPL-3.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "CherryHQ",
       "repo": "CherryHQ/cherry-studio",
       "repoUrl": "https://github.com/CherryHQ/cherry-studio",
-      "stars": 53558,
+      "stars": 53596,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -1430,7 +1430,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -1441,52 +1441,8 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "frontend-slides"
       ],
-      "installs": 32134,
+      "installs": 32157,
       "rank": 31
-    },
-    {
-      "id": "obsidian",
-      "name": "obsidian",
-      "domain": "code",
-      "desc": "Agent Skills for use with Obsidian.",
-      "license": "MIT",
-      "version": "2026-11-11",
-      "author": "obsidianmd",
-      "repo": "obsidianmd/obsidian-skills",
-      "repoUrl": "https://github.com/obsidianmd/obsidian-skills",
-      "stars": 52890,
-      "updatedDays": 4,
-      "updated": "4 天前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "\nclaude plugin marketplace add obsidianmd/obsidian-skills\nclaude plugin install obsidian@obsidian-skills\n\n/plugin marketplace add obsidianmd/obsidian-skills\n/plugin install obsidian@obsidian-skills\n\ncodex plugin marketplace add obsidianmd/obsidian-skills\n\nnpx skills add https://github.com/obsidianmd/obsidian-skills\n\nnpx skills add git@github.com:obsidianmd/obsidian-skills.git\n\ngit clone https://github.com/obsidianmd/obsidian-skills.git ~/.opencode/skills/obsidian-skills\n",
-      "readme": [
-        "claude plugin marketplace add obsidianmd/obsidian-skills",
-        "claude plugin install obsidian@obsidian-skills",
-        "/plugin marketplace add obsidianmd/obsidian-skills"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-11",
-          "d": "索引自最近一次提交",
-          "t": "4 天前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "skills",
-        "superpowers",
-        "andrej-karpathy"
-      ],
-      "installs": 31734,
-      "rank": 32
     },
     {
       "id": "open-code-review",
@@ -1494,11 +1450,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "Open Code Review is an AI-powered code review CLI tool. It originated as Alibaba Group's internal official AI code review assistant — over t",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "alibaba",
       "repo": "alibaba/open-code-review",
       "repoUrl": "https://github.com/alibaba/open-code-review",
-      "stars": 52590,
+      "stars": 53348,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -1518,7 +1474,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -1529,20 +1485,20 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 31554,
-      "rank": 33
+      "installs": 32008,
+      "rank": 32
     },
     {
-      "id": "agentic-awesome",
-      "name": "agentic-awesome",
+      "id": "obsidian",
+      "name": "obsidian",
       "domain": "code",
-      "desc": "Agentic Awesome Skills is a library of 2,960+ installable SKILL.md playbooks for Claude Code, Codex, Cursor, Gemini CLI and other AI coding",
+      "desc": "Agent Skills for use with Obsidian.",
       "license": "MIT",
-      "version": "2026-11-15",
-      "author": "sickn33",
-      "repo": "sickn33/agentic-awesome-skills",
-      "repoUrl": "https://github.com/sickn33/agentic-awesome-skills",
-      "stars": 49785,
+      "version": "2026-11-16",
+      "author": "obsidianmd",
+      "repo": "obsidianmd/obsidian-skills",
+      "repoUrl": "https://github.com/obsidianmd/obsidian-skills",
+      "stars": 53013,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -1554,14 +1510,15 @@ window.SKILLHUB_DATA = {
         "cred": 0,
         "low": 0
       },
-      "skillmd": "\ngh skill preview sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md@v20.9.0\ngh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --agent codex --scope user --pin v20.9.0\n",
+      "skillmd": "\nclaude plugin marketplace add obsidianmd/obsidian-skills\nclaude plugin install obsidian@obsidian-skills\n\n/plugin marketplace add obsidianmd/obsidian-skills\n/plugin install obsidian@obsidian-skills\n\ncodex plugin marketplace add obsidianmd/obsidian-skills\n\nnpx skills add https://github.com/obsidianmd/obsidian-skills\n\nnpx skills add git@github.com:obsidianmd/obsidian-skills.git\n\ngemini extensions install https://github.com/obsidianmd/obsidian-skills\n\ngit clone https://github.com/obsidianmd/obsidian-skills.git ~/.opencode/skills/obsidian-skills\n",
       "readme": [
-        "gh skill preview sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md@v20.9.0",
-        "gh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --agent codex --scope user --pin v20.9.0"
+        "claude plugin marketplace add obsidianmd/obsidian-skills",
+        "claude plugin install obsidian@obsidian-skills",
+        "/plugin marketplace add obsidianmd/obsidian-skills"
       ],
       "versions": [
         {
-          "v": "2026-11-15",
+          "v": "2026-11-16",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -1572,7 +1529,50 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 29871,
+      "installs": 31807,
+      "rank": 33
+    },
+    {
+      "id": "agentic-awesome",
+      "name": "agentic-awesome",
+      "domain": "code",
+      "desc": "Agentic Awesome Skills is a library of 2,981+ installable SKILL.md playbooks for Claude Code, Codex, Cursor, Gemini CLI and other AI coding",
+      "license": "MIT",
+      "version": "2026-11-17",
+      "author": "sickn33",
+      "repo": "sickn33/agentic-awesome-skills",
+      "repoUrl": "https://github.com/sickn33/agentic-awesome-skills",
+      "stars": 49851,
+      "updatedDays": 0,
+      "updated": "今天",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "\ngh skill preview sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md@v20.10.0\ngh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --agent codex --scope user --pin v20.10.0\n",
+      "readme": [
+        "gh skill preview sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md@v20.10.0",
+        "gh skill install sickn33/agentic-awesome-skills skills/brainstorming/SKILL.md --agent codex --scope user --pin v20.10.0"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-17",
+          "d": "索引自最近一次提交",
+          "t": "今天",
+          "cur": true
+        }
+      ],
+      "related": [
+        "skills",
+        "superpowers",
+        "andrej-karpathy"
+      ],
+      "installs": 29910,
       "rank": 34
     },
     {
@@ -1581,11 +1581,11 @@ window.SKILLHUB_DATA = {
       "domain": "ops",
       "desc": "CowAgent is your own open-source personal AI agent. It plans tasks proactively, uses tools, skills and MCP, and gets to know you over time t",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "zhayujie",
       "repo": "zhayujie/CowAgent",
       "repoUrl": "https://github.com/zhayujie/CowAgent",
-      "stars": 47950,
+      "stars": 47970,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -1605,7 +1605,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -1616,7 +1616,7 @@ window.SKILLHUB_DATA = {
         "security-audit",
         "reverse"
       ],
-      "installs": 28770,
+      "installs": 28782,
       "rank": 35
     },
     {
@@ -1625,11 +1625,11 @@ window.SKILLHUB_DATA = {
       "domain": "doc",
       "desc": "src=\"https://img.shields.io/discord/1086345563026489514?label=&logo=discord&style=for-the-badge&logoWidth=20&logoColor=white&labelColor=0000",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "LibreChat-AI",
       "repo": "LibreChat-AI/LibreChat",
       "repoUrl": "https://github.com/LibreChat-AI/LibreChat",
-      "stars": 47179,
+      "stars": 47214,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -1647,7 +1647,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -1658,7 +1658,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 28307,
+      "installs": 28328,
       "rank": 36
     },
     {
@@ -1667,11 +1667,11 @@ window.SKILLHUB_DATA = {
       "domain": "doc",
       "desc": "Reactive Resume is a free and open-source resume builder for writing resumes and cover letters, checking your work, and tracking job applica",
       "license": "MIT",
-      "version": "2026-11-15",
+      "version": "2026-11-16",
       "author": "reactive-resume",
       "repo": "reactive-resume/reactive-resume",
       "repoUrl": "https://github.com/reactive-resume/reactive-resume",
-      "stars": 45810,
+      "stars": 45848,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -1691,7 +1691,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-15",
+          "v": "2026-11-16",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -1702,7 +1702,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 27486,
+      "installs": 27508,
       "rank": 37
     },
     {
@@ -1715,9 +1715,9 @@ window.SKILLHUB_DATA = {
       "author": "zhaoxuya520",
       "repo": "zhaoxuya520/reverse-skill",
       "repoUrl": "https://github.com/zhaoxuya520/reverse-skill",
-      "stars": 44751,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 44814,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -1737,7 +1737,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-14",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -1746,7 +1746,7 @@ window.SKILLHUB_DATA = {
         "security-audit",
         "cowagent"
       ],
-      "installs": 26850,
+      "installs": 26888,
       "rank": 38
     },
     {
@@ -1759,9 +1759,9 @@ window.SKILLHUB_DATA = {
       "author": "wshobson",
       "repo": "wshobson/agents",
       "repoUrl": "https://github.com/wshobson/agents",
-      "stars": 42570,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 42603,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -1781,7 +1781,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -1790,7 +1790,7 @@ window.SKILLHUB_DATA = {
         "marketing",
         "performing-memory-forensics-with-volatility3"
       ],
-      "installs": 25542,
+      "installs": 25561,
       "rank": 39
     },
     {
@@ -1803,7 +1803,7 @@ window.SKILLHUB_DATA = {
       "author": "github",
       "repo": "github/awesome-copilot",
       "repoUrl": "https://github.com/github/awesome-copilot",
-      "stars": 41211,
+      "stars": 41252,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -1833,7 +1833,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 24726,
+      "installs": 24751,
       "rank": 40
     },
     {
@@ -1846,9 +1846,9 @@ window.SKILLHUB_DATA = {
       "author": "Donchitos",
       "repo": "Donchitos/Claude-Code-Game-Studios",
       "repoUrl": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-      "stars": 39678,
-      "updatedDays": 6,
-      "updated": "6 天前",
+      "stars": 39857,
+      "updatedDays": 7,
+      "updated": "7 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -1868,7 +1868,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-09",
           "d": "索引自最近一次提交",
-          "t": "6 天前",
+          "t": "7 天前",
           "cur": true
         }
       ],
@@ -1877,7 +1877,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 23806,
+      "installs": 23914,
       "rank": 41
     },
     {
@@ -1886,13 +1886,13 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "动画由 huashu-motion 制作，女娲形象与每一种画风都由代码绘制",
       "license": "MIT",
-      "version": "2026-11-15",
+      "version": "2026-11-17",
       "author": "alchaincyf",
       "repo": "alchaincyf/nuwa-skill",
       "repoUrl": "https://github.com/alchaincyf/nuwa-skill",
-      "stars": 38393,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 38473,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -1910,9 +1910,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-15",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -1921,7 +1921,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 23035,
+      "installs": 23083,
       "rank": 42
     },
     {
@@ -1934,9 +1934,9 @@ window.SKILLHUB_DATA = {
       "author": "virgiliojr94",
       "repo": "virgiliojr94/book-to-skill",
       "repoUrl": "https://github.com/virgiliojr94/book-to-skill",
-      "stars": 38054,
-      "updatedDays": 7,
-      "updated": "7 天前",
+      "stars": 38211,
+      "updatedDays": 8,
+      "updated": "8 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -1956,7 +1956,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-08",
           "d": "索引自最近一次提交",
-          "t": "7 天前",
+          "t": "8 天前",
           "cur": true
         }
       ],
@@ -1965,7 +1965,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 22832,
+      "installs": 22926,
       "rank": 43
     },
     {
@@ -1974,11 +1974,11 @@ window.SKILLHUB_DATA = {
       "domain": "ops",
       "desc": "Feature Request",
       "license": "UNKNOWN",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "langfuse",
       "repo": "langfuse/langfuse",
       "repoUrl": "https://github.com/langfuse/langfuse",
-      "stars": 37482,
+      "stars": 37539,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -1998,7 +1998,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -2009,7 +2009,7 @@ window.SKILLHUB_DATA = {
         "security-audit",
         "cowagent"
       ],
-      "installs": 22489,
+      "installs": 22523,
       "rank": 44
     },
     {
@@ -2022,9 +2022,9 @@ window.SKILLHUB_DATA = {
       "author": "VoltAgent",
       "repo": "VoltAgent/awesome-agent-skills",
       "repoUrl": "https://github.com/VoltAgent/awesome-agent-skills",
-      "stars": 37229,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 37270,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -2042,7 +2042,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -2051,7 +2051,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 22337,
+      "installs": 22362,
       "rank": 45
     },
     {
@@ -2064,8 +2064,8 @@ window.SKILLHUB_DATA = {
       "author": "mukul975",
       "repo": "mukul975/Anthropic-Cybersecurity-Skills",
       "repoUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-      "stars": 36222,
-      "updatedDays": 77,
+      "stars": 36281,
+      "updatedDays": 78,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -2095,7 +2095,7 @@ window.SKILLHUB_DATA = {
         "marketing",
         "agents"
       ],
-      "installs": 21733,
+      "installs": 21768,
       "rank": 46
     },
     {
@@ -2104,11 +2104,11 @@ window.SKILLHUB_DATA = {
       "domain": "data",
       "desc": "An open catalog of components for Claude Code, installable with one command.",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "davila7",
       "repo": "davila7/claude-code-templates",
       "repoUrl": "https://github.com/davila7/claude-code-templates",
-      "stars": 33817,
+      "stars": 33897,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -2128,7 +2128,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -2139,7 +2139,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 20290,
+      "installs": 20338,
       "rank": 47
     },
     {
@@ -2148,11 +2148,11 @@ window.SKILLHUB_DATA = {
       "domain": "data",
       "desc": "Cognee - The Free Open-Source AI Memory Platform for Agents",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "topoteretes",
       "repo": "topoteretes/cognee",
       "repoUrl": "https://github.com/topoteretes/cognee",
-      "stars": 33346,
+      "stars": 33362,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -2172,7 +2172,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -2183,7 +2183,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 20007,
+      "installs": 20017,
       "rank": 48
     },
     {
@@ -2196,8 +2196,8 @@ window.SKILLHUB_DATA = {
       "author": "zarazhangrui",
       "repo": "zarazhangrui/frontend-slides",
       "repoUrl": "https://github.com/zarazhangrui/frontend-slides",
-      "stars": 32391,
-      "updatedDays": 145,
+      "stars": 32452,
+      "updatedDays": 146,
       "updated": "4 个月前",
       "scan": {
         "state": "pass",
@@ -2227,7 +2227,7 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 19434,
+      "installs": 19471,
       "rank": 49
     },
     {
@@ -2240,9 +2240,9 @@ window.SKILLHUB_DATA = {
       "author": "googleworkspace",
       "repo": "googleworkspace/cli",
       "repoUrl": "https://github.com/googleworkspace/cli",
-      "stars": 32333,
-      "updatedDays": 13,
-      "updated": "13 天前",
+      "stars": 32360,
+      "updatedDays": 14,
+      "updated": "14 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -2262,7 +2262,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-03",
           "d": "索引自最近一次提交",
-          "t": "13 天前",
+          "t": "14 天前",
           "cur": true
         }
       ],
@@ -2271,7 +2271,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 19399,
+      "installs": 19416,
       "rank": 50
     },
     {
@@ -2280,11 +2280,11 @@ window.SKILLHUB_DATA = {
       "domain": "doc",
       "desc": "An AI assistant that runs agents securely in their own containers. Lightweight, built to be easily understood and completely customized for",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "nanocoai",
       "repo": "nanocoai/nanoclaw",
       "repoUrl": "https://github.com/nanocoai/nanoclaw",
-      "stars": 31119,
+      "stars": 31116,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -2304,7 +2304,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -2315,7 +2315,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 18671,
+      "installs": 18669,
       "rank": 51
     },
     {
@@ -2328,9 +2328,9 @@ window.SKILLHUB_DATA = {
       "author": "TencentCloud",
       "repo": "TencentCloud/TencentDB-Agent-Memory",
       "repoUrl": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-      "stars": 30935,
-      "updatedDays": 5,
-      "updated": "5 天前",
+      "stars": 30959,
+      "updatedDays": 6,
+      "updated": "6 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -2350,7 +2350,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-10",
           "d": "索引自最近一次提交",
-          "t": "5 天前",
+          "t": "6 天前",
           "cur": true
         }
       ],
@@ -2359,52 +2359,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 18561,
+      "installs": 18575,
       "rank": 52
-    },
-    {
-      "id": "claude",
-      "name": "claude",
-      "domain": "ops",
-      "desc": "417 production-ready skills for Claude Code and 12 other coding agents, covering engineering, product, marketing, compliance, finance and th",
-      "license": "MIT",
-      "version": "2026-11-16",
-      "author": "alirezarezvani",
-      "repo": "alirezarezvani/claude-skills",
-      "repoUrl": "https://github.com/alirezarezvani/claude-skills",
-      "stars": 29875,
-      "updatedDays": 0,
-      "updated": "今天",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "## What Are Claude Code Skills & Agent Plugins?\n\nClaude Code skills (also called agent skills or coding agent plugins) are modular instruction packages that give AI coding agents domain expertise they don't have out of the box. Each skill includes:\n\n- **SKILL.md** — structured instructions, workflows, and decision frameworks\n- **Python tools** — 824 CLI scripts (all stdlib-only, zero pip installs)\n- **Reference docs** — 931 templates, checklists, and domain-specific knowledge files\n\n**One repo, thirteen platforms.** Works natively as Claude Code plugins, Codex agent skills, Gemini CLI skills, Hermes Agent skills, Mistral Vibe skills, and converts to more tools via `scripts/convert.sh`. All 826 Python tools run anywhere Python runs.\n\n### Skills vs Agents vs Personas\n\n| | Skills | Agents | Personas |\n|---|---|---|---|\n| **Purpose** | How to execute a task | What task to do | Who is thinking |\n| **Scope** | Single domain | Single domain | Cross-domain |\n| **Voice** | Neutral | Professional | Personality-driven |\n| **Example** | \"Follow these steps for SEO\" | \"Run a security audit\" | \"Think like a startup CTO\" |\n\nAll three work together. See [Orchestration](#orchestration) for how to c",
-      "readme": [
-        "Claude Code skills (also called agent skills or coding agent plugins) are modular instruction packages that give AI coding agents domain expertise they don't have out of the box. Each skill includes:",
-        "- SKILL.md — structured instructions, workflows, and decision frameworks",
-        "- Python tools — 824 CLI scripts (all stdlib-only, zero pip installs)"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-16",
-          "d": "索引自最近一次提交",
-          "t": "今天",
-          "cur": true
-        }
-      ],
-      "related": [
-        "code-reviewer",
-        "security-audit",
-        "cowagent"
-      ],
-      "installs": 17925,
-      "rank": 53
     },
     {
       "id": "claude-seo",
@@ -2416,9 +2372,9 @@ window.SKILLHUB_DATA = {
       "author": "AgriciDaniel",
       "repo": "AgriciDaniel/claude-seo",
       "repoUrl": "https://github.com/AgriciDaniel/claude-seo",
-      "stars": 29867,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 30202,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -2438,7 +2394,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -2447,7 +2403,51 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 17920,
+      "installs": 18121,
+      "rank": 53
+    },
+    {
+      "id": "claude",
+      "name": "claude",
+      "domain": "ops",
+      "desc": "428 production-ready skills for Claude Code and 12 other coding agents, covering engineering, product, marketing, compliance, finance and th",
+      "license": "MIT",
+      "version": "2026-11-17",
+      "author": "alirezarezvani",
+      "repo": "alirezarezvani/claude-skills",
+      "repoUrl": "https://github.com/alirezarezvani/claude-skills",
+      "stars": 29947,
+      "updatedDays": 0,
+      "updated": "今天",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "## What Are Claude Code Skills & Agent Plugins?\n\nClaude Code skills (also called agent skills or coding agent plugins) are modular instruction packages that give AI coding agents domain expertise they don't have out of the box. Each skill includes:\n\n- **SKILL.md** — structured instructions, workflows, and decision frameworks\n- **Python tools** — 824 CLI scripts (all stdlib-only, zero pip installs)\n- **Reference docs** — 931 templates, checklists, and domain-specific knowledge files\n\n**One repo, thirteen platforms.** Works natively as Claude Code plugins, Codex agent skills, Gemini CLI skills, Hermes Agent skills, Mistral Vibe skills, and converts to more tools via `scripts/convert.sh`. All 861 Python tools run anywhere Python runs.\n\n### Skills vs Agents vs Personas\n\n| | Skills | Agents | Personas |\n|---|---|---|---|\n| **Purpose** | How to execute a task | What task to do | Who is thinking |\n| **Scope** | Single domain | Single domain | Cross-domain |\n| **Voice** | Neutral | Professional | Personality-driven |\n| **Example** | \"Follow these steps for SEO\" | \"Run a security audit\" | \"Think like a startup CTO\" |\n\nAll three work together. See [Orchestration](#orchestration) for how to c",
+      "readme": [
+        "Claude Code skills (also called agent skills or coding agent plugins) are modular instruction packages that give AI coding agents domain expertise they don't have out of the box. Each skill includes:",
+        "- SKILL.md — structured instructions, workflows, and decision frameworks",
+        "- Python tools — 824 CLI scripts (all stdlib-only, zero pip installs)"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-17",
+          "d": "索引自最近一次提交",
+          "t": "今天",
+          "cur": true
+        }
+      ],
+      "related": [
+        "code-reviewer",
+        "security-audit",
+        "cowagent"
+      ],
+      "installs": 17968,
       "rank": 54
     },
     {
@@ -2460,9 +2460,9 @@ window.SKILLHUB_DATA = {
       "author": "op7418",
       "repo": "op7418/guizang-ppt-skill",
       "repoUrl": "https://github.com/op7418/guizang-ppt-skill",
-      "stars": 29863,
-      "updatedDays": 16,
-      "updated": "16 天前",
+      "stars": 29939,
+      "updatedDays": 17,
+      "updated": "17 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -2482,7 +2482,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-30",
           "d": "索引自最近一次提交",
-          "t": "16 天前",
+          "t": "17 天前",
           "cur": true
         }
       ],
@@ -2491,7 +2491,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 17917,
+      "installs": 17963,
       "rank": 55
     },
     {
@@ -2504,9 +2504,9 @@ window.SKILLHUB_DATA = {
       "author": "alchaincyf",
       "repo": "alchaincyf/huashu-design",
       "repoUrl": "https://github.com/alchaincyf/huashu-design",
-      "stars": 29632,
-      "updatedDays": 6,
-      "updated": "6 天前",
+      "stars": 29702,
+      "updatedDays": 7,
+      "updated": "7 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -2526,7 +2526,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-10",
           "d": "索引自最近一次提交",
-          "t": "6 天前",
+          "t": "7 天前",
           "cur": true
         }
       ],
@@ -2535,52 +2535,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 17779,
+      "installs": 17821,
       "rank": 56
-    },
-    {
-      "id": "planning-with-files",
-      "name": "planning-with-files",
-      "domain": "code",
-      "desc": "The planning skill your agent cannot ignore.",
-      "license": "MIT",
-      "version": "2026-11-11",
-      "author": "OthmanAdi",
-      "repo": "OthmanAdi/planning-with-files",
-      "repoUrl": "https://github.com/OthmanAdi/planning-with-files",
-      "stars": 28089,
-      "updatedDays": 4,
-      "updated": "4 天前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "<p align=\"center\">\n  <em>Your agent's context window dies. The plan does not.</em>\n</p>\n\n<p align=\"center\">\nPersistent file-based planning for AI coding agents and long-running agent tasks: the skill keeps <code>task_plan.md</code>, <code>findings.md</code>, and <code>progress.md</code> on disk. Activated lifecycle hooks inject selected project planning context, so the plan survives context loss, <code>/clear</code>, crashes, and compaction. Automatic recovery reads project files only. Reading same-project local agent session records for aggregate counts or bounded replay requires an explicit catchup mode. Installs across 60+ agents via the Agent Skills standard, with native plugins for Claude Code, Codex CLI, Qoder CLI, Pi, Hermes Agent, OpenCode and DeepSeek Harness.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/OthmanAdi/planning-with-files/stargazers\"><img src=\"https://img.shields.io/github/stars/OthmanAdi/planning-with-files?style=flat&color=yellow\" alt=\"Stars\"></a>\n  <a href=\"https://github.com/OthmanAdi/planning-with-files/releases\"><img src=\"https://img.shields.io/github/v/release/OthmanAdi/planning-with-files?style=flat&label=release\" alt=\"Latest release\"></a>\n  <",
-      "readme": [
-        "Persistent file-based planning for AI coding agents and long-running agent tasks: the skill keeps task_plan.md, findings.md, and progress.md on disk. Activated lifecycle hooks inject selected project ",
-        "Code, documentation, and issue contributors. Select a portrait to open a GitHub profile or archived credit. .",
-        "Built something? to get listed!"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-11",
-          "d": "索引自最近一次提交",
-          "t": "4 天前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "skills",
-        "superpowers",
-        "andrej-karpathy"
-      ],
-      "installs": 16853,
-      "rank": 57
     },
     {
       "id": "aitoearn",
@@ -2592,9 +2548,9 @@ window.SKILLHUB_DATA = {
       "author": "yikart",
       "repo": "yikart/AiToEarn",
       "repoUrl": "https://github.com/yikart/AiToEarn",
-      "stars": 28069,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 28164,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -2614,7 +2570,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -2623,7 +2579,51 @@ window.SKILLHUB_DATA = {
         "security-audit",
         "cowagent"
       ],
-      "installs": 16841,
+      "installs": 16898,
+      "rank": 57
+    },
+    {
+      "id": "planning-with-files",
+      "name": "planning-with-files",
+      "domain": "code",
+      "desc": "The planning skill your agent cannot ignore.",
+      "license": "MIT",
+      "version": "2026-11-11",
+      "author": "OthmanAdi",
+      "repo": "OthmanAdi/planning-with-files",
+      "repoUrl": "https://github.com/OthmanAdi/planning-with-files",
+      "stars": 28106,
+      "updatedDays": 5,
+      "updated": "5 天前",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "<p align=\"center\">\n  <em>Your agent's context window dies. The plan does not.</em>\n</p>\n\n<p align=\"center\">\nPersistent file-based planning for AI coding agents and long-running agent tasks: the skill keeps <code>task_plan.md</code>, <code>findings.md</code>, and <code>progress.md</code> on disk. Activated lifecycle hooks inject selected project planning context, so the plan survives context loss, <code>/clear</code>, crashes, and compaction. Automatic recovery reads project files only. Reading same-project local agent session records for aggregate counts or bounded replay requires an explicit catchup mode. Installs across 60+ agents via the Agent Skills standard, with native plugins for Claude Code, Codex CLI, Qoder CLI, Pi, Hermes Agent, OpenCode and DeepSeek Harness.\n</p>\n\n<p align=\"center\">\n  <a href=\"https://github.com/OthmanAdi/planning-with-files/stargazers\"><img src=\"https://img.shields.io/github/stars/OthmanAdi/planning-with-files?style=flat&color=yellow\" alt=\"Stars\"></a>\n  <a href=\"https://github.com/OthmanAdi/planning-with-files/releases\"><img src=\"https://img.shields.io/github/v/release/OthmanAdi/planning-with-files?style=flat&label=release\" alt=\"Latest release\"></a>\n  <",
+      "readme": [
+        "Persistent file-based planning for AI coding agents and long-running agent tasks: the skill keeps task_plan.md, findings.md, and progress.md on disk. Activated lifecycle hooks inject selected project ",
+        "Code, documentation, and issue contributors. Select a portrait to open a GitHub profile or archived credit. .",
+        "Built something? to get listed!"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-11",
+          "d": "索引自最近一次提交",
+          "t": "5 天前",
+          "cur": true
+        }
+      ],
+      "related": [
+        "skills",
+        "superpowers",
+        "andrej-karpathy"
+      ],
+      "installs": 16863,
       "rank": 58
     },
     {
@@ -2636,9 +2636,9 @@ window.SKILLHUB_DATA = {
       "author": "phuryn",
       "repo": "phuryn/pm-skills",
       "repoUrl": "https://github.com/phuryn/pm-skills",
-      "stars": 28035,
-      "updatedDays": 7,
-      "updated": "7 天前",
+      "stars": 28087,
+      "updatedDays": 8,
+      "updated": "8 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -2658,7 +2658,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-08",
           "d": "索引自最近一次提交",
-          "t": "7 天前",
+          "t": "8 天前",
           "cur": true
         }
       ],
@@ -2667,7 +2667,7 @@ window.SKILLHUB_DATA = {
         "marketing",
         "agents"
       ],
-      "installs": 16821,
+      "installs": 16852,
       "rank": 59
     },
     {
@@ -2680,9 +2680,9 @@ window.SKILLHUB_DATA = {
       "author": "wheresryan22",
       "repo": "wheresryan22/anatomy",
       "repoUrl": "https://github.com/wheresryan22/anatomy",
-      "stars": 27600,
-      "updatedDays": 28,
-      "updated": "28 天前",
+      "stars": 27787,
+      "updatedDays": 29,
+      "updated": "29 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -2702,7 +2702,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-18",
           "d": "索引自最近一次提交",
-          "t": "28 天前",
+          "t": "29 天前",
           "cur": true
         }
       ],
@@ -2711,7 +2711,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 16560,
+      "installs": 16672,
       "rank": 60
     },
     {
@@ -2724,9 +2724,9 @@ window.SKILLHUB_DATA = {
       "author": "JimLiu",
       "repo": "JimLiu/baoyu-skills",
       "repoUrl": "https://github.com/JimLiu/baoyu-skills",
-      "stars": 27596,
-      "updatedDays": 9,
-      "updated": "9 天前",
+      "stars": 27629,
+      "updatedDays": 10,
+      "updated": "10 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -2744,7 +2744,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-06",
           "d": "索引自最近一次提交",
-          "t": "9 天前",
+          "t": "10 天前",
           "cur": true
         }
       ],
@@ -2753,7 +2753,7 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 16557,
+      "installs": 16577,
       "rank": 61
     },
     {
@@ -2766,9 +2766,9 @@ window.SKILLHUB_DATA = {
       "author": "agentskills",
       "repo": "agentskills/agentskills",
       "repoUrl": "https://github.com/agentskills/agentskills",
-      "stars": 27337,
-      "updatedDays": 11,
-      "updated": "11 天前",
+      "stars": 27375,
+      "updatedDays": 12,
+      "updated": "12 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -2788,7 +2788,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-04",
           "d": "索引自最近一次提交",
-          "t": "11 天前",
+          "t": "12 天前",
           "cur": true
         }
       ],
@@ -2797,7 +2797,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 16402,
+      "installs": 16425,
       "rank": 62
     },
     {
@@ -2810,8 +2810,8 @@ window.SKILLHUB_DATA = {
       "author": "titanwings",
       "repo": "titanwings/distilly",
       "repoUrl": "https://github.com/titanwings/distilly",
-      "stars": 26601,
-      "updatedDays": 34,
+      "stars": 26622,
+      "updatedDays": 35,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -2841,7 +2841,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 15960,
+      "installs": 15973,
       "rank": 63
     },
     {
@@ -2850,13 +2850,13 @@ window.SKILLHUB_DATA = {
       "domain": "ops",
       "desc": "Create and edit 3D building models in your browser, run Pascal locally with its CLI, or connect",
       "license": "MIT",
-      "version": "2026-11-14",
+      "version": "2026-11-16",
       "author": "pascalorg",
       "repo": "pascalorg/editor",
       "repoUrl": "https://github.com/pascalorg/editor",
-      "stars": 25540,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "stars": 25569,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -2874,9 +2874,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-14",
+          "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -2885,7 +2885,7 @@ window.SKILLHUB_DATA = {
         "security-audit",
         "cowagent"
       ],
-      "installs": 15324,
+      "installs": 15341,
       "rank": 64
     },
     {
@@ -2894,11 +2894,11 @@ window.SKILLHUB_DATA = {
       "domain": "data",
       "desc": "NocoBase is the open-source platform for building, running, and evolving business systems with AI. Agents write the code and do the work, No",
       "license": "UNKNOWN",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "nocobase",
       "repo": "nocobase/nocobase",
       "repoUrl": "https://github.com/nocobase/nocobase",
-      "stars": 24943,
+      "stars": 24950,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -2918,7 +2918,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -2929,7 +2929,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 14965,
+      "installs": 14970,
       "rank": 65
     },
     {
@@ -2938,11 +2938,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "The fastest browser for AI agents to run web automation",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "citrolabs",
       "repo": "citrolabs/ego-lite",
       "repoUrl": "https://github.com/citrolabs/ego-lite",
-      "stars": 23062,
+      "stars": 23311,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -2962,7 +2962,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -2973,7 +2973,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 13837,
+      "installs": 13986,
       "rank": 66
     },
     {
@@ -2986,8 +2986,8 @@ window.SKILLHUB_DATA = {
       "author": "op7418",
       "repo": "op7418/Humanizer-zh",
       "repoUrl": "https://github.com/op7418/Humanizer-zh",
-      "stars": 22930,
-      "updatedDays": 54,
+      "stars": 23071,
+      "updatedDays": 55,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -3017,7 +3017,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 13758,
+      "installs": 13842,
       "rank": 67
     },
     {
@@ -3030,9 +3030,9 @@ window.SKILLHUB_DATA = {
       "author": "KKKKhazix",
       "repo": "KKKKhazix/khazix-skills",
       "repoUrl": "https://github.com/KKKKhazix/khazix-skills",
-      "stars": 22298,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 22343,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -3052,7 +3052,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -3061,7 +3061,7 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 13378,
+      "installs": 13405,
       "rank": 68
     },
     {
@@ -3074,9 +3074,9 @@ window.SKILLHUB_DATA = {
       "author": "liyupi",
       "repo": "liyupi/ai-guide",
       "repoUrl": "https://github.com/liyupi/ai-guide",
-      "stars": 22146,
-      "updatedDays": 4,
-      "updated": "4 天前",
+      "stars": 22172,
+      "updatedDays": 5,
+      "updated": "5 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -3096,7 +3096,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-12",
           "d": "索引自最近一次提交",
-          "t": "4 天前",
+          "t": "5 天前",
           "cur": true
         }
       ],
@@ -3105,7 +3105,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 13287,
+      "installs": 13303,
       "rank": 69
     },
     {
@@ -3118,9 +3118,9 @@ window.SKILLHUB_DATA = {
       "author": "latent-spaces",
       "repo": "latent-spaces/brag",
       "repoUrl": "https://github.com/latent-spaces/brag",
-      "stars": 21652,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 21777,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -3140,7 +3140,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -3149,7 +3149,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 12991,
+      "installs": 13066,
       "rank": 70
     },
     {
@@ -3158,11 +3158,11 @@ window.SKILLHUB_DATA = {
       "domain": "test",
       "desc": "Tell Claude Code or Codex \"make a promo for my product\". The agent captures your real pages, picks shots",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "Vincentwei1021",
       "repo": "Vincentwei1021/video-shotcraft",
       "repoUrl": "https://github.com/Vincentwei1021/video-shotcraft",
-      "stars": 20342,
+      "stars": 20895,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -3182,7 +3182,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -3193,52 +3193,8 @@ window.SKILLHUB_DATA = {
         "marketing",
         "agents"
       ],
-      "installs": 12205,
+      "installs": 12537,
       "rank": 71
-    },
-    {
-      "id": "notebooklm-py",
-      "name": "notebooklm-py",
-      "domain": "code",
-      "desc": "A Comprehensive Google Gemini Notebook Skill & Unofficial Python API. Full programmatic access to NotebookLM's features—including capabiliti",
-      "license": "MIT",
-      "version": "2026-11-15",
-      "author": "teng-lin",
-      "repo": "teng-lin/notebooklm-py",
-      "repoUrl": "https://github.com/teng-lin/notebooklm-py",
-      "stars": 20249,
-      "updatedDays": 0,
-      "updated": "今天",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "\npip install \"notebooklm-py[android,browser]\"\nnotebooklm login --master-token --account you@example.com\nnotebooklm --backend android list --json\n\nuv tool install \"notebooklm-py[browser]\"   # or: pipx install \"notebooklm-py[browser]\"\nnotebooklm login                           # first run auto-downloads Chromium (~170 MB), then Google sign-in\nnotebooklm auth check --test --json        # verify: expect \"status\": \"ok\"\n\npython3 -m venv .venv && source .venv/bin/activate   # Windows: .venv\\Scripts\\activate\npip install \"notebooklm-py[browser]\"\n\nuv add notebooklm-py                    # or, inside a virtualenv: pip install notebooklm-py\n\n# 1. Authenticate (opens browser)\nnotebooklm login\n# Or use Microsoft Edge (for orgs that require Edge for SSO)\n# notebooklm login --browser msedge\n# Or reuse cookies from an already-logged-in browser session\n# notebooklm login --browser-cookies chrome\n# notebooklm login --browser-cookies 'chrome::Profile 1'  # one Chromium profile\n# (combine with --profile to populate a specific profile;\n#  use --account / --all-accounts after auth inspect when several\n#  Google accounts are signed in)\n\n# 2. Create a notebook and add sources\nnotebooklm create \"My Research",
-      "readme": [
-        "pip install \"notebooklm-py[android,browser]\"",
-        "notebooklm login --master-token --account you@example.com",
-        "notebooklm --backend android list --json"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-15",
-          "d": "索引自最近一次提交",
-          "t": "今天",
-          "cur": true
-        }
-      ],
-      "related": [
-        "skills",
-        "superpowers",
-        "andrej-karpathy"
-      ],
-      "installs": 12149,
-      "rank": 72
     },
     {
       "id": "elephant-goldfish-model",
@@ -3246,11 +3202,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "Design with an elephant. Review with a goldfish.",
       "license": "Apache-2.0",
-      "version": "2026-11-15",
+      "version": "2026-11-17",
       "author": "google",
       "repo": "google/elephant-goldfish-model",
       "repoUrl": "https://github.com/google/elephant-goldfish-model",
-      "stars": 20071,
+      "stars": 20590,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -3270,7 +3226,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-15",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -3281,7 +3237,51 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 12042,
+      "installs": 12354,
+      "rank": 72
+    },
+    {
+      "id": "notebooklm-py",
+      "name": "notebooklm-py",
+      "domain": "code",
+      "desc": "A Comprehensive Google Gemini Notebook Skill & Unofficial Python API. Full programmatic access to NotebookLM's features—including capabiliti",
+      "license": "MIT",
+      "version": "2026-11-15",
+      "author": "teng-lin",
+      "repo": "teng-lin/notebooklm-py",
+      "repoUrl": "https://github.com/teng-lin/notebooklm-py",
+      "stars": 20264,
+      "updatedDays": 1,
+      "updated": "昨天",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "\npip install \"notebooklm-py[android,browser]\"\nnotebooklm login --master-token --account you@example.com\nnotebooklm --backend android list --json\n\nuv tool install \"notebooklm-py[browser]\"   # or: pipx install \"notebooklm-py[browser]\"\nnotebooklm login                           # first run auto-downloads Chromium (~170 MB), then Google sign-in\nnotebooklm auth check --test --json        # verify: expect \"status\": \"ok\"\n\npython3 -m venv .venv && source .venv/bin/activate   # Windows: .venv\\Scripts\\activate\npip install \"notebooklm-py[browser]\"\n\nuv add notebooklm-py                    # or, inside a virtualenv: pip install notebooklm-py\n\n# 1. Authenticate (opens browser)\nnotebooklm login\n# Or use Microsoft Edge (for orgs that require Edge for SSO)\n# notebooklm login --browser msedge\n# Or reuse cookies from an already-logged-in browser session\n# notebooklm login --browser-cookies chrome\n# notebooklm login --browser-cookies 'chrome::Profile 1'  # one Chromium profile\n# (combine with --profile to populate a specific profile;\n#  use --account / --all-accounts after auth inspect when several\n#  Google accounts are signed in)\n\n# 2. Create a notebook and add sources\nnotebooklm create \"My Research",
+      "readme": [
+        "pip install \"notebooklm-py[android,browser]\"",
+        "notebooklm login --master-token --account you@example.com",
+        "notebooklm --backend android list --json"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-15",
+          "d": "索引自最近一次提交",
+          "t": "昨天",
+          "cur": true
+        }
+      ],
+      "related": [
+        "skills",
+        "superpowers",
+        "andrej-karpathy"
+      ],
+      "installs": 12158,
       "rank": 73
     },
     {
@@ -3294,8 +3294,8 @@ window.SKILLHUB_DATA = {
       "author": "tanweai",
       "repo": "tanweai/pua",
       "repoUrl": "https://github.com/tanweai/pua",
-      "stars": 19849,
-      "updatedDays": 68,
+      "stars": 19856,
+      "updatedDays": 69,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -3325,7 +3325,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 11909,
+      "installs": 11913,
       "rank": 74
     },
     {
@@ -3338,9 +3338,9 @@ window.SKILLHUB_DATA = {
       "author": "wanshuiyin",
       "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
       "repoUrl": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
-      "stars": 19287,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "stars": 19355,
+      "updatedDays": 3,
+      "updated": "3 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -3360,7 +3360,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-14",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "3 天前",
           "cur": true
         }
       ],
@@ -3369,7 +3369,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 11572,
+      "installs": 11613,
       "rank": 75
     },
     {
@@ -3378,13 +3378,13 @@ window.SKILLHUB_DATA = {
       "domain": "test",
       "desc": "Train agent skills like you train neural networks — with epochs, (mini-)batchsize, learning rates, and validation gates — but without touchi",
       "license": "MIT",
-      "version": "2026-11-10",
+      "version": "2026-11-17",
       "author": "microsoft",
       "repo": "microsoft/SkillOpt",
       "repoUrl": "https://github.com/microsoft/SkillOpt",
-      "stars": 19097,
-      "updatedDays": 5,
-      "updated": "5 天前",
+      "stars": 19114,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -3402,9 +3402,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-10",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "5 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -3413,7 +3413,7 @@ window.SKILLHUB_DATA = {
         "marketing",
         "agents"
       ],
-      "installs": 11458,
+      "installs": 11468,
       "rank": 76
     },
     {
@@ -3426,8 +3426,8 @@ window.SKILLHUB_DATA = {
       "author": "greensock",
       "repo": "greensock/gsap-skills",
       "repoUrl": "https://github.com/greensock/gsap-skills",
-      "stars": 18525,
-      "updatedDays": 109,
+      "stars": 18598,
+      "updatedDays": 110,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -3457,7 +3457,7 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 11115,
+      "installs": 11158,
       "rank": 77
     },
     {
@@ -3470,8 +3470,8 @@ window.SKILLHUB_DATA = {
       "author": "muratcankoylan",
       "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
       "repoUrl": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering",
-      "stars": 18357,
-      "updatedDays": 35,
+      "stars": 18367,
+      "updatedDays": 36,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -3501,8 +3501,52 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 11014,
+      "installs": 11020,
       "rank": 78
+    },
+    {
+      "id": "lemo-opuscar",
+      "name": "lemo-opuscar",
+      "domain": "code",
+      "desc": "99 film styles for your coding agent. Pick one, bring your story, and the agent makes the film, entirely in code.",
+      "license": "UNKNOWN",
+      "version": "2026-11-17",
+      "author": "lemomo-ai",
+      "repo": "lemomo-ai/lemo-opuscar",
+      "repoUrl": "https://github.com/lemomo-ai/lemo-opuscar",
+      "stars": 17524,
+      "updatedDays": 0,
+      "updated": "今天",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "\nMake a film in the Neon Tubes style about the coffee farm my family runs.\n\nclaude plugin marketplace add lemomo-ai/lemo-opuscar\nclaude plugin install lemo-opuscar@lemolab\n\ngit clone https://github.com/lemomo-ai/lemo-opuscar.git\ncd lemo-opuscar\nclaude\n\nclaude plugin marketplace update lemolab && claude plugin update lemo-opuscar@lemolab\n\nclaude plugin uninstall lemo-opuscar@lemolab\n",
+      "readme": [
+        "Make a film in the Neon Tubes style about the coffee farm my family runs.",
+        "claude plugin marketplace add lemomo-ai/lemo-opuscar",
+        "claude plugin install lemo-opuscar@lemolab"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-17",
+          "d": "索引自最近一次提交",
+          "t": "今天",
+          "cur": true
+        }
+      ],
+      "related": [
+        "skills",
+        "superpowers",
+        "andrej-karpathy"
+      ],
+      "installs": 10514,
+      "rank": 79
     },
     {
       "id": "kubesphere",
@@ -3514,8 +3558,8 @@ window.SKILLHUB_DATA = {
       "author": "kubesphere",
       "repo": "kubesphere/kubesphere",
       "repoUrl": "https://github.com/kubesphere/kubesphere",
-      "stars": 17080,
-      "updatedDays": 124,
+      "stars": 17081,
+      "updatedDays": 125,
       "updated": "4 个月前",
       "scan": {
         "state": "pass",
@@ -3544,50 +3588,6 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 10248,
-      "rank": 79
-    },
-    {
-      "id": "lemo-opuscar",
-      "name": "lemo-opuscar",
-      "domain": "code",
-      "desc": "99 film styles for your coding agent. Pick one, bring your story, and the agent makes the film, entirely in code.",
-      "license": "UNKNOWN",
-      "version": "2026-11-12",
-      "author": "lemomo-ai",
-      "repo": "lemomo-ai/lemo-opuscar",
-      "repoUrl": "https://github.com/lemomo-ai/lemo-opuscar",
-      "stars": 17020,
-      "updatedDays": 3,
-      "updated": "3 天前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "\nMake a film in the Neon Tubes style about the coffee farm my family runs.\n\nclaude plugin marketplace add lemomo-ai/lemo-opuscar\nclaude plugin install lemo-opuscar@lemolab\n\ngit clone https://github.com/lemomo-ai/lemo-opuscar.git\ncd lemo-opuscar\nclaude\n\nclaude plugin marketplace update lemolab && claude plugin update lemo-opuscar@lemolab\n\nclaude plugin uninstall lemo-opuscar@lemolab\n",
-      "readme": [
-        "Make a film in the Neon Tubes style about the coffee farm my family runs.",
-        "claude plugin marketplace add lemomo-ai/lemo-opuscar",
-        "claude plugin install lemo-opuscar@lemolab"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-12",
-          "d": "索引自最近一次提交",
-          "t": "3 天前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "skills",
-        "superpowers",
-        "andrej-karpathy"
-      ],
-      "installs": 10212,
       "rank": 80
     },
     {
@@ -3600,9 +3600,9 @@ window.SKILLHUB_DATA = {
       "author": "dreammis",
       "repo": "dreammis/social-auto-upload",
       "repoUrl": "https://github.com/dreammis/social-auto-upload",
-      "stars": 16594,
-      "updatedDays": 24,
-      "updated": "24 天前",
+      "stars": 16623,
+      "updatedDays": 25,
+      "updated": "25 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -3622,7 +3622,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-22",
           "d": "索引自最近一次提交",
-          "t": "24 天前",
+          "t": "25 天前",
           "cur": true
         }
       ],
@@ -3631,7 +3631,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 9956,
+      "installs": 9973,
       "rank": 81
     },
     {
@@ -3644,9 +3644,9 @@ window.SKILLHUB_DATA = {
       "author": "AgriciDaniel",
       "repo": "AgriciDaniel/claude-obsidian",
       "repoUrl": "https://github.com/AgriciDaniel/claude-obsidian",
-      "stars": 16530,
-      "updatedDays": 21,
-      "updated": "21 天前",
+      "stars": 16559,
+      "updatedDays": 22,
+      "updated": "22 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -3666,7 +3666,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-25",
           "d": "索引自最近一次提交",
-          "t": "21 天前",
+          "t": "22 天前",
           "cur": true
         }
       ],
@@ -3675,7 +3675,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 9918,
+      "installs": 9935,
       "rank": 82
     },
     {
@@ -3688,9 +3688,9 @@ window.SKILLHUB_DATA = {
       "author": "wasp-lang",
       "repo": "wasp-lang/open-saas",
       "repoUrl": "https://github.com/wasp-lang/open-saas",
-      "stars": 16325,
-      "updatedDays": 4,
-      "updated": "4 天前",
+      "stars": 16331,
+      "updatedDays": 5,
+      "updated": "5 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -3710,7 +3710,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-11",
           "d": "索引自最近一次提交",
-          "t": "4 天前",
+          "t": "5 天前",
           "cur": true
         }
       ],
@@ -3719,7 +3719,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 9795,
+      "installs": 9798,
       "rank": 83
     },
     {
@@ -3732,9 +3732,9 @@ window.SKILLHUB_DATA = {
       "author": "alibaba",
       "repo": "alibaba/zvec",
       "repoUrl": "https://github.com/alibaba/zvec",
-      "stars": 16249,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 16257,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -3754,7 +3754,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -3763,7 +3763,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 9749,
+      "installs": 9754,
       "rank": 84
     },
     {
@@ -3776,9 +3776,9 @@ window.SKILLHUB_DATA = {
       "author": "nidhinjs",
       "repo": "nidhinjs/prompt-master",
       "repoUrl": "https://github.com/nidhinjs/prompt-master",
-      "stars": 16041,
-      "updatedDays": 24,
-      "updated": "24 天前",
+      "stars": 16083,
+      "updatedDays": 25,
+      "updated": "25 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -3798,7 +3798,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-22",
           "d": "索引自最近一次提交",
-          "t": "24 天前",
+          "t": "25 天前",
           "cur": true
         }
       ],
@@ -3807,7 +3807,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 9624,
+      "installs": 9649,
       "rank": 85
     },
     {
@@ -3820,8 +3820,8 @@ window.SKILLHUB_DATA = {
       "author": "travisvn",
       "repo": "travisvn/awesome-claude-skills",
       "repoUrl": "https://github.com/travisvn/awesome-claude-skills",
-      "stars": 15836,
-      "updatedDays": 201,
+      "stars": 15852,
+      "updatedDays": 202,
       "updated": "6 个月前",
       "scan": {
         "state": "pass",
@@ -3851,7 +3851,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 9501,
+      "installs": 9511,
       "rank": 86
     },
     {
@@ -3860,13 +3860,13 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "Eigent is the open source Cowork desktop application, empowering you to build, manage, and deploy a custom AI workforce that can turn your m",
       "license": "Apache-2.0",
-      "version": "2026-11-13",
+      "version": "2026-11-17",
       "author": "eigent-ai",
       "repo": "eigent-ai/eigent",
       "repoUrl": "https://github.com/eigent-ai/eigent",
-      "stars": 15830,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "stars": 15836,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -3882,9 +3882,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-13",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -3893,7 +3893,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 9498,
+      "installs": 9501,
       "rank": 87
     },
     {
@@ -3902,11 +3902,11 @@ window.SKILLHUB_DATA = {
       "domain": "design",
       "desc": "cc-haha 是一个桌面端 Claude Code 工作台：多会话与全局搜索、分支 / Worktree 启动、Diff 审阅、内置浏览器预览、图形化权限审批、模型自选（Claude / ChatGPT / Grok / 预设 / 本地端点）、图片生成、MCP 与 SubAge",
       "license": "UNKNOWN",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "NanmiCoder",
       "repo": "NanmiCoder/cc-haha",
       "repoUrl": "https://github.com/NanmiCoder/cc-haha",
-      "stars": 15463,
+      "stars": 15475,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -3924,7 +3924,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -3935,7 +3935,7 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 9277,
+      "installs": 9285,
       "rank": 88
     },
     {
@@ -3948,7 +3948,7 @@ window.SKILLHUB_DATA = {
       "author": "yusufkaraaslan",
       "repo": "yusufkaraaslan/Skill_Seekers",
       "repoUrl": "https://github.com/yusufkaraaslan/Skill_Seekers",
-      "stars": 15326,
+      "stars": 15328,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -3979,7 +3979,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 9195,
+      "installs": 9196,
       "rank": 89
     },
     {
@@ -3993,8 +3993,8 @@ window.SKILLHUB_DATA = {
       "repo": "NevaMind-AI/memU",
       "repoUrl": "https://github.com/NevaMind-AI/memU",
       "stars": 14625,
-      "updatedDays": 0,
-      "updated": "今天",
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -4014,7 +4014,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -4036,8 +4036,8 @@ window.SKILLHUB_DATA = {
       "author": "Orchestra-Research",
       "repo": "Orchestra-Research/AI-Research-SKILLs",
       "repoUrl": "https://github.com/Orchestra-Research/AI-Research-SKILLs",
-      "stars": 14585,
-      "updatedDays": 36,
+      "stars": 14614,
+      "updatedDays": 37,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -4067,7 +4067,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 8751,
+      "installs": 8768,
       "rank": 91
     },
     {
@@ -4076,13 +4076,13 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "A Minimal, Self-Evolving Autonomous Agent Framework",
       "license": "MIT",
-      "version": "2026-11-06",
+      "version": "2026-11-17",
       "author": "lsdefine",
       "repo": "lsdefine/GenericAgent",
       "repoUrl": "https://github.com/lsdefine/GenericAgent",
-      "stars": 14427,
-      "updatedDays": 10,
-      "updated": "10 天前",
+      "stars": 14431,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -4100,9 +4100,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-06",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "10 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -4111,7 +4111,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 8656,
+      "installs": 8658,
       "rank": 92
     },
     {
@@ -4120,11 +4120,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "The open-source AI workspace & Skills for creators",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "krillinai",
       "repo": "krillinai/OpenCreator",
       "repoUrl": "https://github.com/krillinai/OpenCreator",
-      "stars": 14376,
+      "stars": 14397,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -4144,7 +4144,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -4155,7 +4155,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 8625,
+      "installs": 8638,
       "rank": 93
     },
     {
@@ -4168,8 +4168,8 @@ window.SKILLHUB_DATA = {
       "author": "kangarooking",
       "repo": "kangarooking/cangjie-skill",
       "repoUrl": "https://github.com/kangarooking/cangjie-skill",
-      "stars": 12906,
-      "updatedDays": 45,
+      "stars": 12937,
+      "updatedDays": 46,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -4199,7 +4199,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 7743,
+      "installs": 7762,
       "rank": 94
     },
     {
@@ -4212,9 +4212,9 @@ window.SKILLHUB_DATA = {
       "author": "tw93",
       "repo": "tw93/Kami",
       "repoUrl": "https://github.com/tw93/Kami",
-      "stars": 12559,
-      "updatedDays": 6,
-      "updated": "6 天前",
+      "stars": 12563,
+      "updatedDays": 7,
+      "updated": "7 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -4234,7 +4234,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-10",
           "d": "索引自最近一次提交",
-          "t": "6 天前",
+          "t": "7 天前",
           "cur": true
         }
       ],
@@ -4243,7 +4243,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 7535,
+      "installs": 7537,
       "rank": 95
     },
     {
@@ -4252,11 +4252,11 @@ window.SKILLHUB_DATA = {
       "domain": "doc",
       "desc": "The world's first full-featured open-source AI Office suite.",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "genspark-ai",
       "repo": "genspark-ai/genoffice",
       "repoUrl": "https://github.com/genspark-ai/genoffice",
-      "stars": 12429,
+      "stars": 12486,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -4276,7 +4276,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -4287,7 +4287,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 7457,
+      "installs": 7491,
       "rank": 96
     },
     {
@@ -4296,13 +4296,13 @@ window.SKILLHUB_DATA = {
       "domain": "ops",
       "desc": "MemOS 2.0 Stardust（星尘）",
       "license": "Apache-2.0",
-      "version": "2026-11-11",
+      "version": "2026-11-17",
       "author": "MemTensor",
       "repo": "MemTensor/MemOS",
       "repoUrl": "https://github.com/MemTensor/MemOS",
-      "stars": 12415,
-      "updatedDays": 5,
-      "updated": "5 天前",
+      "stars": 12428,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -4320,9 +4320,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-11",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "5 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -4331,7 +4331,7 @@ window.SKILLHUB_DATA = {
         "security-audit",
         "cowagent"
       ],
-      "installs": 7449,
+      "installs": 7456,
       "rank": 97
     },
     {
@@ -4340,11 +4340,11 @@ window.SKILLHUB_DATA = {
       "domain": "data",
       "desc": "GEO-first, SEO-supported. Optimize websites for AI-powered search engines",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "zubair-trabzada",
       "repo": "zubair-trabzada/geo-seo-claude",
       "repoUrl": "https://github.com/zubair-trabzada/geo-seo-claude",
-      "stars": 11710,
+      "stars": 11731,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -4364,7 +4364,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -4375,7 +4375,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 7026,
+      "installs": 7038,
       "rank": 98
     },
     {
@@ -4384,13 +4384,13 @@ window.SKILLHUB_DATA = {
       "domain": "data",
       "desc": "An open-source runtime for colonies of AI agents that do real business work.",
       "license": "Apache-2.0",
-      "version": "2026-11-08",
+      "version": "2026-11-17",
       "author": "aden-hive",
       "repo": "aden-hive/hive",
       "repoUrl": "https://github.com/aden-hive/hive",
-      "stars": 11162,
-      "updatedDays": 8,
-      "updated": "8 天前",
+      "stars": 11165,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -4408,9 +4408,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-08",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "8 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -4419,7 +4419,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 6697,
+      "installs": 6699,
       "rank": 99
     },
     {
@@ -4432,9 +4432,9 @@ window.SKILLHUB_DATA = {
       "author": "tigerless-labs",
       "repo": "tigerless-labs/autoharness",
       "repoUrl": "https://github.com/tigerless-labs/autoharness",
-      "stars": 11135,
-      "updatedDays": 4,
-      "updated": "4 天前",
+      "stars": 11163,
+      "updatedDays": 5,
+      "updated": "5 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -4454,7 +4454,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-12",
           "d": "索引自最近一次提交",
-          "t": "4 天前",
+          "t": "5 天前",
           "cur": true
         }
       ],
@@ -4463,7 +4463,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 6681,
+      "installs": 6697,
       "rank": 100
     },
     {
@@ -4476,9 +4476,9 @@ window.SKILLHUB_DATA = {
       "author": "SnailSploit",
       "repo": "SnailSploit/Claude-Red",
       "repoUrl": "https://github.com/SnailSploit/Claude-Red",
-      "stars": 11076,
-      "updatedDays": 4,
-      "updated": "4 天前",
+      "stars": 11163,
+      "updatedDays": 5,
+      "updated": "5 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -4498,7 +4498,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-11",
           "d": "索引自最近一次提交",
-          "t": "4 天前",
+          "t": "5 天前",
           "cur": true
         }
       ],
@@ -4507,7 +4507,7 @@ window.SKILLHUB_DATA = {
         "security-audit",
         "cowagent"
       ],
-      "installs": 6645,
+      "installs": 6697,
       "rank": 101
     },
     {
@@ -4520,9 +4520,9 @@ window.SKILLHUB_DATA = {
       "author": "AgriciDaniel",
       "repo": "AgriciDaniel/claude-ads",
       "repoUrl": "https://github.com/AgriciDaniel/claude-ads",
-      "stars": 11071,
-      "updatedDays": 14,
-      "updated": "14 天前",
+      "stars": 11107,
+      "updatedDays": 15,
+      "updated": "15 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -4542,7 +4542,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-01",
           "d": "索引自最近一次提交",
-          "t": "14 天前",
+          "t": "15 天前",
           "cur": true
         }
       ],
@@ -4551,7 +4551,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 6642,
+      "installs": 6664,
       "rank": 102
     },
     {
@@ -4564,9 +4564,9 @@ window.SKILLHUB_DATA = {
       "author": "Agents365-ai",
       "repo": "Agents365-ai/drawio-skill",
       "repoUrl": "https://github.com/Agents365-ai/drawio-skill",
-      "stars": 10791,
-      "updatedDays": 6,
-      "updated": "6 天前",
+      "stars": 10812,
+      "updatedDays": 7,
+      "updated": "7 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -4586,7 +4586,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-10",
           "d": "索引自最近一次提交",
-          "t": "6 天前",
+          "t": "7 天前",
           "cur": true
         }
       ],
@@ -4595,7 +4595,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 6474,
+      "installs": 6487,
       "rank": 103
     },
     {
@@ -4608,8 +4608,8 @@ window.SKILLHUB_DATA = {
       "author": "alchaincyf",
       "repo": "alchaincyf/zhangxuefeng-skill",
       "repoUrl": "https://github.com/alchaincyf/zhangxuefeng-skill",
-      "stars": 10785,
-      "updatedDays": 34,
+      "stars": 10790,
+      "updatedDays": 35,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -4639,7 +4639,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 6471,
+      "installs": 6474,
       "rank": 104
     },
     {
@@ -4652,8 +4652,8 @@ window.SKILLHUB_DATA = {
       "author": "ykdojo",
       "repo": "ykdojo/claude-code-tips",
       "repoUrl": "https://github.com/ykdojo/claude-code-tips",
-      "stars": 10345,
-      "updatedDays": 52,
+      "stars": 10351,
+      "updatedDays": 53,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -4683,7 +4683,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 6207,
+      "installs": 6210,
       "rank": 105
     },
     {
@@ -4696,9 +4696,9 @@ window.SKILLHUB_DATA = {
       "author": "Ryze-AI-Adgent",
       "repo": "Ryze-AI-Adgent/open-seo-mcp-skills",
       "repoUrl": "https://github.com/Ryze-AI-Adgent/open-seo-mcp-skills",
-      "stars": 10102,
-      "updatedDays": 20,
-      "updated": "20 天前",
+      "stars": 10340,
+      "updatedDays": 21,
+      "updated": "21 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -4718,7 +4718,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-27",
           "d": "索引自最近一次提交",
-          "t": "20 天前",
+          "t": "21 天前",
           "cur": true
         }
       ],
@@ -4727,7 +4727,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 6061,
+      "installs": 6204,
       "rank": 106
     },
     {
@@ -4740,8 +4740,8 @@ window.SKILLHUB_DATA = {
       "author": "diet103",
       "repo": "diet103/claude-code-infrastructure-showcase",
       "repoUrl": "https://github.com/diet103/claude-code-infrastructure-showcase",
-      "stars": 10058,
-      "updatedDays": 125,
+      "stars": 10057,
+      "updatedDays": 126,
       "updated": "4 个月前",
       "scan": {
         "state": "pass",
@@ -4775,94 +4775,6 @@ window.SKILLHUB_DATA = {
       "rank": 107
     },
     {
-      "id": "universal-modder",
-      "name": "universal-modder",
-      "domain": "design",
-      "desc": "Skills, tools and a shared knowledge base that let any AI coding agent mod almost any PC game you own.",
-      "license": "MIT",
-      "version": "2026-11-16",
-      "author": "rehan-remade",
-      "repo": "rehan-remade/universal-modder",
-      "repoUrl": "https://github.com/rehan-remade/universal-modder",
-      "stars": 9723,
-      "updatedDays": 0,
-      "updated": "今天",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "[![made with universal-modder](https://raw.githubusercontent.com/rehan-remade/universal-modder/main/docs/media/made-with-dark.svg)](https://github.com/rehan-remade/universal-modder)\n\nuv tool install git+https://github.com/rehan-remade/universal-modder     # or: pipx install git+...\n\num fal key set                                                   # hidden prompt\nexport FAL_KEY=\"$(secret-tool lookup service fal.ai key api)\"    # Linux: before starting the agent\n\num kb search \"grand theft auto\"                 # before you start: prior art (works outside the repo too)\num kb new --game \"Hades II\" --title \"A new boon god\" --from-scan hades --agent \"Codex (gpt-6)\"\num kb check knowledge/games/hades-ii/a-new-boon-god.md\num kb pr knowledge/games/hades-ii/a-new-boon-god.md --yes    # after your human says OK: branch, push, PR\n\n[![made with universal-modder](https://raw.githubusercontent.com/rehan-remade/universal-modder/main/docs/media/made-with-dark.svg)](https://github.com/rehan-remade/universal-modder)\n",
-      "readme": [
-        "](https://github.com/rehan-remade/universal-modder)",
-        "uv tool install git+https://github.com/rehan-remade/universal-modder or: pipx install git+...",
-        "um fal key set hidden prompt"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-16",
-          "d": "索引自最近一次提交",
-          "t": "今天",
-          "cur": true
-        }
-      ],
-      "related": [
-        "ui-ux-pro-max",
-        "career-ops",
-        "cherry-studio"
-      ],
-      "installs": 5833,
-      "rank": 108
-    },
-    {
-      "id": "skill",
-      "name": "skill",
-      "domain": "data",
-      "desc": "收录最全、更新最快的AI Agent技能库，涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流等多个领域的精选技能包。",
-      "license": "UNKNOWN",
-      "version": "2026-11-16",
-      "author": "anbeime",
-      "repo": "anbeime/skill",
-      "repoUrl": "https://github.com/anbeime/skill",
-      "stars": 9617,
-      "updatedDays": 0,
-      "updated": "今天",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "\ngit clone https://github.com/anbeime/skill.git\ncd skill\n\n# 立即执行一次更新\npython main.py --once\n\n# 启动定时更新守护进程\npython main.py --daemon\n\n# 显示数据统计\npython main.py --stats\n\n# 导出为 CSV 格式\npython main.py --export skills.csv\n\n# 详细日志模式\npython main.py --once -v\n\n# 查看官方技能列表\ncat data/skills.json\n\n# 查看本地技能列表\ncat data/local_skills.json\n\n# 查看技能文档\nls docs/\n\n# 验证所有技能\npython tools/skill_validator.py validate\n\n# 验证单个技能\npython tools/skill_validator.py validate skills/agent-team\n\n# 读取技能属性\npython tools/skill_validator.py read-properties skills/agent-team --json\n\n# 生成 XML prompt（用于 AI 调用）\npython tools/skill_validator.py to-prompt skills/agent-team\n\n{\n  \"skills\": [\n    {\n      \"name\": \"组织名/技能名\",\n      \"description\": \"技能描述\",\n      \"link\": \"GitHub链接\",\n      \"category\": \"分类名称\",\n      \"source\": \"来源仓库\",\n      \"crawled_at\": \"2026-02-02T17:07:33\"\n    }\n  ],\n  \"total\": 182,\n  \"updated_at\": \"2026-02-02T17:07:33\"\n}\n\n{\n  \"metadata\": {\n    \"total_skills\": 61,\n    \"core_skills\": 25,\n    \"sub_skills\": 30,\n    \"system_builtin\": 6,\n    \"last_updated\": \"2026-02-11T15:30:00\"\n  },\n  \"categories\": {\n    \"内容创作与发布\": {...},\n    \"视频创作\": {...},\n    ...\n  },\n  \"statistics\": {\n    \"by_api_requirement\": {\n      \"必需API\": 15,\n      \"可选API\":",
-      "readme": [
-        "git clone https://github.com/anbeime/skill.git",
-        "python main.py --once",
-        "python main.py --daemon"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-16",
-          "d": "索引自最近一次提交",
-          "t": "今天",
-          "cur": true
-        }
-      ],
-      "related": [
-        "paperclip",
-        "archify",
-        "understand-anything"
-      ],
-      "installs": 5770,
-      "rank": 109
-    },
-    {
       "id": "stitch",
       "name": "stitch",
       "domain": "code",
@@ -4872,8 +4784,8 @@ window.SKILLHUB_DATA = {
       "author": "google-labs-code",
       "repo": "google-labs-code/stitch-skills",
       "repoUrl": "https://github.com/google-labs-code/stitch-skills",
-      "stars": 9551,
-      "updatedDays": 90,
+      "stars": 9913,
+      "updatedDays": 91,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -4903,8 +4815,52 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 5730,
-      "rank": 110
+      "installs": 5947,
+      "rank": 108
+    },
+    {
+      "id": "universal-modder",
+      "name": "universal-modder",
+      "domain": "design",
+      "desc": "Skills, tools and a shared knowledge base that let any AI coding agent mod almost any PC game you own.",
+      "license": "MIT",
+      "version": "2026-11-17",
+      "author": "rehan-remade",
+      "repo": "rehan-remade/universal-modder",
+      "repoUrl": "https://github.com/rehan-remade/universal-modder",
+      "stars": 9737,
+      "updatedDays": 0,
+      "updated": "今天",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "[![made with universal-modder](https://raw.githubusercontent.com/rehan-remade/universal-modder/main/docs/media/made-with-dark.svg)](https://github.com/rehan-remade/universal-modder)\n\nuv tool install git+https://github.com/rehan-remade/universal-modder     # or: pipx install git+...\n\num fal key set                                                   # hidden prompt\nexport FAL_KEY=\"$(secret-tool lookup service fal.ai key api)\"    # Linux: before starting the agent\n\num kb search \"grand theft auto\"                 # before you start: prior art (works outside the repo too)\num kb new --game \"Hades II\" --title \"A new boon god\" --from-scan hades --agent \"Codex (gpt-6)\"\num kb check knowledge/games/hades-ii/a-new-boon-god.md\num kb pr knowledge/games/hades-ii/a-new-boon-god.md --yes    # after your human says OK: branch, push, PR\n\n[![made with universal-modder](https://raw.githubusercontent.com/rehan-remade/universal-modder/main/docs/media/made-with-dark.svg)](https://github.com/rehan-remade/universal-modder)\n",
+      "readme": [
+        "](https://github.com/rehan-remade/universal-modder)",
+        "uv tool install git+https://github.com/rehan-remade/universal-modder or: pipx install git+...",
+        "um fal key set hidden prompt"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-17",
+          "d": "索引自最近一次提交",
+          "t": "今天",
+          "cur": true
+        }
+      ],
+      "related": [
+        "ui-ux-pro-max",
+        "career-ops",
+        "cherry-studio"
+      ],
+      "installs": 5842,
+      "rank": 109
     },
     {
       "id": "replica",
@@ -4916,8 +4872,8 @@ window.SKILLHUB_DATA = {
       "author": "Jakeschincariol",
       "repo": "Jakeschincariol/replica-skill",
       "repoUrl": "https://github.com/Jakeschincariol/replica-skill",
-      "stars": 9491,
-      "updatedDays": 43,
+      "stars": 9653,
+      "updatedDays": 44,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -4947,7 +4903,51 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 5694,
+      "installs": 5791,
+      "rank": 110
+    },
+    {
+      "id": "skill",
+      "name": "skill",
+      "domain": "data",
+      "desc": "收录最全、更新最快的AI Agent技能库，涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流等多个领域的精选技能包。",
+      "license": "UNKNOWN",
+      "version": "2026-11-17",
+      "author": "anbeime",
+      "repo": "anbeime/skill",
+      "repoUrl": "https://github.com/anbeime/skill",
+      "stars": 9645,
+      "updatedDays": 0,
+      "updated": "今天",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "\ngit clone https://github.com/anbeime/skill.git\ncd skill\n\n# 立即执行一次更新\npython main.py --once\n\n# 启动定时更新守护进程\npython main.py --daemon\n\n# 显示数据统计\npython main.py --stats\n\n# 导出为 CSV 格式\npython main.py --export skills.csv\n\n# 详细日志模式\npython main.py --once -v\n\n# 查看官方技能列表\ncat data/skills.json\n\n# 查看本地技能列表\ncat data/local_skills.json\n\n# 查看技能文档\nls docs/\n\n# 验证所有技能\npython tools/skill_validator.py validate\n\n# 验证单个技能\npython tools/skill_validator.py validate skills/agent-team\n\n# 读取技能属性\npython tools/skill_validator.py read-properties skills/agent-team --json\n\n# 生成 XML prompt（用于 AI 调用）\npython tools/skill_validator.py to-prompt skills/agent-team\n\n{\n  \"skills\": [\n    {\n      \"name\": \"组织名/技能名\",\n      \"description\": \"技能描述\",\n      \"link\": \"GitHub链接\",\n      \"category\": \"分类名称\",\n      \"source\": \"来源仓库\",\n      \"crawled_at\": \"2026-02-02T17:07:33\"\n    }\n  ],\n  \"total\": 182,\n  \"updated_at\": \"2026-02-02T17:07:33\"\n}\n\n{\n  \"metadata\": {\n    \"total_skills\": 61,\n    \"core_skills\": 25,\n    \"sub_skills\": 30,\n    \"system_builtin\": 6,\n    \"last_updated\": \"2026-02-11T15:30:00\"\n  },\n  \"categories\": {\n    \"内容创作与发布\": {...},\n    \"视频创作\": {...},\n    ...\n  },\n  \"statistics\": {\n    \"by_api_requirement\": {\n      \"必需API\": 15,\n      \"可选API\":",
+      "readme": [
+        "git clone https://github.com/anbeime/skill.git",
+        "python main.py --once",
+        "python main.py --daemon"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-17",
+          "d": "索引自最近一次提交",
+          "t": "今天",
+          "cur": true
+        }
+      ],
+      "related": [
+        "paperclip",
+        "archify",
+        "understand-anything"
+      ],
+      "installs": 5787,
       "rank": 111
     },
     {
@@ -4960,8 +4960,8 @@ window.SKILLHUB_DATA = {
       "author": "eze-is",
       "repo": "eze-is/web-access",
       "repoUrl": "https://github.com/eze-is/web-access",
-      "stars": 9424,
-      "updatedDays": 32,
+      "stars": 9429,
+      "updatedDays": 34,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -4991,7 +4991,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 5654,
+      "installs": 5657,
       "rank": 112
     },
     {
@@ -5000,11 +5000,11 @@ window.SKILLHUB_DATA = {
       "domain": "design",
       "desc": "The deterministic engineering environment for the AI agent you already use.",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "Gentleman-Programming",
       "repo": "Gentleman-Programming/gentle-ai",
       "repoUrl": "https://github.com/Gentleman-Programming/gentle-ai",
-      "stars": 9242,
+      "stars": 9304,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -5024,7 +5024,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -5035,7 +5035,7 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 5545,
+      "installs": 5582,
       "rank": 113
     },
     {
@@ -5048,9 +5048,9 @@ window.SKILLHUB_DATA = {
       "author": "WenyuChiou",
       "repo": "WenyuChiou/awesome-agentic-ai-zh",
       "repoUrl": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
-      "stars": 8787,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 8800,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5070,7 +5070,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -5079,7 +5079,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 5272,
+      "installs": 5280,
       "rank": 114
     },
     {
@@ -5092,8 +5092,8 @@ window.SKILLHUB_DATA = {
       "author": "SimoneAvogadro",
       "repo": "SimoneAvogadro/android-reverse-engineering-skill",
       "repoUrl": "https://github.com/SimoneAvogadro/android-reverse-engineering-skill",
-      "stars": 8740,
-      "updatedDays": 35,
+      "stars": 8739,
+      "updatedDays": 36,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -5123,7 +5123,7 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 5244,
+      "installs": 5243,
       "rank": 115
     },
     {
@@ -5136,9 +5136,9 @@ window.SKILLHUB_DATA = {
       "author": "zenstory-ai",
       "repo": "zenstory-ai/oh-story-claudecode",
       "repoUrl": "https://github.com/zenstory-ai/oh-story-claudecode",
-      "stars": 8654,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 8689,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5158,7 +5158,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -5167,7 +5167,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 5192,
+      "installs": 5213,
       "rank": 116
     },
     {
@@ -5180,9 +5180,9 @@ window.SKILLHUB_DATA = {
       "author": "jnMetaCode",
       "repo": "jnMetaCode/superpowers-zh",
       "repoUrl": "https://github.com/jnMetaCode/superpowers-zh",
-      "stars": 8547,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 8552,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5202,7 +5202,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -5211,7 +5211,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 5128,
+      "installs": 5131,
       "rank": 117
     },
     {
@@ -5224,8 +5224,8 @@ window.SKILLHUB_DATA = {
       "author": "Master-cai",
       "repo": "Master-cai/Research-Paper-Writing-Skills",
       "repoUrl": "https://github.com/Master-cai/Research-Paper-Writing-Skills",
-      "stars": 8373,
-      "updatedDays": 146,
+      "stars": 8394,
+      "updatedDays": 147,
       "updated": "4 个月前",
       "scan": {
         "state": "pass",
@@ -5255,96 +5255,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 5023,
+      "installs": 5036,
       "rank": 118
-    },
-    {
-      "id": "google-maps-scraper",
-      "name": "google-maps-scraper",
-      "domain": "code",
-      "desc": "Extract Google Maps business leads, emails, reviews, phone numbers, websites, ratings, coordinates, and more with a free open-source CLI, We",
-      "license": "MIT",
-      "version": "2026-11-15",
-      "author": "gosom",
-      "repo": "gosom/google-maps-scraper",
-      "repoUrl": "https://github.com/gosom/google-maps-scraper",
-      "stars": 8128,
-      "updatedDays": 0,
-      "updated": "今天",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 1,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "## Featured Sponsor\n\n<table width=\"100%\">\n  <tr>\n    <td align=\"left\" valign=\"middle\" width=\"67%\">\n      <a href=\"https://www.webshare.io/?referral_code=0q3l81eet8mp\">\n        <img src=\"./img/webshare-featured-banner.png\" alt=\"Webshare — Premium proxies for scraping\" width=\"600\">\n      </a>\n    </td>\n    <td align=\"left\" valign=\"middle\" width=\"33%\">\n      <p>The most affordable premium proxies across 195 countries &amp; 80+ million IPs, plus a FREE plan for new users.</p>\n      <a href=\"https://www.webshare.io/?referral_code=0q3l81eet8mp\">Visit Webshare →</a>\n    </td>\n  </tr>\n</table>\n\n## Sponsored By\n\nThese sponsors help support development and maintenance of Google Maps Scraper.\n\n<table width=\"100%\">\n  <tr>\n    <td align=\"center\" valign=\"middle\" width=\"33%\">\n      <a href=\"https://www.coreclaw.com/?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gosom&amp;utm_term=&amp;utm_id=gosom\">\n        <img src=\"./img/sponsors/coreclaw.svg\" alt=\"Coreclaw\" width=\"250\" height=\"100\"><br>\n        <strong>Coreclaw</strong>\n      </a>\n    </td>\n    <td align=\"center\" valign=\"middle\" width=\"33%\">\n      <a href=\"https://evomi.com?utm_source=github&amp;utm_medium=banner&amp;utm_campaign=",
-      "readme": [
-        "These sponsors help support development and maintenance of Google Maps Scraper.",
-        "npx skills add gosom/google-maps-scraper",
-        "mkdir -p gmaps-output"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-15",
-          "d": "索引自最近一次提交",
-          "t": "今天",
-          "cur": true
-        }
-      ],
-      "related": [
-        "skills",
-        "superpowers",
-        "andrej-karpathy"
-      ],
-      "installs": 4876,
-      "rank": 119
-    },
-    {
-      "id": "guizang-social-card",
-      "name": "guizang-social-card",
-      "domain": "design",
-      "desc": "一个适配 Claude Code / Codex 等 Agent 环境的图文卡片技能,用于从文章、文案、截图、产品笔记、字幕、照片或用户视频生成小红书 / Rednote 图文组图、Live Photo 动态卡与公众号 21:9 + 1:1 封面对。",
-      "license": "AGPL-3.0",
-      "version": "2026-10-30",
-      "author": "op7418",
-      "repo": "op7418/guizang-social-card-skill",
-      "repoUrl": "https://github.com/op7418/guizang-social-card-skill",
-      "stars": 8127,
-      "updatedDays": 16,
-      "updated": "16 天前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "\nnpx skills add https://github.com/op7418/guizang-social-card-skill --skill guizang-social-card-skill\n\n帮我安装 guizang-social-card-skill。请把 https://github.com/op7418/guizang-social-card-skill 克隆到 ~/.claude/skills/guizang-social-card-skill,安装完成后检查 SKILL.md、assets/、references/ 是否存在。\n\n帮我更新 guizang-social-card-skill。请进入 ~/.claude/skills/guizang-social-card-skill 执行 git pull,然后告诉我当前最新 commit。\n\n基于这份产品测评做一套小红书 3:4,标题用电子杂志风。\n帮我把这篇文章做成公众号封面对:21:9 头图 + 1:1 分享卡,视觉保持一致。\n我有 3 张露营照片,帮我做一套全图风格的小红书图文。\n把这段游戏攻略文案做成一套小红书图文,需要从 wallhaven 拿点游戏原画。\n我有一段咖啡视频,帮我做成小红书 5 秒 Live Photo 卡片,文字压在安静区域。\n把这三个游戏片段做成三连 Live Photo 拼图,用 Swiss 风介绍攻略要点。\n\n把这个咖啡视频做成小红书 5 秒 Live Photo,标题只放一组,避开杯子和手。\n这四段旅行视频素材质量很好,帮我做成四宫格 Live Photo,不加文字。\n这段 2 分钟游戏视频先做 contact sheet,帮我判断适合截哪 5 秒做攻略 Live Photo。\n\nnpx skills add https://github.com/op7418/guizang-social-card-skill --skill guizang-social-card-skill\n\ngit clone https://github.com/op7418/guizang-social-card-skill.git ~/.claude/skills/guizang-social-card-skill\n\nnode validate-social-deck.mjs path/to/task-dir\n",
-      "readme": [
-        "npx skills add https://github.com/op7418/guizang-social-card-skill --skill guizang-social-card-skill",
-        "帮我安装 guizang-social-card-skill。请把 https://github.com/op7418/guizang-social-card-skill 克隆到 ~/.claude/skills/guizang-social-card-skill,安装完成后检查 SKILL.md、assets/、references/ 是否存在。",
-        "帮我更新 guizang-social-card-skill。请进入 ~/.claude/skills/guizang-social-card-skill 执行 git pull,然后告诉我当前最新 commit。"
-      ],
-      "versions": [
-        {
-          "v": "2026-10-30",
-          "d": "索引自最近一次提交",
-          "t": "16 天前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "ui-ux-pro-max",
-        "career-ops",
-        "cherry-studio"
-      ],
-      "installs": 4876,
-      "rank": 120
     },
     {
       "id": "day-trader",
@@ -5356,9 +5268,9 @@ window.SKILLHUB_DATA = {
       "author": "Jakeschincariol",
       "repo": "Jakeschincariol/day-trader-skill",
       "repoUrl": "https://github.com/Jakeschincariol/day-trader-skill",
-      "stars": 8078,
-      "updatedDays": 26,
-      "updated": "26 天前",
+      "stars": 8289,
+      "updatedDays": 27,
+      "updated": "27 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5378,7 +5290,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-20",
           "d": "索引自最近一次提交",
-          "t": "26 天前",
+          "t": "27 天前",
           "cur": true
         }
       ],
@@ -5387,7 +5299,95 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 4846,
+      "installs": 4973,
+      "rank": 119
+    },
+    {
+      "id": "google-maps-scraper",
+      "name": "google-maps-scraper",
+      "domain": "code",
+      "desc": "Extract Google Maps business leads, emails, reviews, phone numbers, websites, ratings, coordinates, and more with a free open-source CLI, We",
+      "license": "MIT",
+      "version": "2026-11-15",
+      "author": "gosom",
+      "repo": "gosom/google-maps-scraper",
+      "repoUrl": "https://github.com/gosom/google-maps-scraper",
+      "stars": 8173,
+      "updatedDays": 1,
+      "updated": "昨天",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 1,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "## Featured Sponsor\n\n<table width=\"100%\">\n  <tr>\n    <td align=\"left\" valign=\"middle\" width=\"67%\">\n      <a href=\"https://www.webshare.io/?referral_code=0q3l81eet8mp\">\n        <img src=\"./img/webshare-featured-banner.png\" alt=\"Webshare — Premium proxies for scraping\" width=\"600\">\n      </a>\n    </td>\n    <td align=\"left\" valign=\"middle\" width=\"33%\">\n      <p>The most affordable premium proxies across 195 countries &amp; 80+ million IPs, plus a FREE plan for new users.</p>\n      <a href=\"https://www.webshare.io/?referral_code=0q3l81eet8mp\">Visit Webshare →</a>\n    </td>\n  </tr>\n</table>\n\n## Sponsored By\n\nThese sponsors help support development and maintenance of Google Maps Scraper.\n\n<table width=\"100%\">\n  <tr>\n    <td align=\"center\" valign=\"middle\" width=\"33%\">\n      <a href=\"https://www.coreclaw.com/?utm_source=github&amp;utm_medium=referral&amp;utm_campaign=gosom&amp;utm_term=&amp;utm_id=gosom\">\n        <img src=\"./img/sponsors/coreclaw.svg\" alt=\"Coreclaw\" width=\"250\" height=\"100\"><br>\n        <strong>Coreclaw</strong>\n      </a>\n    </td>\n    <td align=\"center\" valign=\"middle\" width=\"33%\">\n      <a href=\"https://evomi.com?utm_source=github&amp;utm_medium=banner&amp;utm_campaign=",
+      "readme": [
+        "These sponsors help support development and maintenance of Google Maps Scraper.",
+        "npx skills add gosom/google-maps-scraper",
+        "mkdir -p gmaps-output"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-15",
+          "d": "索引自最近一次提交",
+          "t": "昨天",
+          "cur": true
+        }
+      ],
+      "related": [
+        "skills",
+        "superpowers",
+        "andrej-karpathy"
+      ],
+      "installs": 4903,
+      "rank": 120
+    },
+    {
+      "id": "guizang-social-card",
+      "name": "guizang-social-card",
+      "domain": "design",
+      "desc": "一个适配 Claude Code / Codex 等 Agent 环境的图文卡片技能,用于从文章、文案、截图、产品笔记、字幕、照片或用户视频生成小红书 / Rednote 图文组图、Live Photo 动态卡与公众号 21:9 + 1:1 封面对。",
+      "license": "AGPL-3.0",
+      "version": "2026-10-30",
+      "author": "op7418",
+      "repo": "op7418/guizang-social-card-skill",
+      "repoUrl": "https://github.com/op7418/guizang-social-card-skill",
+      "stars": 8143,
+      "updatedDays": 17,
+      "updated": "17 天前",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "\nnpx skills add https://github.com/op7418/guizang-social-card-skill --skill guizang-social-card-skill\n\n帮我安装 guizang-social-card-skill。请把 https://github.com/op7418/guizang-social-card-skill 克隆到 ~/.claude/skills/guizang-social-card-skill,安装完成后检查 SKILL.md、assets/、references/ 是否存在。\n\n帮我更新 guizang-social-card-skill。请进入 ~/.claude/skills/guizang-social-card-skill 执行 git pull,然后告诉我当前最新 commit。\n\n基于这份产品测评做一套小红书 3:4,标题用电子杂志风。\n帮我把这篇文章做成公众号封面对:21:9 头图 + 1:1 分享卡,视觉保持一致。\n我有 3 张露营照片,帮我做一套全图风格的小红书图文。\n把这段游戏攻略文案做成一套小红书图文,需要从 wallhaven 拿点游戏原画。\n我有一段咖啡视频,帮我做成小红书 5 秒 Live Photo 卡片,文字压在安静区域。\n把这三个游戏片段做成三连 Live Photo 拼图,用 Swiss 风介绍攻略要点。\n\n把这个咖啡视频做成小红书 5 秒 Live Photo,标题只放一组,避开杯子和手。\n这四段旅行视频素材质量很好,帮我做成四宫格 Live Photo,不加文字。\n这段 2 分钟游戏视频先做 contact sheet,帮我判断适合截哪 5 秒做攻略 Live Photo。\n\nnpx skills add https://github.com/op7418/guizang-social-card-skill --skill guizang-social-card-skill\n\ngit clone https://github.com/op7418/guizang-social-card-skill.git ~/.claude/skills/guizang-social-card-skill\n\nnode validate-social-deck.mjs path/to/task-dir\n",
+      "readme": [
+        "npx skills add https://github.com/op7418/guizang-social-card-skill --skill guizang-social-card-skill",
+        "帮我安装 guizang-social-card-skill。请把 https://github.com/op7418/guizang-social-card-skill 克隆到 ~/.claude/skills/guizang-social-card-skill,安装完成后检查 SKILL.md、assets/、references/ 是否存在。",
+        "帮我更新 guizang-social-card-skill。请进入 ~/.claude/skills/guizang-social-card-skill 执行 git pull,然后告诉我当前最新 commit。"
+      ],
+      "versions": [
+        {
+          "v": "2026-10-30",
+          "d": "索引自最近一次提交",
+          "t": "17 天前",
+          "cur": true
+        }
+      ],
+      "related": [
+        "ui-ux-pro-max",
+        "career-ops",
+        "cherry-studio"
+      ],
+      "installs": 4885,
       "rank": 121
     },
     {
@@ -5400,9 +5400,9 @@ window.SKILLHUB_DATA = {
       "author": "deanpeters",
       "repo": "deanpeters/Product-Manager-Skills",
       "repoUrl": "https://github.com/deanpeters/Product-Manager-Skills",
-      "stars": 8042,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "stars": 8052,
+      "updatedDays": 3,
+      "updated": "3 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5422,7 +5422,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-13",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "3 天前",
           "cur": true
         }
       ],
@@ -5431,8 +5431,52 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 4825,
+      "installs": 4831,
       "rank": 122
+    },
+    {
+      "id": "claude-bughunter",
+      "name": "Claude-BugHunter",
+      "domain": "ops",
+      "desc": "Built by — Bug Hunting & GenAI Security Research.",
+      "license": "MIT",
+      "version": "2026-11-16",
+      "author": "elementalsouls",
+      "repo": "elementalsouls/Claude-BugHunter",
+      "repoUrl": "https://github.com/elementalsouls/Claude-BugHunter",
+      "stars": 8051,
+      "updatedDays": 0,
+      "updated": "今天",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "## What is this?\n\n`claude-bughunter` is a drop-in skill bundle for the [Claude Code skills system](https://docs.claude.com/en/docs/claude-code/skills). Install once and Claude Code stops being a chatbot and starts behaving like a senior bug-hunting researcher or red-team operator: it knows the techniques, the chain templates, the VRT mappings, the platform CVE chains, and the hygiene — and it stays in scope.\n\nFour layers stack:\n\n- **Think** — `bb-methodology` + `redteam-mindset`: the 5-phase non-linear workflow, critical-thinking framework, and red-team operator discipline.\n- **Hunt webapps** — 58 `hunt-*` skills curated from 681 disclosed HackerOne reports: per-class detection patterns, payloads, bypass tables, and chain templates.\n- **Hit the perimeter** — enterprise platform chains (M365/Entra, Okta, vCenter, SSL-VPN appliances, SharePoint, cloud IAM): current 2024–2026 CVE chains + post-credential escalation.\n- **Ship it** — `triage-validation` + reporting + `evidence-hygiene`: the 7-Question Gate, VRT-aware severity, OOS rebuttals, PII redaction, and red-team deliverables.\n\nAll triggered automatically by topic — describe what you're testing in plain English and the relevant sk",
+      "readme": [
+        "claude-bughunter is a drop-in skill bundle for the . Install once and Claude Code stops being a chatbot and starts behaving like a senior bug-hunting researcher or red-team operator: it knows the tech",
+        "Four layers stack:",
+        "- Think — bb-methodology + redteam-mindset: the 5-phase non-linear workflow, critical-thinking framework, and red-team operator discipline."
+      ],
+      "versions": [
+        {
+          "v": "2026-11-16",
+          "d": "索引自最近一次提交",
+          "t": "今天",
+          "cur": true
+        }
+      ],
+      "related": [
+        "code-reviewer",
+        "security-audit",
+        "cowagent"
+      ],
+      "installs": 4830,
+      "rank": 123
     },
     {
       "id": "notebooklm",
@@ -5444,8 +5488,8 @@ window.SKILLHUB_DATA = {
       "author": "PleasePrompto",
       "repo": "PleasePrompto/notebooklm-skill",
       "repoUrl": "https://github.com/PleasePrompto/notebooklm-skill",
-      "stars": 7794,
-      "updatedDays": 67,
+      "stars": 7795,
+      "updatedDays": 68,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -5475,8 +5519,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 4676,
-      "rank": 123
+      "installs": 4677,
+      "rank": 124
     },
     {
       "id": "waza",
@@ -5488,9 +5532,9 @@ window.SKILLHUB_DATA = {
       "author": "tw93",
       "repo": "tw93/Waza",
       "repoUrl": "https://github.com/tw93/Waza",
-      "stars": 7599,
-      "updatedDays": 5,
-      "updated": "5 天前",
+      "stars": 7603,
+      "updatedDays": 6,
+      "updated": "6 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5510,7 +5554,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-11",
           "d": "索引自最近一次提交",
-          "t": "5 天前",
+          "t": "6 天前",
           "cur": true
         }
       ],
@@ -5519,51 +5563,7 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 4559,
-      "rank": 124
-    },
-    {
-      "id": "refly",
-      "name": "refly",
-      "domain": "ops",
-      "desc": "Skills are not prompts. They are durable infrastructure.",
-      "license": "UNKNOWN",
-      "version": "2026-11-02",
-      "author": "refly-ai",
-      "repo": "refly-ai/refly",
-      "repoUrl": "https://github.com/refly-ai/refly",
-      "stars": 7556,
-      "updatedDays": 14,
-      "updated": "14 天前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 1,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "## Refly Skills\n\nRefly Skills is the official executable skill registry for Refly.\n\n- ⚡ **Run instantly**: Execute skills in Refly with one click\n- 🧩 **Reusable infrastructure**: Versioned skills, not one-off prompts\n- 🔌 **Export anywhere**: Ship skills to Claude Code or deploy as APIs\n- 🌍 **Community-powered**: Import, fork, and publish your own skills\n\nExplore the registry: <a href=\"https://github.com/refly-ai/refly-skills\"><u>Refly Skills Repo</u></a> \n\nSkills are deterministic agent capabilities—reusable across workflows, teams, and runtimes.\n\n**TL;DR**: Refly compiles your enterprise SOPs into executable agent skills. Built in 3 minutes. Shipped anywhere.\n\n1. Add \"Web Search\" node - searches for product information\n2. Add \"LLM\" node - analyzes search results\n3. Add \"Output\" node - formats the report\n4. Connect the nodes\n5. Click \"Save\"\n\ncurl -X POST https://your-refly-instance.com/api/v1/workflows/{WORKFLOW_ID}/execute \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"input\": {\n      \"product_url\": \"https://example.com/product\"\n    }\n  }'\n\n{\n  \"execution_id\": \"exec_abc123\",\n  \"status\": \"running\"\n}\n\ncurl https://your-refly-instan",
-      "readme": [
-        "Refly Skills is the official executable skill registry for Refly.",
-        "- ⚡ Run instantly: Execute skills in Refly with one click",
-        "- 🧩 Reusable infrastructure: Versioned skills, not one-off prompts"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-02",
-          "d": "索引自最近一次提交",
-          "t": "14 天前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "code-reviewer",
-        "security-audit",
-        "cowagent"
-      ],
-      "installs": 4533,
+      "installs": 4561,
       "rank": 125
     },
     {
@@ -5576,9 +5576,9 @@ window.SKILLHUB_DATA = {
       "author": "xingkongliang",
       "repo": "xingkongliang/skills-manager",
       "repoUrl": "https://github.com/xingkongliang/skills-manager",
-      "stars": 7542,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 7567,
+      "updatedDays": 3,
+      "updated": "3 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5598,7 +5598,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-14",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "3 天前",
           "cur": true
         }
       ],
@@ -5607,22 +5607,22 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 4525,
+      "installs": 4540,
       "rank": 126
     },
     {
-      "id": "openpencil",
-      "name": "openpencil",
-      "domain": "code",
-      "desc": "The world's first open-source AI-native vector design tool.",
-      "license": "MIT",
-      "version": "2026-11-16",
-      "author": "ZSeven-W",
-      "repo": "ZSeven-W/openpencil",
-      "repoUrl": "https://github.com/ZSeven-W/openpencil",
-      "stars": 7252,
-      "updatedDays": 0,
-      "updated": "今天",
+      "id": "refly",
+      "name": "refly",
+      "domain": "ops",
+      "desc": "Skills are not prompts. They are durable infrastructure.",
+      "license": "UNKNOWN",
+      "version": "2026-11-02",
+      "author": "refly-ai",
+      "repo": "refly-ai/refly",
+      "repoUrl": "https://github.com/refly-ai/refly",
+      "stars": 7555,
+      "updatedDays": 15,
+      "updated": "15 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5632,26 +5632,26 @@ window.SKILLHUB_DATA = {
         "cred": 0,
         "low": 0
       },
-      "skillmd": "\nbrew tap zseven-w/openpencil\nbrew install --cask openpencil\n\nscoop bucket add openpencil https://github.com/zseven-w/scoop-openpencil\nscoop install openpencil\n\nnix develop\nnix run .                         # launch the desktop app\nnix build .#openpencil            # native web host + CanvasKit web bundle\nnix build .#op-cli                # the `op` CLI\nnix build .#prebuilt              # use the matching upstream desktop archive\nnix build .#prebuilt-cli          # use the matching upstream CLI archive\nnix build .#web-server            # native GL-free web server + web bundle\nnix build .#runtime-prebuilt      # prebuilt desktop + `op` CLI runtime\nnix build .#web-sdk-packages      # npm tarballs for the web SDKs\nnix build .#appimage              # portable desktop AppImage\n\ncurl -fsSL https://raw.githubusercontent.com/ZSeven-W/openpencil/main/scripts/install-op.sh | bash\n\ncurl -fsSL https://raw.githubusercontent.com/ZSeven-W/openpencil/main/scripts/install-op.sh | OP_PRERELEASE=1 bash\n\nirm https://raw.githubusercontent.com/ZSeven-W/openpencil/main/scripts/install-op.ps1 | iex\n\n$env:OP_PRERELEASE = \"1\"; irm https://raw.githubusercontent.com/ZSeven-W/openpencil/main/scripts/install-op",
+      "skillmd": "## Refly Skills\n\nRefly Skills is the official executable skill registry for Refly.\n\n- ⚡ **Run instantly**: Execute skills in Refly with one click\n- 🧩 **Reusable infrastructure**: Versioned skills, not one-off prompts\n- 🔌 **Export anywhere**: Ship skills to Claude Code or deploy as APIs\n- 🌍 **Community-powered**: Import, fork, and publish your own skills\n\nExplore the registry: <a href=\"https://github.com/refly-ai/refly-skills\"><u>Refly Skills Repo</u></a> \n\nSkills are deterministic agent capabilities—reusable across workflows, teams, and runtimes.\n\n**TL;DR**: Refly compiles your enterprise SOPs into executable agent skills. Built in 3 minutes. Shipped anywhere.\n\n1. Add \"Web Search\" node - searches for product information\n2. Add \"LLM\" node - analyzes search results\n3. Add \"Output\" node - formats the report\n4. Connect the nodes\n5. Click \"Save\"\n\ncurl -X POST https://your-refly-instance.com/api/v1/workflows/{WORKFLOW_ID}/execute \\\n  -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"input\": {\n      \"product_url\": \"https://example.com/product\"\n    }\n  }'\n\n{\n  \"execution_id\": \"exec_abc123\",\n  \"status\": \"running\"\n}\n\ncurl https://your-refly-instan",
       "readme": [
-        "brew tap zseven-w/openpencil",
-        "brew install --cask openpencil",
-        "scoop bucket add openpencil https://github.com/zseven-w/scoop-openpencil"
+        "Refly Skills is the official executable skill registry for Refly.",
+        "- ⚡ Run instantly: Execute skills in Refly with one click",
+        "- 🧩 Reusable infrastructure: Versioned skills, not one-off prompts"
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-02",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "15 天前",
           "cur": true
         }
       ],
       "related": [
-        "skills",
-        "superpowers",
-        "andrej-karpathy"
+        "code-reviewer",
+        "security-audit",
+        "cowagent"
       ],
-      "installs": 4351,
+      "installs": 4533,
       "rank": 127
     },
     {
@@ -5664,9 +5664,9 @@ window.SKILLHUB_DATA = {
       "author": "kaankiziltug",
       "repo": "kaankiziltug/logo-design-skill",
       "repoUrl": "https://github.com/kaankiziltug/logo-design-skill",
-      "stars": 7036,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "stars": 7133,
+      "updatedDays": 3,
+      "updated": "3 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5686,7 +5686,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-13",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "3 天前",
           "cur": true
         }
       ],
@@ -5695,7 +5695,7 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 4221,
+      "installs": 4279,
       "rank": 128
     },
     {
@@ -5708,9 +5708,9 @@ window.SKILLHUB_DATA = {
       "author": "alchaincyf",
       "repo": "alchaincyf/huashu-art-motion",
       "repoUrl": "https://github.com/alchaincyf/huashu-art-motion",
-      "stars": 7017,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 7092,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5730,7 +5730,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -5739,52 +5739,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 4210,
+      "installs": 4255,
       "rank": 129
-    },
-    {
-      "id": "claude-bughunter",
-      "name": "Claude-BugHunter",
-      "domain": "ops",
-      "desc": "Built by — Bug Hunting & GenAI Security Research.",
-      "license": "MIT",
-      "version": "2026-11-15",
-      "author": "elementalsouls",
-      "repo": "elementalsouls/Claude-BugHunter",
-      "repoUrl": "https://github.com/elementalsouls/Claude-BugHunter",
-      "stars": 6974,
-      "updatedDays": 0,
-      "updated": "今天",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "## What is this?\n\n`claude-bughunter` is a drop-in skill bundle for the [Claude Code skills system](https://docs.claude.com/en/docs/claude-code/skills). Install once and Claude Code stops being a chatbot and starts behaving like a senior bug-hunting researcher or red-team operator: it knows the techniques, the chain templates, the VRT mappings, the platform CVE chains, and the hygiene — and it stays in scope.\n\nFour layers stack:\n\n- **Think** — `bb-methodology` + `redteam-mindset`: the 5-phase non-linear workflow, critical-thinking framework, and red-team operator discipline.\n- **Hunt webapps** — 58 `hunt-*` skills curated from 681 disclosed HackerOne reports: per-class detection patterns, payloads, bypass tables, and chain templates.\n- **Hit the perimeter** — enterprise platform chains (M365/Entra, Okta, vCenter, SSL-VPN appliances, SharePoint, cloud IAM): current 2024–2026 CVE chains + post-credential escalation.\n- **Ship it** — `triage-validation` + reporting + `evidence-hygiene`: the 7-Question Gate, VRT-aware severity, OOS rebuttals, PII redaction, and red-team deliverables.\n\nAll triggered automatically by topic — describe what you're testing in plain English and the relevant sk",
-      "readme": [
-        "claude-bughunter is a drop-in skill bundle for the . Install once and Claude Code stops being a chatbot and starts behaving like a senior bug-hunting researcher or red-team operator: it knows the tech",
-        "Four layers stack:",
-        "- Think — bb-methodology + redteam-mindset: the 5-phase non-linear workflow, critical-thinking framework, and red-team operator discipline."
-      ],
-      "versions": [
-        {
-          "v": "2026-11-15",
-          "d": "索引自最近一次提交",
-          "t": "今天",
-          "cur": true
-        }
-      ],
-      "related": [
-        "code-reviewer",
-        "security-audit",
-        "cowagent"
-      ],
-      "installs": 4184,
-      "rank": 130
     },
     {
       "id": "darwin",
@@ -5796,9 +5752,9 @@ window.SKILLHUB_DATA = {
       "author": "alchaincyf",
       "repo": "alchaincyf/darwin-skill",
       "repoUrl": "https://github.com/alchaincyf/darwin-skill",
-      "stars": 6941,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 6957,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5816,7 +5772,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-14",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -5825,8 +5781,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 4164,
-      "rank": 131
+      "installs": 4174,
+      "rank": 130
     },
     {
       "id": "social-media-research",
@@ -5838,8 +5794,8 @@ window.SKILLHUB_DATA = {
       "author": "ScrapeCreators",
       "repo": "ScrapeCreators/social-media-research-skills",
       "repoUrl": "https://github.com/ScrapeCreators/social-media-research-skills",
-      "stars": 6551,
-      "updatedDays": 81,
+      "stars": 6625,
+      "updatedDays": 82,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -5869,8 +5825,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 3930,
-      "rank": 132
+      "installs": 3975,
+      "rank": 131
     },
     {
       "id": "answer-me-with-html",
@@ -5878,11 +5834,11 @@ window.SKILLHUB_DATA = {
       "domain": "test",
       "desc": "Explore Zapply's Chrome extension for autofilling job applications, dedicated job board featuring the latest openings, multiple profiles for",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "QingYunA",
       "repo": "QingYunA/answer-me-with-html",
       "repoUrl": "https://github.com/QingYunA/answer-me-with-html",
-      "stars": 6355,
+      "stars": 6447,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -5902,7 +5858,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -5913,8 +5869,8 @@ window.SKILLHUB_DATA = {
         "marketing",
         "agents"
       ],
-      "installs": 3813,
-      "rank": 133
+      "installs": 3868,
+      "rank": 132
     },
     {
       "id": "awesome-aitools",
@@ -5926,9 +5882,9 @@ window.SKILLHUB_DATA = {
       "author": "ikaijua",
       "repo": "ikaijua/Awesome-AITools",
       "repoUrl": "https://github.com/ikaijua/Awesome-AITools",
-      "stars": 6347,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 6352,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5946,7 +5902,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -5955,8 +5911,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 3808,
-      "rank": 134
+      "installs": 3811,
+      "rank": 133
     },
     {
       "id": "linkedin",
@@ -5964,13 +5920,13 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "Claude skills for LinkedIn. 12 Claude Code and Codex skills that write LinkedIn posts, comments, and replies in your voice. They draft conte",
       "license": "MIT",
-      "version": "2026-11-10",
+      "version": "2026-11-17",
       "author": "sergebulaev",
       "repo": "sergebulaev/linkedin-skills",
       "repoUrl": "https://github.com/sergebulaev/linkedin-skills",
-      "stars": 5945,
-      "updatedDays": 5,
-      "updated": "5 天前",
+      "stars": 5977,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -5988,9 +5944,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-10",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "5 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -5999,8 +5955,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 3567,
-      "rank": 135
+      "installs": 3586,
+      "rank": 134
     },
     {
       "id": "appllama",
@@ -6012,8 +5968,8 @@ window.SKILLHUB_DATA = {
       "author": "Appllama",
       "repo": "Appllama/appllama-skills",
       "repoUrl": "https://github.com/Appllama/appllama-skills",
-      "stars": 5210,
-      "updatedDays": 71,
+      "stars": 5223,
+      "updatedDays": 72,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -6043,8 +5999,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 3126,
-      "rank": 136
+      "installs": 3133,
+      "rank": 135
     },
     {
       "id": "pstack-claude",
@@ -6056,9 +6012,9 @@ window.SKILLHUB_DATA = {
       "author": "michael-denyer",
       "repo": "michael-denyer/pstack-claude",
       "repoUrl": "https://github.com/michael-denyer/pstack-claude",
-      "stars": 4371,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "stars": 4429,
+      "updatedDays": 3,
+      "updated": "3 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -6078,7 +6034,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-13",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "3 天前",
           "cur": true
         }
       ],
@@ -6087,8 +6043,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 2622,
-      "rank": 137
+      "installs": 2657,
+      "rank": 136
     },
     {
       "id": "drama",
@@ -6100,9 +6056,9 @@ window.SKILLHUB_DATA = {
       "author": "zenstory-ai",
       "repo": "zenstory-ai/drama-skills",
       "repoUrl": "https://github.com/zenstory-ai/drama-skills",
-      "stars": 4330,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 4390,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -6122,7 +6078,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -6131,8 +6087,8 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 2598,
-      "rank": 138
+      "installs": 2634,
+      "rank": 137
     },
     {
       "id": "pstack",
@@ -6140,11 +6096,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "pstack — standalone mirror",
       "license": "MIT",
-      "version": "2026-11-15",
+      "version": "2026-11-16",
       "author": "backnotprop",
       "repo": "backnotprop/pstack",
       "repoUrl": "https://github.com/backnotprop/pstack",
-      "stars": 4288,
+      "stars": 4374,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -6164,7 +6120,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-15",
+          "v": "2026-11-16",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -6175,8 +6131,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 2572,
-      "rank": 139
+      "installs": 2624,
+      "rank": 138
     },
     {
       "id": "notfair-plugin",
@@ -6188,9 +6144,9 @@ window.SKILLHUB_DATA = {
       "author": "nowork-studio",
       "repo": "nowork-studio/notfair-plugin",
       "repoUrl": "https://github.com/nowork-studio/notfair-plugin",
-      "stars": 4213,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "stars": 4237,
+      "updatedDays": 3,
+      "updated": "3 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -6210,7 +6166,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-13",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "3 天前",
           "cur": true
         }
       ],
@@ -6219,8 +6175,8 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 2527,
-      "rank": 140
+      "installs": 2542,
+      "rank": 139
     },
     {
       "id": "nihaixia",
@@ -6232,9 +6188,9 @@ window.SKILLHUB_DATA = {
       "author": "jangviktor-web",
       "repo": "jangviktor-web/nihaixia",
       "repoUrl": "https://github.com/jangviktor-web/nihaixia",
-      "stars": 4125,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 4137,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -6254,92 +6210,6 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
-          "cur": true
-        }
-      ],
-      "related": [
-        "skills",
-        "superpowers",
-        "andrej-karpathy"
-      ],
-      "installs": 2475,
-      "rank": 141
-    },
-    {
-      "id": "continuous-claude-v3",
-      "name": "Continuous-Claude-v3",
-      "domain": "data",
-      "desc": "Continuous Claude transforms Claude Code into a continuously learning system that maintains context across sessions, orchestrates specialize",
-      "license": "MIT",
-      "version": "2026-01-26",
-      "author": "parcadei",
-      "repo": "parcadei/Continuous-Claude-v3",
-      "repoUrl": "https://github.com/parcadei/Continuous-Claude-v3",
-      "stars": 3950,
-      "updatedDays": 293,
-      "updated": "9 个月前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "## Why Continuous Claude?\n\nClaude Code has a **compaction problem**: when context fills up, the system compacts your conversation, losing nuanced understanding and decisions made during the session.\n\n**Continuous Claude solves this with:**\n\n| Problem | Solution |\n|---------|----------|\n| Context loss on compaction | YAML handoffs - more token-efficient transfer |\n| Starting fresh each session | Memory system recalls + daemon auto-extracts learnings |\n| Reading entire files burns tokens | 5-layer code analysis + semantic index |\n| Complex tasks need coordination | Meta-skills orchestrate agent workflows |\n| Repeating workflows manually | 109 skills with natural language triggers |\n\n**The mantra: Compound, don't compact.** Extract learnings automatically, then start fresh with full context.\n\n### Why \"Continuous\"? Why \"Compounding\"?\n\nThe name is a pun. **Continuous** because Claude maintains state across sessions. **Compounding** because each session makes the system smarter—learnings accumulate like compound interest.\n\n> \"Fix the login bug in auth.py\"\n\n🎯 SKILL ACTIVATION CHECK\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n⚠️ CRITICAL SKILLS (REQUIRED):\n  → create_handoff\n\n📚 RECOMMENDED SK",
-      "readme": [
-        "Claude Code has a compaction problem: when context fills up, the system compacts your conversation, losing nuanced understanding and decisions made during the session.",
-        "Continuous Claude solves this with:",
-        "The mantra: Compound, don't compact. Extract learnings automatically, then start fresh with full context."
-      ],
-      "versions": [
-        {
-          "v": "2026-01-26",
-          "d": "索引自最近一次提交",
-          "t": "9 个月前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "paperclip",
-        "archify",
-        "understand-anything"
-      ],
-      "installs": 2370,
-      "rank": 142
-    },
-    {
-      "id": "one-skill-to-rule-them-all",
-      "name": "one-skill-to-rule-them-all",
-      "domain": "code",
-      "desc": "Why \"One Skill to Rule Them All\"? The slogan doesn't claim this is the best skill. It couldn't be: a meta-skill is useless without the skill",
-      "license": "CC-BY-4.0",
-      "version": "2026-11-15",
-      "author": "rebelytics",
-      "repo": "rebelytics/one-skill-to-rule-them-all",
-      "repoUrl": "https://github.com/rebelytics/one-skill-to-rule-them-all",
-      "stars": 3928,
-      "updatedDays": 1,
-      "updated": "昨天",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 1,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "\n",
-      "readme": [
-        "该仓库未提供可渲染的说明文档，建议查看原文链接。"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-15",
-          "d": "索引自最近一次提交",
           "t": "昨天",
           "cur": true
         }
@@ -6349,8 +6219,52 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 2356,
-      "rank": 143
+      "installs": 2482,
+      "rank": 140
+    },
+    {
+      "id": "blender",
+      "name": "blender",
+      "domain": "doc",
+      "desc": "94 Specialized Skills for Blender Artists.",
+      "license": "MIT",
+      "version": "2026-11-06",
+      "author": "arjun988",
+      "repo": "arjun988/blender-skills",
+      "repoUrl": "https://github.com/arjun988/blender-skills",
+      "stars": 4032,
+      "updatedDays": 11,
+      "updated": "11 天前",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "## Quick Start\n\n> **Marketplace listing is currently under review by Anthropic.**\n> Install directly from GitHub in the meantime.\n\nWorks with **Cursor**, **Claude Code**, **Kiro**, and **Codex** — same skill pack, Blender MCP execution.\n\n**Claude Code**\n```bash\ngit clone https://github.com/arjun988/blender-skills.git\ncp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/\n```\n\n**Cursor (Windows)**\n```powershell\ngit clone https://github.com/arjun988/blender-skills.git\nCopy-Item -Recurse -Force \"blender-skills\\.claude\\skills\\*\" \".cursor\\skills\\\"\n```\n\n**Kiro**\n```bash\n# Copy skill folders into your Kiro skills directory, then restart Kiro\ncp -r blender-skills/.claude/skills/* /path/to/kiro/skills/\n```\n\n**Codex**\n```bash\n# Mount or copy skills into your Codex skills path\ncp -r blender-skills/.claude/skills/* /path/to/codex/skills/\n# or: ln -s /path/to/blender-skills/.claude/skills /path/to/codex/skills/blender-skills\n```\n\nFor all installation methods and first steps, see the **[Quick Start Guide](https://blender-skills.vercel.app/getting-started/)**.\n\n**Full documentation:** [blender-skills.vercel.app](https://blender-skills.vercel.app/)\n\ngit clone https://github.com/",
+      "readme": [
+        "Works with Cursor, Claude Code, Kiro, and Codex — same skill pack, Blender MCP execution.",
+        "Cursor (Windows)",
+        "For all installation methods and first steps, see the ."
+      ],
+      "versions": [
+        {
+          "v": "2026-11-06",
+          "d": "索引自最近一次提交",
+          "t": "11 天前",
+          "cur": true
+        }
+      ],
+      "related": [
+        "rea",
+        "humanizer",
+        "academic-research"
+      ],
+      "installs": 2419,
+      "rank": 141
     },
     {
       "id": "founder",
@@ -6362,8 +6276,8 @@ window.SKILLHUB_DATA = {
       "author": "Jakeschincariol",
       "repo": "Jakeschincariol/founder-skill",
       "repoUrl": "https://github.com/Jakeschincariol/founder-skill",
-      "stars": 3834,
-      "updatedDays": 40,
+      "stars": 3953,
+      "updatedDays": 41,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -6393,22 +6307,22 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 2300,
-      "rank": 144
+      "installs": 2371,
+      "rank": 142
     },
     {
-      "id": "blender",
-      "name": "blender",
-      "domain": "doc",
-      "desc": "94 Specialized Skills for Blender Artists.",
+      "id": "continuous-claude-v3",
+      "name": "Continuous-Claude-v3",
+      "domain": "data",
+      "desc": "Continuous Claude transforms Claude Code into a continuously learning system that maintains context across sessions, orchestrates specialize",
       "license": "MIT",
-      "version": "2026-11-06",
-      "author": "arjun988",
-      "repo": "arjun988/blender-skills",
-      "repoUrl": "https://github.com/arjun988/blender-skills",
-      "stars": 3826,
-      "updatedDays": 10,
-      "updated": "10 天前",
+      "version": "2026-11-16",
+      "author": "parcadei",
+      "repo": "parcadei/Continuous-Claude-v3",
+      "repoUrl": "https://github.com/parcadei/Continuous-Claude-v3",
+      "stars": 3952,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -6418,27 +6332,69 @@ window.SKILLHUB_DATA = {
         "cred": 0,
         "low": 0
       },
-      "skillmd": "## Quick Start\n\n> **Marketplace listing is currently under review by Anthropic.**\n> Install directly from GitHub in the meantime.\n\nWorks with **Cursor**, **Claude Code**, **Kiro**, and **Codex** — same skill pack, Blender MCP execution.\n\n**Claude Code**\n```bash\ngit clone https://github.com/arjun988/blender-skills.git\ncp -r blender-skills/.claude/skills /path/to/your/project/.claude/skills/\n```\n\n**Cursor (Windows)**\n```powershell\ngit clone https://github.com/arjun988/blender-skills.git\nCopy-Item -Recurse -Force \"blender-skills\\.claude\\skills\\*\" \".cursor\\skills\\\"\n```\n\n**Kiro**\n```bash\n# Copy skill folders into your Kiro skills directory, then restart Kiro\ncp -r blender-skills/.claude/skills/* /path/to/kiro/skills/\n```\n\n**Codex**\n```bash\n# Mount or copy skills into your Codex skills path\ncp -r blender-skills/.claude/skills/* /path/to/codex/skills/\n# or: ln -s /path/to/blender-skills/.claude/skills /path/to/codex/skills/blender-skills\n```\n\nFor all installation methods and first steps, see the **[Quick Start Guide](https://blender-skills.vercel.app/getting-started/)**.\n\n**Full documentation:** [blender-skills.vercel.app](https://blender-skills.vercel.app/)\n\ngit clone https://github.com/",
+      "skillmd": "## Why Continuous Claude?\n\nClaude Code has a **compaction problem**: when context fills up, the system compacts your conversation, losing nuanced understanding and decisions made during the session.\n\n**Continuous Claude solves this with:**\n\n| Problem | Solution |\n|---------|----------|\n| Context loss on compaction | YAML handoffs - more token-efficient transfer |\n| Starting fresh each session | Memory system recalls + daemon auto-extracts learnings |\n| Reading entire files burns tokens | 5-layer code analysis + semantic index |\n| Complex tasks need coordination | Meta-skills orchestrate agent workflows |\n| Repeating workflows manually | 109 skills with natural language triggers |\n\n**The mantra: Compound, don't compact.** Extract learnings automatically, then start fresh with full context.\n\n### Why \"Continuous\"? Why \"Compounding\"?\n\nThe name is a pun. **Continuous** because Claude maintains state across sessions. **Compounding** because each session makes the system smarter—learnings accumulate like compound interest.\n\n> \"Fix the login bug in auth.py\"\n\n🎯 SKILL ACTIVATION CHECK\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n⚠️ CRITICAL SKILLS (REQUIRED):\n  → create_handoff\n\n📚 RECOMMENDED SK",
       "readme": [
-        "Works with Cursor, Claude Code, Kiro, and Codex — same skill pack, Blender MCP execution.",
-        "Cursor (Windows)",
-        "For all installation methods and first steps, see the ."
+        "Claude Code has a compaction problem: when context fills up, the system compacts your conversation, losing nuanced understanding and decisions made during the session.",
+        "Continuous Claude solves this with:",
+        "The mantra: Compound, don't compact. Extract learnings automatically, then start fresh with full context."
       ],
       "versions": [
         {
-          "v": "2026-11-06",
+          "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "10 天前",
+          "t": "今天",
           "cur": true
         }
       ],
       "related": [
-        "rea",
-        "humanizer",
-        "academic-research"
+        "paperclip",
+        "archify",
+        "understand-anything"
       ],
-      "installs": 2295,
-      "rank": 145
+      "installs": 2371,
+      "rank": 143
+    },
+    {
+      "id": "one-skill-to-rule-them-all",
+      "name": "one-skill-to-rule-them-all",
+      "domain": "code",
+      "desc": "Why \"One Skill to Rule Them All\"? The slogan doesn't claim this is the best skill. It couldn't be: a meta-skill is useless without the skill",
+      "license": "CC-BY-4.0",
+      "version": "2026-11-16",
+      "author": "rebelytics",
+      "repo": "rebelytics/one-skill-to-rule-them-all",
+      "repoUrl": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+      "stars": 3948,
+      "updatedDays": 0,
+      "updated": "今天",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 1,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "\n",
+      "readme": [
+        "该仓库未提供可渲染的说明文档，建议查看原文链接。"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-16",
+          "d": "索引自最近一次提交",
+          "t": "今天",
+          "cur": true
+        }
+      ],
+      "related": [
+        "skills",
+        "superpowers",
+        "andrej-karpathy"
+      ],
+      "installs": 2368,
+      "rank": 144
     },
     {
       "id": "vibe",
@@ -6450,9 +6406,9 @@ window.SKILLHUB_DATA = {
       "author": "foryourhealth111-pixel",
       "repo": "foryourhealth111-pixel/Vibe-Skills",
       "repoUrl": "https://github.com/foryourhealth111-pixel/Vibe-Skills",
-      "stars": 3821,
-      "updatedDays": 7,
-      "updated": "7 天前",
+      "stars": 3827,
+      "updatedDays": 8,
+      "updated": "8 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -6472,7 +6428,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-09",
           "d": "索引自最近一次提交",
-          "t": "7 天前",
+          "t": "8 天前",
           "cur": true
         }
       ],
@@ -6481,8 +6437,8 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 2292,
-      "rank": 146
+      "installs": 2296,
+      "rank": 145
     },
     {
       "id": "md2wechat",
@@ -6494,8 +6450,8 @@ window.SKILLHUB_DATA = {
       "author": "geekjourneyx",
       "repo": "geekjourneyx/md2wechat-skill",
       "repoUrl": "https://github.com/geekjourneyx/md2wechat-skill",
-      "stars": 3802,
-      "updatedDays": 32,
+      "stars": 3804,
+      "updatedDays": 33,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -6525,8 +6481,8 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 2281,
-      "rank": 147
+      "installs": 2282,
+      "rank": 146
     },
     {
       "id": "ctf",
@@ -6538,9 +6494,9 @@ window.SKILLHUB_DATA = {
       "author": "ljagiello",
       "repo": "ljagiello/ctf-skills",
       "repoUrl": "https://github.com/ljagiello/ctf-skills",
-      "stars": 3720,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 3728,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -6560,7 +6516,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -6569,8 +6525,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 2232,
-      "rank": 148
+      "installs": 2236,
+      "rank": 147
     },
     {
       "id": "claude-code-quest",
@@ -6582,9 +6538,9 @@ window.SKILLHUB_DATA = {
       "author": "wesammustafa",
       "repo": "wesammustafa/Claude-Code-Quest",
       "repoUrl": "https://github.com/wesammustafa/Claude-Code-Quest",
-      "stars": 3710,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 3713,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -6604,7 +6560,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -6613,8 +6569,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 2226,
-      "rank": 149
+      "installs": 2227,
+      "rank": 148
     },
     {
       "id": "awesome-design",
@@ -6626,8 +6582,8 @@ window.SKILLHUB_DATA = {
       "author": "bergside",
       "repo": "bergside/awesome-design-skills",
       "repoUrl": "https://github.com/bergside/awesome-design-skills",
-      "stars": 3677,
-      "updatedDays": 141,
+      "stars": 3694,
+      "updatedDays": 142,
       "updated": "4 个月前",
       "scan": {
         "state": "pass",
@@ -6657,8 +6613,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 2206,
-      "rank": 150
+      "installs": 2216,
+      "rank": 149
     },
     {
       "id": "agent-rules-books",
@@ -6670,8 +6626,8 @@ window.SKILLHUB_DATA = {
       "author": "ciembor",
       "repo": "ciembor/agent-rules-books",
       "repoUrl": "https://github.com/ciembor/agent-rules-books",
-      "stars": 3286,
-      "updatedDays": 66,
+      "stars": 3300,
+      "updatedDays": 68,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -6701,8 +6657,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 1971,
-      "rank": 151
+      "installs": 1980,
+      "rank": 150
     },
     {
       "id": "claude-osint",
@@ -6714,9 +6670,9 @@ window.SKILLHUB_DATA = {
       "author": "elementalsouls",
       "repo": "elementalsouls/Claude-OSINT",
       "repoUrl": "https://github.com/elementalsouls/Claude-OSINT",
-      "stars": 3059,
-      "updatedDays": 26,
-      "updated": "26 天前",
+      "stars": 3062,
+      "updatedDays": 27,
+      "updated": "27 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -6736,7 +6692,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-20",
           "d": "索引自最近一次提交",
-          "t": "26 天前",
+          "t": "27 天前",
           "cur": true
         }
       ],
@@ -6745,8 +6701,8 @@ window.SKILLHUB_DATA = {
         "security-audit",
         "cowagent"
       ],
-      "installs": 1835,
-      "rank": 152
+      "installs": 1837,
+      "rank": 151
     },
     {
       "id": "pro-workflow",
@@ -6758,8 +6714,8 @@ window.SKILLHUB_DATA = {
       "author": "rohitg00",
       "repo": "rohitg00/pro-workflow",
       "repoUrl": "https://github.com/rohitg00/pro-workflow",
-      "stars": 2959,
-      "updatedDays": 48,
+      "stars": 2961,
+      "updatedDays": 49,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -6789,8 +6745,8 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 1775,
-      "rank": 153
+      "installs": 1776,
+      "rank": 152
     },
     {
       "id": "huashu-motion",
@@ -6802,9 +6758,9 @@ window.SKILLHUB_DATA = {
       "author": "alchaincyf",
       "repo": "alchaincyf/huashu-motion",
       "repoUrl": "https://github.com/alchaincyf/huashu-motion",
-      "stars": 2760,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 2822,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -6824,7 +6780,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -6833,8 +6789,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 1656,
-      "rank": 154
+      "installs": 1693,
+      "rank": 153
     },
     {
       "id": "delegate",
@@ -6846,9 +6802,9 @@ window.SKILLHUB_DATA = {
       "author": "amElnagdy",
       "repo": "amElnagdy/delegate-skills",
       "repoUrl": "https://github.com/amElnagdy/delegate-skills",
-      "stars": 2609,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 2617,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -6868,7 +6824,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-14",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -6877,8 +6833,8 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 1565,
-      "rank": 155
+      "installs": 1570,
+      "rank": 154
     },
     {
       "id": "deep-research",
@@ -6890,8 +6846,8 @@ window.SKILLHUB_DATA = {
       "author": "Weizhena",
       "repo": "Weizhena/Deep-Research-skills",
       "repoUrl": "https://github.com/Weizhena/Deep-Research-skills",
-      "stars": 2567,
-      "updatedDays": 85,
+      "stars": 2572,
+      "updatedDays": 86,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -6921,8 +6877,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 1540,
-      "rank": 156
+      "installs": 1543,
+      "rank": 155
     },
     {
       "id": "docmd",
@@ -6934,7 +6890,7 @@ window.SKILLHUB_DATA = {
       "author": "docmd-io",
       "repo": "docmd-io/docmd",
       "repoUrl": "https://github.com/docmd-io/docmd",
-      "stars": 2566,
+      "stars": 2567,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -6965,8 +6921,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 1539,
-      "rank": 157
+      "installs": 1540,
+      "rank": 156
     },
     {
       "id": "huashu",
@@ -6978,9 +6934,9 @@ window.SKILLHUB_DATA = {
       "author": "alchaincyf",
       "repo": "alchaincyf/huashu-skills",
       "repoUrl": "https://github.com/alchaincyf/huashu-skills",
-      "stars": 2286,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 2291,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -7000,7 +6956,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -7009,8 +6965,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 1371,
-      "rank": 158
+      "installs": 1374,
+      "rank": 157
     },
     {
       "id": "nihaisha-nishi-tcm",
@@ -7022,9 +6978,9 @@ window.SKILLHUB_DATA = {
       "author": "JuneYaooo",
       "repo": "JuneYaooo/nihaisha-nishi-tcm",
       "repoUrl": "https://github.com/JuneYaooo/nihaisha-nishi-tcm",
-      "stars": 2260,
-      "updatedDays": 8,
-      "updated": "8 天前",
+      "stars": 2265,
+      "updatedDays": 9,
+      "updated": "9 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -7042,7 +6998,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-07",
           "d": "索引自最近一次提交",
-          "t": "8 天前",
+          "t": "9 天前",
           "cur": true
         }
       ],
@@ -7051,8 +7007,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 1356,
-      "rank": 159
+      "installs": 1359,
+      "rank": 158
     },
     {
       "id": "babysitter",
@@ -7064,9 +7020,9 @@ window.SKILLHUB_DATA = {
       "author": "a5c-ai",
       "repo": "a5c-ai/babysitter",
       "repoUrl": "https://github.com/a5c-ai/babysitter",
-      "stars": 1914,
-      "updatedDays": 14,
-      "updated": "14 天前",
+      "stars": 1916,
+      "updatedDays": 15,
+      "updated": "15 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -7086,7 +7042,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-01",
           "d": "索引自最近一次提交",
-          "t": "14 天前",
+          "t": "15 天前",
           "cur": true
         }
       ],
@@ -7095,8 +7051,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 1148,
-      "rank": 160
+      "installs": 1149,
+      "rank": 159
     },
     {
       "id": "mex",
@@ -7140,7 +7096,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 1077,
-      "rank": 161
+      "rank": 160
     },
     {
       "id": "claude-code-my-workflow",
@@ -7152,9 +7108,9 @@ window.SKILLHUB_DATA = {
       "author": "pedrohcgs",
       "repo": "pedrohcgs/claude-code-my-workflow",
       "repoUrl": "https://github.com/pedrohcgs/claude-code-my-workflow",
-      "stars": 1713,
-      "updatedDays": 8,
-      "updated": "8 天前",
+      "stars": 1715,
+      "updatedDays": 9,
+      "updated": "9 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -7174,7 +7130,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-07",
           "d": "索引自最近一次提交",
-          "t": "8 天前",
+          "t": "9 天前",
           "cur": true
         }
       ],
@@ -7183,8 +7139,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 1027,
-      "rank": 162
+      "installs": 1029,
+      "rank": 161
     },
     {
       "id": "kicad-happy",
@@ -7196,7 +7152,7 @@ window.SKILLHUB_DATA = {
       "author": "aklofas",
       "repo": "aklofas/kicad-happy",
       "repoUrl": "https://github.com/aklofas/kicad-happy",
-      "stars": 1683,
+      "stars": 1691,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -7227,8 +7183,8 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 1009,
-      "rank": 163
+      "installs": 1014,
+      "rank": 162
     },
     {
       "id": "n8n-as-code",
@@ -7240,9 +7196,9 @@ window.SKILLHUB_DATA = {
       "author": "EtienneLescot",
       "repo": "EtienneLescot/n8n-as-code",
       "repoUrl": "https://github.com/EtienneLescot/n8n-as-code",
-      "stars": 1662,
-      "updatedDays": 15,
-      "updated": "15 天前",
+      "stars": 1663,
+      "updatedDays": 16,
+      "updated": "16 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -7261,7 +7217,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-01",
           "d": "索引自最近一次提交",
-          "t": "15 天前",
+          "t": "16 天前",
           "cur": true
         }
       ],
@@ -7271,7 +7227,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 997,
-      "rank": 164
+      "rank": 163
     },
     {
       "id": "alook",
@@ -7279,11 +7235,11 @@ window.SKILLHUB_DATA = {
       "domain": "data",
       "desc": "Alook is where people and AI agents share the same rooms. Your local coding agents get persistent identities — a handle, inbox, and membersh",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "alookai",
       "repo": "alookai/alook",
       "repoUrl": "https://github.com/alookai/alook",
-      "stars": 1510,
+      "stars": 1521,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -7303,7 +7259,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -7314,8 +7270,8 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 906,
-      "rank": 165
+      "installs": 912,
+      "rank": 164
     },
     {
       "id": "gpt-image2-ppt",
@@ -7327,8 +7283,8 @@ window.SKILLHUB_DATA = {
       "author": "JuneYaooo",
       "repo": "JuneYaooo/gpt-image2-ppt-skills",
       "repoUrl": "https://github.com/JuneYaooo/gpt-image2-ppt-skills",
-      "stars": 1462,
-      "updatedDays": 85,
+      "stars": 1467,
+      "updatedDays": 86,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -7358,8 +7314,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 877,
-      "rank": 166
+      "installs": 880,
+      "rank": 165
     },
     {
       "id": "skillnet",
@@ -7372,8 +7328,8 @@ window.SKILLHUB_DATA = {
       "repo": "zjunlp/SkillNet",
       "repoUrl": "https://github.com/zjunlp/SkillNet",
       "stars": 1454,
-      "updatedDays": 14,
-      "updated": "14 天前",
+      "updatedDays": 15,
+      "updated": "15 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -7393,7 +7349,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-02",
           "d": "索引自最近一次提交",
-          "t": "14 天前",
+          "t": "15 天前",
           "cur": true
         }
       ],
@@ -7403,7 +7359,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 872,
-      "rank": 167
+      "rank": 166
     },
     {
       "id": "ecommerce",
@@ -7415,9 +7371,9 @@ window.SKILLHUB_DATA = {
       "author": "nexscope-ai",
       "repo": "nexscope-ai/eCommerce-Skills",
       "repoUrl": "https://github.com/nexscope-ai/eCommerce-Skills",
-      "stars": 1434,
-      "updatedDays": 5,
-      "updated": "5 天前",
+      "stars": 1450,
+      "updatedDays": 6,
+      "updated": "6 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -7437,7 +7393,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-11",
           "d": "索引自最近一次提交",
-          "t": "5 天前",
+          "t": "6 天前",
           "cur": true
         }
       ],
@@ -7446,8 +7402,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 860,
-      "rank": 168
+      "installs": 870,
+      "rank": 167
     },
     {
       "id": "getspecstory",
@@ -7455,7 +7411,7 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "Turn your AI development conversations into searchable, shareable knowledge.",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "specstoryai",
       "repo": "specstoryai/getspecstory",
       "repoUrl": "https://github.com/specstoryai/getspecstory",
@@ -7479,7 +7435,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -7491,7 +7447,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 824,
-      "rank": 169
+      "rank": 168
     },
     {
       "id": "x-mentor",
@@ -7503,8 +7459,8 @@ window.SKILLHUB_DATA = {
       "author": "alchaincyf",
       "repo": "alchaincyf/x-mentor-skill",
       "repoUrl": "https://github.com/alchaincyf/x-mentor-skill",
-      "stars": 1342,
-      "updatedDays": 34,
+      "stars": 1343,
+      "updatedDays": 35,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -7535,6 +7491,50 @@ window.SKILLHUB_DATA = {
         "understand-anything"
       ],
       "installs": 805,
+      "rank": 169
+    },
+    {
+      "id": "seo",
+      "name": "seo",
+      "domain": "doc",
+      "desc": "SEO Skills for Claude Code, Cursor AI Agents",
+      "license": "UNKNOWN",
+      "version": "2026-11-16",
+      "author": "Illyism",
+      "repo": "Illyism/seo-skills",
+      "repoUrl": "https://github.com/Illyism/seo-skills",
+      "stars": 1294,
+      "updatedDays": 0,
+      "updated": "今天",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "## Install\n\nInstall every skill in one command using the [`skills`](https://www.npmjs.com/package/skills) CLI, or install individual skills on demand:\n\n```bash\n# Install all 30 SEO, GEO, Ahrefs/DataForSEO research, proof KB, link building & copywriting skills\nnpx skills add Illyism/seo-skills\n\n# Install a single skill (for example, daily autonomous repo SEO)\nnpx skills add Illyism/seo-skills --skill seo-autopilot\n\n# List every available skill in this repository\nnpx skills add Illyism/seo-skills --list\n```\n\n### Works Across Every Coding Agent & AI Chat App\n\nEach skill is a self-contained folder with a plain Markdown `SKILL.md` following the open [Agent Skills specification](https://agentskills.io). Your agent loads only the short `name` and `description` at startup and opens the full instructions only when your prompt matches, keeping your context window fast and clean.\n\n| Environment | Where `SKILL.md` lives | How to install |\n| --- | --- | --- |\n| **Claude Code** | `.claude/skills/` or `~/.claude/skills/` | `npx skills add Illyism/seo-skills -a claude-code` |\n| **Cursor** | `.cursor/skills/` or `.agents/skills/` | `npx skills add Illyism/seo-skills -a cursor` |\n| **OpenAI Codex / ",
+      "readme": [
+        "Install every skill in one command using the CLI, or install individual skills on demand:",
+        "Each skill is a self-contained folder with a plain Markdown SKILL.md following the open . Your agent loads only the short name and description at startup and opens the full instructions only when your",
+        "npx skills add Illyism/seo-skills"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-16",
+          "d": "索引自最近一次提交",
+          "t": "今天",
+          "cur": true
+        }
+      ],
+      "related": [
+        "rea",
+        "humanizer",
+        "academic-research"
+      ],
+      "installs": 776,
       "rank": 170
     },
     {
@@ -7548,8 +7548,8 @@ window.SKILLHUB_DATA = {
       "repo": "kharmanskyi/open-steps",
       "repoUrl": "https://github.com/kharmanskyi/open-steps",
       "stars": 1284,
-      "updatedDays": 0,
-      "updated": "今天",
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -7569,7 +7569,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -7582,50 +7582,6 @@ window.SKILLHUB_DATA = {
       "rank": 171
     },
     {
-      "id": "seo",
-      "name": "seo",
-      "domain": "doc",
-      "desc": "SEO Skills for Claude Code, Cursor AI Agents",
-      "license": "UNKNOWN",
-      "version": "2026-11-12",
-      "author": "Illyism",
-      "repo": "Illyism/seo-skills",
-      "repoUrl": "https://github.com/Illyism/seo-skills",
-      "stars": 1272,
-      "updatedDays": 4,
-      "updated": "4 天前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "## Install\n\nInstall every skill in one command using the [`skills`](https://www.npmjs.com/package/skills) CLI, or install individual skills on demand:\n\n```bash\n# Install all 30 SEO, GEO, Ahrefs/DataForSEO research, proof KB, link building & copywriting skills\nnpx skills add Illyism/seo-skills\n\n# Install a single skill (for example, daily autonomous repo SEO)\nnpx skills add Illyism/seo-skills --skill seo-autopilot\n\n# List every available skill in this repository\nnpx skills add Illyism/seo-skills --list\n```\n\n### Works Across Every Coding Agent & AI Chat App\n\nEach skill is a self-contained folder with a plain Markdown `SKILL.md` following the open [Agent Skills specification](https://agentskills.io). Your agent loads only the short `name` and `description` at startup and opens the full instructions only when your prompt matches, keeping your context window fast and clean.\n\n| Environment | Where `SKILL.md` lives | How to install |\n| --- | --- | --- |\n| **Claude Code** | `.claude/skills/` or `~/.claude/skills/` | `npx skills add Illyism/seo-skills -a claude-code` |\n| **Cursor** | `.cursor/skills/` or `.agents/skills/` | `npx skills add Illyism/seo-skills -a cursor` |\n| **OpenAI Codex / ",
-      "readme": [
-        "Install every skill in one command using the CLI, or install individual skills on demand:",
-        "Each skill is a self-contained folder with a plain Markdown SKILL.md following the open . Your agent loads only the short name and description at startup and opens the full instructions only when your",
-        "npx skills add Illyism/seo-skills"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-12",
-          "d": "索引自最近一次提交",
-          "t": "4 天前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "rea",
-        "humanizer",
-        "academic-research"
-      ],
-      "installs": 763,
-      "rank": 172
-    },
-    {
       "id": "skillpack",
       "name": "skillpack",
       "domain": "design",
@@ -7636,7 +7592,7 @@ window.SKILLHUB_DATA = {
       "repo": "CreminiAI/skillpack",
       "repoUrl": "https://github.com/CreminiAI/skillpack",
       "stars": 1206,
-      "updatedDays": 61,
+      "updatedDays": 62,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -7667,7 +7623,7 @@ window.SKILLHUB_DATA = {
         "cherry-studio"
       ],
       "installs": 723,
-      "rank": 173
+      "rank": 172
     },
     {
       "id": "ai-factory",
@@ -7675,11 +7631,11 @@ window.SKILLHUB_DATA = {
       "domain": "doc",
       "desc": "You want to build with AI, but setting up the right context, prompts, and workflows takes time. AI Factory handles all of that so you can fo",
       "license": "UNKNOWN",
-      "version": "2026-11-15",
+      "version": "2026-11-17",
       "author": "lee-to",
       "repo": "lee-to/ai-factory",
       "repoUrl": "https://github.com/lee-to/ai-factory",
-      "stars": 1166,
+      "stars": 1165,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -7699,7 +7655,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-15",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -7711,7 +7667,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 699,
-      "rank": 174
+      "rank": 173
     },
     {
       "id": "power-platform",
@@ -7719,11 +7675,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "Plugins from Microsoft that teach AI assistants, such as GitHub Copilot and Claude Code, to build on Power Platform.",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "microsoft",
       "repo": "microsoft/power-platform-skills",
       "repoUrl": "https://github.com/microsoft/power-platform-skills",
-      "stars": 1152,
+      "stars": 1159,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -7743,7 +7699,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -7754,8 +7710,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 691,
-      "rank": 175
+      "installs": 695,
+      "rank": 174
     },
     {
       "id": "app-store-connect-cli",
@@ -7767,9 +7723,9 @@ window.SKILLHUB_DATA = {
       "author": "rorkai",
       "repo": "rorkai/app-store-connect-cli-skills",
       "repoUrl": "https://github.com/rorkai/app-store-connect-cli-skills",
-      "stars": 1139,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 1142,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -7789,7 +7745,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -7798,8 +7754,8 @@ window.SKILLHUB_DATA = {
         "marketing",
         "agents"
       ],
-      "installs": 683,
-      "rank": 176
+      "installs": 685,
+      "rank": 175
     },
     {
       "id": "novel-to-game",
@@ -7811,9 +7767,9 @@ window.SKILLHUB_DATA = {
       "author": "zenstory-ai",
       "repo": "zenstory-ai/novel-to-game",
       "repoUrl": "https://github.com/zenstory-ai/novel-to-game",
-      "stars": 1105,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 1119,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -7833,7 +7789,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -7842,8 +7798,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 663,
-      "rank": 177
+      "installs": 671,
+      "rank": 176
     },
     {
       "id": "ecommerce-visual-copywriting",
@@ -7855,9 +7811,9 @@ window.SKILLHUB_DATA = {
       "author": "feichanggege",
       "repo": "feichanggege/ecommerce-visual-copywriting-skill",
       "repoUrl": "https://github.com/feichanggege/ecommerce-visual-copywriting-skill",
-      "stars": 1105,
-      "updatedDays": 17,
-      "updated": "17 天前",
+      "stars": 1111,
+      "updatedDays": 18,
+      "updated": "18 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -7877,7 +7833,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-30",
           "d": "索引自最近一次提交",
-          "t": "17 天前",
+          "t": "18 天前",
           "cur": true
         }
       ],
@@ -7886,8 +7842,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 663,
-      "rank": 178
+      "installs": 666,
+      "rank": 177
     },
     {
       "id": "agentic-seo",
@@ -7899,8 +7855,8 @@ window.SKILLHUB_DATA = {
       "author": "Bhanunamikaze",
       "repo": "Bhanunamikaze/Agentic-SEO-Skill",
       "repoUrl": "https://github.com/Bhanunamikaze/Agentic-SEO-Skill",
-      "stars": 1058,
-      "updatedDays": 32,
+      "stars": 1060,
+      "updatedDays": 33,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -7930,8 +7886,8 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 634,
-      "rank": 179
+      "installs": 636,
+      "rank": 178
     },
     {
       "id": "auteur",
@@ -7943,8 +7899,8 @@ window.SKILLHUB_DATA = {
       "author": "agiwhitelist",
       "repo": "agiwhitelist/auteur",
       "repoUrl": "https://github.com/agiwhitelist/auteur",
-      "stars": 1049,
-      "updatedDays": 101,
+      "stars": 1051,
+      "updatedDays": 102,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -7974,8 +7930,8 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 629,
-      "rank": 180
+      "installs": 630,
+      "rank": 179
     },
     {
       "id": "sno-station",
@@ -7983,11 +7939,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "Sno Station is the workstation for your AI coding agents. Claude Code, Codex and Cursor each run in their own harness. Sno Station is where",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "sno-ai",
       "repo": "sno-ai/sno-station",
       "repoUrl": "https://github.com/sno-ai/sno-station",
-      "stars": 1020,
+      "stars": 1022,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -8007,7 +7963,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -8018,8 +7974,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 612,
-      "rank": 181
+      "installs": 613,
+      "rank": 180
     },
     {
       "id": "open-agent-hub",
@@ -8027,13 +7983,13 @@ window.SKILLHUB_DATA = {
       "domain": "doc",
       "desc": "A lightweight, zero-dependency CLI tool to manage and activate capabilities for AI coding assistants (such as Claude Code, Cursor, Trae, etc",
       "license": "MIT",
-      "version": "2026-11-15",
+      "version": "2026-11-17",
       "author": "guanyang",
       "repo": "guanyang/open-agent-hub",
       "repoUrl": "https://github.com/guanyang/open-agent-hub",
       "stars": 1004,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8051,9 +8007,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-15",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -8063,7 +8019,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 602,
-      "rank": 182
+      "rank": 181
     },
     {
       "id": "light-science",
@@ -8075,9 +8031,9 @@ window.SKILLHUB_DATA = {
       "author": "Light0305",
       "repo": "Light0305/Light-Science",
       "repoUrl": "https://github.com/Light0305/Light-Science",
-      "stars": 986,
-      "updatedDays": 8,
-      "updated": "8 天前",
+      "stars": 1001,
+      "updatedDays": 9,
+      "updated": "9 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8097,7 +8053,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-08",
           "d": "索引自最近一次提交",
-          "t": "8 天前",
+          "t": "9 天前",
           "cur": true
         }
       ],
@@ -8106,8 +8062,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 591,
-      "rank": 183
+      "installs": 600,
+      "rank": 182
     },
     {
       "id": "steve-jobs",
@@ -8119,9 +8075,9 @@ window.SKILLHUB_DATA = {
       "author": "alchaincyf",
       "repo": "alchaincyf/steve-jobs-skill",
       "repoUrl": "https://github.com/alchaincyf/steve-jobs-skill",
-      "stars": 980,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 981,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8141,7 +8097,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -8151,7 +8107,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 588,
-      "rank": 184
+      "rank": 183
     },
     {
       "id": "godotprompter",
@@ -8163,9 +8119,9 @@ window.SKILLHUB_DATA = {
       "author": "jame581",
       "repo": "jame581/GodotPrompter",
       "repoUrl": "https://github.com/jame581/GodotPrompter",
-      "stars": 966,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 968,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8185,7 +8141,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-14",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -8194,8 +8150,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 579,
-      "rank": 185
+      "installs": 580,
+      "rank": 184
     },
     {
       "id": "huashu-md-html",
@@ -8207,9 +8163,9 @@ window.SKILLHUB_DATA = {
       "author": "alchaincyf",
       "repo": "alchaincyf/huashu-md-html",
       "repoUrl": "https://github.com/alchaincyf/huashu-md-html",
-      "stars": 947,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 948,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8229,7 +8185,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -8239,6 +8195,48 @@ window.SKILLHUB_DATA = {
         "cherry-studio"
       ],
       "installs": 568,
+      "rank": 185
+    },
+    {
+      "id": "ai-manju",
+      "name": "ai-manju",
+      "domain": "code",
+      "desc": "21 个题材的 AI 漫剧全流程模板。发一句故事点子，就能得到企划案、资产图提示词、分集剧本、分镜图与视频提示词，以及发布文案。",
+      "license": "MIT",
+      "version": "2026-11-01",
+      "author": "zhanghao123vip",
+      "repo": "zhanghao123vip/ai-manju-skills",
+      "repoUrl": "https://github.com/zhanghao123vip/ai-manju-skills",
+      "stars": 890,
+      "updatedDays": 16,
+      "updated": "16 天前",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "\n",
+      "readme": [
+        "该仓库未提供可渲染的说明文档，建议查看原文链接。"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-01",
+          "d": "索引自最近一次提交",
+          "t": "16 天前",
+          "cur": true
+        }
+      ],
+      "related": [
+        "skills",
+        "superpowers",
+        "andrej-karpathy"
+      ],
+      "installs": 534,
       "rank": 186
     },
     {
@@ -8251,9 +8249,9 @@ window.SKILLHUB_DATA = {
       "author": "taracodlabs",
       "repo": "taracodlabs/aiden",
       "repoUrl": "https://github.com/taracodlabs/aiden",
-      "stars": 885,
-      "updatedDays": 27,
-      "updated": "27 天前",
+      "stars": 886,
+      "updatedDays": 28,
+      "updated": "28 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8273,7 +8271,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-19",
           "d": "索引自最近一次提交",
-          "t": "27 天前",
+          "t": "28 天前",
           "cur": true
         }
       ],
@@ -8296,8 +8294,8 @@ window.SKILLHUB_DATA = {
       "repo": "23blocks-OS/ai-maestro",
       "repoUrl": "https://github.com/23blocks-OS/ai-maestro",
       "stars": 853,
-      "updatedDays": 5,
-      "updated": "5 天前",
+      "updatedDays": 6,
+      "updated": "6 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8317,7 +8315,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-10",
           "d": "索引自最近一次提交",
-          "t": "5 天前",
+          "t": "6 天前",
           "cur": true
         }
       ],
@@ -8330,102 +8328,16 @@ window.SKILLHUB_DATA = {
       "rank": 188
     },
     {
-      "id": "ai-manju",
-      "name": "ai-manju",
-      "domain": "code",
-      "desc": "21 个题材的 AI 漫剧全流程模板。发一句故事点子，就能得到企划案、资产图提示词、分集剧本、分镜图与视频提示词，以及发布文案。",
-      "license": "MIT",
-      "version": "2026-11-01",
-      "author": "zhanghao123vip",
-      "repo": "zhanghao123vip/ai-manju-skills",
-      "repoUrl": "https://github.com/zhanghao123vip/ai-manju-skills",
-      "stars": 833,
-      "updatedDays": 15,
-      "updated": "15 天前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "\n",
-      "readme": [
-        "该仓库未提供可渲染的说明文档，建议查看原文链接。"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-01",
-          "d": "索引自最近一次提交",
-          "t": "15 天前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "skills",
-        "superpowers",
-        "andrej-karpathy"
-      ],
-      "installs": 499,
-      "rank": 189
-    },
-    {
-      "id": "claude-code-java",
-      "name": "claude-code-java",
-      "domain": "doc",
-      "desc": "This project is not affiliated with Anthropic.",
-      "license": "MIT",
-      "version": "2026-10-29",
-      "author": "decebals",
-      "repo": "decebals/claude-code-java",
-      "repoUrl": "https://github.com/decebals/claude-code-java",
-      "stars": 774,
-      "updatedDays": 17,
-      "updated": "17 天前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "\nnpx skills@latest add decebals/claude-code-java\n\ngit clone https://github.com/decebals/claude-code-java.git ~/projects/claude-code-java\ncd ~/projects/claude-code-java\nchmod +x scripts/*.sh\n\n./scripts/setup-project.sh ~/projects/your-java-project\n\nmkdir -p your-project/.claude/skills\n\n# Copy specific skills\ncp -r ~/projects/claude-code-java/skills/java-code-review your-project/.claude/skills/\n\n# Or symlink all skills\nln -s ~/projects/claude-code-java/skills/* your-project/.claude/skills/\n\ncd ~/projects/your-java-project\nclaude\n\n# Skills load automatically based on context, or invoke directly:\n> /git-commit\n> /java-code-review\n\nclaude-code-java/\n├── README.md                    # This file\n├── LICENSE                      # MIT license\n├── .gitignore                   # Git ignore rules\n├── .claude/\n│   └── skills/                  # 18 reusable skills (see Available Skills above)\n├── docs/                        # Guidelines and best practices\n│   ├── DESIGN_PRINCIPLES.md     # Core philosophy\n│   ├── RED_FLAGS.md             # Warning signs to watch for\n│   ├── SAFE_WORKFLOWS.md        # Step-by-step safe workflows\n│   ├── SCRIPTS.md               # Scripts documentation\n│   ├── S",
-      "readme": [
-        "npx skills@latest add decebals/claude-code-java",
-        "git clone https://github.com/decebals/claude-code-java.git ~/projects/claude-code-java",
-        "cd ~/projects/claude-code-java"
-      ],
-      "versions": [
-        {
-          "v": "2026-10-29",
-          "d": "索引自最近一次提交",
-          "t": "17 天前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "rea",
-        "humanizer",
-        "academic-research"
-      ],
-      "installs": 464,
-      "rank": 190
-    },
-    {
       "id": "best",
       "name": "best",
       "domain": "data",
       "desc": "Daily-updated Top 100 Agent Skills rankings — installs, growth, and social buzz aggregated from skills.sh, ClawHub, Tencent SkillHub, GitHub",
       "license": "UNKNOWN",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "LinklyAI",
       "repo": "LinklyAI/best-skills",
       "repoUrl": "https://github.com/LinklyAI/best-skills",
-      "stars": 773,
+      "stars": 777,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -8445,7 +8357,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -8456,8 +8368,52 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 463,
-      "rank": 191
+      "installs": 466,
+      "rank": 189
+    },
+    {
+      "id": "claude-code-java",
+      "name": "claude-code-java",
+      "domain": "doc",
+      "desc": "This project is not affiliated with Anthropic.",
+      "license": "MIT",
+      "version": "2026-10-29",
+      "author": "decebals",
+      "repo": "decebals/claude-code-java",
+      "repoUrl": "https://github.com/decebals/claude-code-java",
+      "stars": 775,
+      "updatedDays": 18,
+      "updated": "18 天前",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "\nnpx skills@latest add decebals/claude-code-java\n\ngit clone https://github.com/decebals/claude-code-java.git ~/projects/claude-code-java\ncd ~/projects/claude-code-java\nchmod +x scripts/*.sh\n\n./scripts/setup-project.sh ~/projects/your-java-project\n\nmkdir -p your-project/.claude/skills\n\n# Copy specific skills\ncp -r ~/projects/claude-code-java/skills/java-code-review your-project/.claude/skills/\n\n# Or symlink all skills\nln -s ~/projects/claude-code-java/skills/* your-project/.claude/skills/\n\ncd ~/projects/your-java-project\nclaude\n\n# Skills load automatically based on context, or invoke directly:\n> /git-commit\n> /java-code-review\n\nclaude-code-java/\n├── README.md                    # This file\n├── LICENSE                      # MIT license\n├── .gitignore                   # Git ignore rules\n├── .claude/\n│   └── skills/                  # 18 reusable skills (see Available Skills above)\n├── docs/                        # Guidelines and best practices\n│   ├── DESIGN_PRINCIPLES.md     # Core philosophy\n│   ├── RED_FLAGS.md             # Warning signs to watch for\n│   ├── SAFE_WORKFLOWS.md        # Step-by-step safe workflows\n│   ├── SCRIPTS.md               # Scripts documentation\n│   ├── S",
+      "readme": [
+        "npx skills@latest add decebals/claude-code-java",
+        "git clone https://github.com/decebals/claude-code-java.git ~/projects/claude-code-java",
+        "cd ~/projects/claude-code-java"
+      ],
+      "versions": [
+        {
+          "v": "2026-10-29",
+          "d": "索引自最近一次提交",
+          "t": "18 天前",
+          "cur": true
+        }
+      ],
+      "related": [
+        "rea",
+        "humanizer",
+        "academic-research"
+      ],
+      "installs": 465,
+      "rank": 190
     },
     {
       "id": "compass",
@@ -8470,8 +8426,8 @@ window.SKILLHUB_DATA = {
       "repo": "dongshuyan/compass-skills",
       "repoUrl": "https://github.com/dongshuyan/compass-skills",
       "stars": 770,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8491,7 +8447,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -8501,7 +8457,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 462,
-      "rank": 192
+      "rank": 191
     },
     {
       "id": "awesome-human-distillation",
@@ -8509,13 +8465,13 @@ window.SKILLHUB_DATA = {
       "domain": "ops",
       "desc": "收集一切将真实的人蒸馏成 AI Skill 的项目",
       "license": "UNKNOWN",
-      "version": "2026-11-15",
+      "version": "2026-11-17",
       "author": "mliu98",
       "repo": "mliu98/awesome-human-distillation",
       "repoUrl": "https://github.com/mliu98/awesome-human-distillation",
       "stars": 763,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8531,9 +8487,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-15",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -8543,7 +8499,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 457,
-      "rank": 193
+      "rank": 192
     },
     {
       "id": "wechat-article",
@@ -8555,8 +8511,8 @@ window.SKILLHUB_DATA = {
       "author": "aiworkskills",
       "repo": "aiworkskills/wechat-article-skills",
       "repoUrl": "https://github.com/aiworkskills/wechat-article-skills",
-      "stars": 748,
-      "updatedDays": 54,
+      "stars": 752,
+      "updatedDays": 55,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -8586,8 +8542,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 448,
-      "rank": 194
+      "installs": 451,
+      "rank": 193
     },
     {
       "id": "claude-skill-registry",
@@ -8599,7 +8555,7 @@ window.SKILLHUB_DATA = {
       "author": "majiayu000",
       "repo": "majiayu000/claude-skill-registry",
       "repoUrl": "https://github.com/majiayu000/claude-skill-registry",
-      "stars": 738,
+      "stars": 742,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -8630,8 +8586,8 @@ window.SKILLHUB_DATA = {
         "security-audit",
         "cowagent"
       ],
-      "installs": 442,
-      "rank": 195
+      "installs": 445,
+      "rank": 194
     },
     {
       "id": "axiomcodegraph",
@@ -8643,9 +8599,9 @@ window.SKILLHUB_DATA = {
       "author": "AxiomCodeAI",
       "repo": "AxiomCodeAI/axiomcodegraph",
       "repoUrl": "https://github.com/AxiomCodeAI/axiomcodegraph",
-      "stars": 704,
-      "updatedDays": 6,
-      "updated": "6 天前",
+      "stars": 722,
+      "updatedDays": 7,
+      "updated": "7 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8665,7 +8621,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-09",
           "d": "索引自最近一次提交",
-          "t": "6 天前",
+          "t": "7 天前",
           "cur": true
         }
       ],
@@ -8674,8 +8630,8 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 422,
-      "rank": 196
+      "installs": 433,
+      "rank": 195
     },
     {
       "id": "terrashark",
@@ -8688,8 +8644,8 @@ window.SKILLHUB_DATA = {
       "repo": "LukasNiessen/terrashark",
       "repoUrl": "https://github.com/LukasNiessen/terrashark",
       "stars": 704,
-      "updatedDays": 14,
-      "updated": "14 天前",
+      "updatedDays": 15,
+      "updated": "15 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8709,7 +8665,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-02",
           "d": "索引自最近一次提交",
-          "t": "14 天前",
+          "t": "15 天前",
           "cur": true
         }
       ],
@@ -8719,6 +8675,49 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 422,
+      "rank": 196
+    },
+    {
+      "id": "claude-ai-music",
+      "name": "claude-ai-music",
+      "domain": "doc",
+      "desc": "I love music but never learned an instrument. AI became the creative outlet that was always out of reach. This project started as a way to g",
+      "license": "CC0-1.0",
+      "version": "2026-11-15",
+      "author": "bitwize-music-studio",
+      "repo": "bitwize-music-studio/claude-ai-music-skills",
+      "repoUrl": "https://github.com/bitwize-music-studio/claude-ai-music-skills",
+      "stars": 672,
+      "updatedDays": 2,
+      "updated": "2 天前",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "## See It in Action\n\n![Listening to two takes in iTerm2 panes beside Claude Code, with the track's lyrics below](docs/images/listen-iterm2.gif)\n\n`/bitwize-music:listen the-nub 02 --iterm2` opens both takes of a track as Suno players beside the session, with the track's lyrics underneath, so you can hear them side by side without leaving the terminal.\n\nmacOS is my daily driver, so it's where this plugin gets the most real-world use. Every change is also tested on Linux and Windows in CI. The iTerm2 panes shown here need macOS. Everywhere else, the same command opens your takes in the browser.\n\n## Example Workflow\n\n```\nYou:    \"Let's make an album about the 2016 Bangladesh Bank heist\"\nClaude: Creates album structure, runs 7-phase concept planning\n\nYou:    \"Start the research\"\nClaude: Dispatches legal, financial, and security researchers in parallel\n        Gathers DOJ filings, SWIFT documentation, malware analysis\n        Cross-verifies sources, flags claims that need human review\n\nYou:    \"Sources look good. Let's write track 1\"\nClaude: Drafts lyrics, checks prosody and rhyme schemes\n        Scans for pronunciation risks, suggests phonetic fixes\n        Builds the Suno style prompt ",
+      "readme": [
+        "/bitwize-music:listen the-nub 02 --iterm2 opens both takes of a track as Suno players beside the session, with the track's lyrics underneath, so you can hear them side by side without leaving the term",
+        "macOS is my daily driver, so it's where this plugin gets the most real-world use. Every change is also tested on Linux and Windows in CI. The iTerm2 panes shown here need macOS. Everywhere else, the s"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-15",
+          "d": "索引自最近一次提交",
+          "t": "2 天前",
+          "cur": true
+        }
+      ],
+      "related": [
+        "rea",
+        "humanizer",
+        "academic-research"
+      ],
+      "installs": 403,
       "rank": 197
     },
     {
@@ -8732,8 +8731,8 @@ window.SKILLHUB_DATA = {
       "repo": "evanca/flutter-ai-rules",
       "repoUrl": "https://github.com/evanca/flutter-ai-rules",
       "stars": 671,
-      "updatedDays": 3,
-      "updated": "3 天前",
+      "updatedDays": 4,
+      "updated": "4 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8753,7 +8752,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-12",
           "d": "索引自最近一次提交",
-          "t": "3 天前",
+          "t": "4 天前",
           "cur": true
         }
       ],
@@ -8766,61 +8765,18 @@ window.SKILLHUB_DATA = {
       "rank": 198
     },
     {
-      "id": "claude-ai-music",
-      "name": "claude-ai-music",
-      "domain": "doc",
-      "desc": "I love music but never learned an instrument. AI became the creative outlet that was always out of reach. This project started as a way to g",
-      "license": "CC0-1.0",
-      "version": "2026-11-15",
-      "author": "bitwize-music-studio",
-      "repo": "bitwize-music-studio/claude-ai-music-skills",
-      "repoUrl": "https://github.com/bitwize-music-studio/claude-ai-music-skills",
-      "stars": 669,
-      "updatedDays": 1,
-      "updated": "昨天",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "## See It in Action\n\n![Listening to two takes in iTerm2 panes beside Claude Code, with the track's lyrics below](docs/images/listen-iterm2.gif)\n\n`/bitwize-music:listen the-nub 02 --iterm2` opens both takes of a track as Suno players beside the session, with the track's lyrics underneath, so you can hear them side by side without leaving the terminal.\n\nmacOS is my daily driver, so it's where this plugin gets the most real-world use. Every change is also tested on Linux and Windows in CI. The iTerm2 panes shown here need macOS. Everywhere else, the same command opens your takes in the browser.\n\n## Example Workflow\n\n```\nYou:    \"Let's make an album about the 2016 Bangladesh Bank heist\"\nClaude: Creates album structure, runs 7-phase concept planning\n\nYou:    \"Start the research\"\nClaude: Dispatches legal, financial, and security researchers in parallel\n        Gathers DOJ filings, SWIFT documentation, malware analysis\n        Cross-verifies sources, flags claims that need human review\n\nYou:    \"Sources look good. Let's write track 1\"\nClaude: Drafts lyrics, checks prosody and rhyme schemes\n        Scans for pronunciation risks, suggests phonetic fixes\n        Builds the Suno style prompt ",
-      "readme": [
-        "/bitwize-music:listen the-nub 02 --iterm2 opens both takes of a track as Suno players beside the session, with the track's lyrics underneath, so you can hear them side by side without leaving the term",
-        "macOS is my daily driver, so it's where this plugin gets the most real-world use. Every change is also tested on Linux and Windows in CI. The iTerm2 panes shown here need macOS. Everywhere else, the s"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-15",
-          "d": "索引自最近一次提交",
-          "t": "昨天",
-          "cur": true
-        }
-      ],
-      "related": [
-        "rea",
-        "humanizer",
-        "academic-research"
-      ],
-      "installs": 401,
-      "rank": 199
-    },
-    {
       "id": "nwave",
       "name": "nWave",
       "domain": "code",
       "desc": "nWave supplies specialist roles and a host-led delivery workflow for software teams. Its nwdes command builds one canonical handoff per feat",
       "license": "MIT",
-      "version": "2026-11-14",
+      "version": "2026-11-16",
       "author": "nWave-ai",
       "repo": "nWave-ai/nWave",
       "repoUrl": "https://github.com/nWave-ai/nWave",
       "stars": 636,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8838,9 +8794,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-14",
+          "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -8850,7 +8806,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 381,
-      "rank": 200
+      "rank": 199
     },
     {
       "id": "abide",
@@ -8862,8 +8818,8 @@ window.SKILLHUB_DATA = {
       "author": "coldteadotai",
       "repo": "coldteadotai/abide",
       "repoUrl": "https://github.com/coldteadotai/abide",
-      "stars": 629,
-      "updatedDays": 36,
+      "stars": 630,
+      "updatedDays": 37,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -8892,8 +8848,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 377,
-      "rank": 201
+      "installs": 378,
+      "rank": 200
     },
     {
       "id": "pdf-tools",
@@ -8905,8 +8861,8 @@ window.SKILLHUB_DATA = {
       "author": "sno-ai",
       "repo": "sno-ai/mda",
       "repoUrl": "https://github.com/sno-ai/mda",
-      "stars": 617,
-      "updatedDays": 174,
+      "stars": 618,
+      "updatedDays": 175,
       "updated": "5 个月前",
       "scan": {
         "state": "pass",
@@ -8937,7 +8893,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 370,
-      "rank": 202
+      "rank": 201
     },
     {
       "id": "claude-code",
@@ -8950,8 +8906,8 @@ window.SKILLHUB_DATA = {
       "repo": "levnikolaevich/claude-code-skills",
       "repoUrl": "https://github.com/levnikolaevich/claude-code-skills",
       "stars": 596,
-      "updatedDays": 5,
-      "updated": "5 天前",
+      "updatedDays": 6,
+      "updated": "6 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -8971,7 +8927,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-11",
           "d": "索引自最近一次提交",
-          "t": "5 天前",
+          "t": "6 天前",
           "cur": true
         }
       ],
@@ -8981,7 +8937,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 357,
-      "rank": 203
+      "rank": 202
     },
     {
       "id": "elon-musk",
@@ -8993,9 +8949,9 @@ window.SKILLHUB_DATA = {
       "author": "alchaincyf",
       "repo": "alchaincyf/elon-musk-skill",
       "repoUrl": "https://github.com/alchaincyf/elon-musk-skill",
-      "stars": 577,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 578,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9015,7 +8971,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -9025,7 +8981,7 @@ window.SKILLHUB_DATA = {
         "understand-anything"
       ],
       "installs": 346,
-      "rank": 204
+      "rank": 203
     },
     {
       "id": "claude-elixir-phoenix",
@@ -9038,8 +8994,8 @@ window.SKILLHUB_DATA = {
       "repo": "oliver-kriska/claude-elixir-phoenix",
       "repoUrl": "https://github.com/oliver-kriska/claude-elixir-phoenix",
       "stars": 576,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "updatedDays": 3,
+      "updated": "3 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9059,7 +9015,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-13",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "3 天前",
           "cur": true
         }
       ],
@@ -9069,7 +9025,7 @@ window.SKILLHUB_DATA = {
         "agents"
       ],
       "installs": 345,
-      "rank": 205
+      "rank": 204
     },
     {
       "id": "qt-qml-review",
@@ -9081,9 +9037,9 @@ window.SKILLHUB_DATA = {
       "author": "TheQtCompanyRnD",
       "repo": "TheQtCompanyRnD/agent-skills",
       "repoUrl": "https://github.com/TheQtCompanyRnD/agent-skills",
-      "stars": 546,
-      "updatedDays": 6,
-      "updated": "6 天前",
+      "stars": 549,
+      "updatedDays": 7,
+      "updated": "7 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9103,7 +9059,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-09",
           "d": "索引自最近一次提交",
-          "t": "6 天前",
+          "t": "7 天前",
           "cur": true
         }
       ],
@@ -9112,8 +9068,8 @@ window.SKILLHUB_DATA = {
         "career-ops",
         "cherry-studio"
       ],
-      "installs": 327,
-      "rank": 206
+      "installs": 329,
+      "rank": 205
     },
     {
       "id": "designing-real-world-ai-agents-workshop",
@@ -9125,8 +9081,8 @@ window.SKILLHUB_DATA = {
       "author": "iusztinpaul",
       "repo": "iusztinpaul/designing-real-world-ai-agents-workshop",
       "repoUrl": "https://github.com/iusztinpaul/designing-real-world-ai-agents-workshop",
-      "stars": 522,
-      "updatedDays": 166,
+      "stars": 523,
+      "updatedDays": 167,
       "updated": "5 个月前",
       "scan": {
         "state": "pass",
@@ -9157,7 +9113,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 313,
-      "rank": 207
+      "rank": 206
     },
     {
       "id": "idea-validation-agents",
@@ -9169,8 +9125,8 @@ window.SKILLHUB_DATA = {
       "author": "MaxKmet",
       "repo": "MaxKmet/idea-validation-agents",
       "repoUrl": "https://github.com/MaxKmet/idea-validation-agents",
-      "stars": 516,
-      "updatedDays": 152,
+      "stars": 517,
+      "updatedDays": 153,
       "updated": "5 个月前",
       "scan": {
         "state": "pass",
@@ -9200,8 +9156,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 309,
-      "rank": 208
+      "installs": 310,
+      "rank": 207
     },
     {
       "id": "ok",
@@ -9214,8 +9170,8 @@ window.SKILLHUB_DATA = {
       "repo": "mxyhi/ok-skills",
       "repoUrl": "https://github.com/mxyhi/ok-skills",
       "stars": 516,
-      "updatedDays": 8,
-      "updated": "8 天前",
+      "updatedDays": 9,
+      "updated": "9 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9235,7 +9191,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-08",
           "d": "索引自最近一次提交",
-          "t": "8 天前",
+          "t": "9 天前",
           "cur": true
         }
       ],
@@ -9245,7 +9201,7 @@ window.SKILLHUB_DATA = {
         "agents"
       ],
       "installs": 309,
-      "rank": 209
+      "rank": 208
     },
     {
       "id": "sap",
@@ -9257,9 +9213,9 @@ window.SKILLHUB_DATA = {
       "author": "secondsky",
       "repo": "secondsky/sap-skills",
       "repoUrl": "https://github.com/secondsky/sap-skills",
-      "stars": 498,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "stars": 499,
+      "updatedDays": 3,
+      "updated": "3 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9279,7 +9235,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-13",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "3 天前",
           "cur": true
         }
       ],
@@ -9288,8 +9244,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 298,
-      "rank": 210
+      "installs": 299,
+      "rank": 209
     },
     {
       "id": "humanities-writing-companion",
@@ -9301,8 +9257,8 @@ window.SKILLHUB_DATA = {
       "author": "tizzy916",
       "repo": "tizzy916/humanities-writing-companion",
       "repoUrl": "https://github.com/tizzy916/humanities-writing-companion",
-      "stars": 492,
-      "updatedDays": 55,
+      "stars": 496,
+      "updatedDays": 56,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -9331,8 +9287,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 295,
-      "rank": 211
+      "installs": 297,
+      "rank": 210
     },
     {
       "id": "marketplace",
@@ -9340,11 +9296,11 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "This is the open-source content repository behind",
       "license": "UNKNOWN",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "aiskillstore",
       "repo": "aiskillstore/marketplace",
       "repoUrl": "https://github.com/aiskillstore/marketplace",
-      "stars": 485,
+      "stars": 486,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -9364,7 +9320,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -9376,7 +9332,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 291,
-      "rank": 212
+      "rank": 211
     },
     {
       "id": "agnix",
@@ -9388,9 +9344,9 @@ window.SKILLHUB_DATA = {
       "author": "agent-sh",
       "repo": "agent-sh/agnix",
       "repoUrl": "https://github.com/agent-sh/agnix",
-      "stars": 484,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "stars": 486,
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9410,7 +9366,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -9419,8 +9375,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 290,
-      "rank": 213
+      "installs": 291,
+      "rank": 212
     },
     {
       "id": "skillanything",
@@ -9433,7 +9389,7 @@ window.SKILLHUB_DATA = {
       "repo": "AgentSkillOS/SkillAnything",
       "repoUrl": "https://github.com/AgentSkillOS/SkillAnything",
       "stars": 482,
-      "updatedDays": 224,
+      "updatedDays": 225,
       "updated": "7 个月前",
       "scan": {
         "state": "pass",
@@ -9462,7 +9418,7 @@ window.SKILLHUB_DATA = {
         "understand-anything"
       ],
       "installs": 289,
-      "rank": 214
+      "rank": 213
     },
     {
       "id": "plinth",
@@ -9470,7 +9426,7 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "An opinionated AI-native workflow for evolving modern Java Enterprise SDLC practices through reusable Skills, Agents, Commands & MCP servers",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "jabrena",
       "repo": "jabrena/plinth",
       "repoUrl": "https://github.com/jabrena/plinth",
@@ -9494,7 +9450,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -9506,7 +9462,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 277,
-      "rank": 215
+      "rank": 214
     },
     {
       "id": "skill-name",
@@ -9518,9 +9474,9 @@ window.SKILLHUB_DATA = {
       "author": "sanjay3290",
       "repo": "sanjay3290/ai-skills",
       "repoUrl": "https://github.com/sanjay3290/ai-skills",
-      "stars": 456,
-      "updatedDays": 13,
-      "updated": "13 天前",
+      "stars": 457,
+      "updatedDays": 14,
+      "updated": "14 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9540,7 +9496,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-02",
           "d": "索引自最近一次提交",
-          "t": "13 天前",
+          "t": "14 天前",
           "cur": true
         }
       ],
@@ -9549,8 +9505,8 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 273,
-      "rank": 216
+      "installs": 274,
+      "rank": 215
     },
     {
       "id": "vexjoy-agent",
@@ -9558,13 +9514,13 @@ window.SKILLHUB_DATA = {
       "domain": "test",
       "desc": "Essays and writing behind this toolkit live at .",
       "license": "MIT",
-      "version": "2026-11-13",
+      "version": "2026-11-17",
       "author": "notque",
       "repo": "notque/vexjoy-agent",
       "repoUrl": "https://github.com/notque/vexjoy-agent",
       "stars": 450,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9582,9 +9538,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-13",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -9594,7 +9550,7 @@ window.SKILLHUB_DATA = {
         "agents"
       ],
       "installs": 270,
-      "rank": 217
+      "rank": 216
     },
     {
       "id": "playwright-best-practices",
@@ -9606,9 +9562,9 @@ window.SKILLHUB_DATA = {
       "author": "currents-dev",
       "repo": "currents-dev/playwright-best-practices-skill",
       "repoUrl": "https://github.com/currents-dev/playwright-best-practices-skill",
-      "stars": 433,
-      "updatedDays": 8,
-      "updated": "8 天前",
+      "stars": 434,
+      "updatedDays": 9,
+      "updated": "9 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9626,7 +9582,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-08",
           "d": "索引自最近一次提交",
-          "t": "8 天前",
+          "t": "9 天前",
           "cur": true
         }
       ],
@@ -9635,8 +9591,8 @@ window.SKILLHUB_DATA = {
         "marketing",
         "agents"
       ],
-      "installs": 259,
-      "rank": 218
+      "installs": 260,
+      "rank": 217
     },
     {
       "id": "playwright",
@@ -9648,9 +9604,9 @@ window.SKILLHUB_DATA = {
       "author": "testdino-hq",
       "repo": "testdino-hq/playwright-skill",
       "repoUrl": "https://github.com/testdino-hq/playwright-skill",
-      "stars": 419,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 420,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9670,7 +9626,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-16",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -9679,8 +9635,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 251,
-      "rank": 219
+      "installs": 252,
+      "rank": 218
     },
     {
       "id": "robotics",
@@ -9693,7 +9649,7 @@ window.SKILLHUB_DATA = {
       "repo": "arpitg1304/robotics-agent-skills",
       "repoUrl": "https://github.com/arpitg1304/robotics-agent-skills",
       "stars": 401,
-      "updatedDays": 96,
+      "updatedDays": 97,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -9724,7 +9680,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 240,
-      "rank": 220
+      "rank": 219
     },
     {
       "id": "mck-ppt-design",
@@ -9736,9 +9692,9 @@ window.SKILLHUB_DATA = {
       "author": "likaku",
       "repo": "likaku/Mck-ppt-design-skill",
       "repoUrl": "https://github.com/likaku/Mck-ppt-design-skill",
-      "stars": 343,
-      "updatedDays": 12,
-      "updated": "12 天前",
+      "stars": 344,
+      "updatedDays": 13,
+      "updated": "13 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9758,7 +9714,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-03",
           "d": "索引自最近一次提交",
-          "t": "12 天前",
+          "t": "13 天前",
           "cur": true
         }
       ],
@@ -9767,8 +9723,8 @@ window.SKILLHUB_DATA = {
         "archify",
         "understand-anything"
       ],
-      "installs": 205,
-      "rank": 221
+      "installs": 206,
+      "rank": 220
     },
     {
       "id": "agent-skills.md",
@@ -9780,9 +9736,9 @@ window.SKILLHUB_DATA = {
       "author": "futantan",
       "repo": "futantan/agent-skills.md",
       "repoUrl": "https://github.com/futantan/agent-skills.md",
-      "stars": 343,
-      "updatedDays": 15,
-      "updated": "15 天前",
+      "stars": 344,
+      "updatedDays": 17,
+      "updated": "17 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9800,7 +9756,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-31",
           "d": "索引自最近一次提交",
-          "t": "15 天前",
+          "t": "17 天前",
           "cur": true
         }
       ],
@@ -9809,8 +9765,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 205,
-      "rank": 222
+      "installs": 206,
+      "rank": 221
     },
     {
       "id": "skill-generator",
@@ -9823,7 +9779,7 @@ window.SKILLHUB_DATA = {
       "repo": "marketingjuliancongdanh79-pixel/skill-generator",
       "repoUrl": "https://github.com/marketingjuliancongdanh79-pixel/skill-generator",
       "stars": 341,
-      "updatedDays": 255,
+      "updatedDays": 256,
       "updated": "8 个月前",
       "scan": {
         "state": "pass",
@@ -9854,7 +9810,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 204,
-      "rank": 223
+      "rank": 222
     },
     {
       "id": "jianing",
@@ -9867,8 +9823,8 @@ window.SKILLHUB_DATA = {
       "repo": "Jianing1117/jianing-skills",
       "repoUrl": "https://github.com/Jianing1117/jianing-skills",
       "stars": 330,
-      "updatedDays": 17,
-      "updated": "17 天前",
+      "updatedDays": 18,
+      "updated": "18 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9888,7 +9844,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-30",
           "d": "索引自最近一次提交",
-          "t": "17 天前",
+          "t": "18 天前",
           "cur": true
         }
       ],
@@ -9898,7 +9854,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 198,
-      "rank": 224
+      "rank": 223
     },
     {
       "id": "agentic-hacking",
@@ -9910,9 +9866,9 @@ window.SKILLHUB_DATA = {
       "author": "mrhlaingbwardev",
       "repo": "mrhlaingbwardev/agentic-hacking-skills",
       "repoUrl": "https://github.com/mrhlaingbwardev/agentic-hacking-skills",
-      "stars": 329,
-      "updatedDays": 15,
-      "updated": "15 天前",
+      "stars": 328,
+      "updatedDays": 16,
+      "updated": "16 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9931,7 +9887,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-01",
           "d": "索引自最近一次提交",
-          "t": "15 天前",
+          "t": "16 天前",
           "cur": true
         }
       ],
@@ -9940,8 +9896,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 197,
-      "rank": 225
+      "installs": 196,
+      "rank": 224
     },
     {
       "id": "turkish-anti-ai",
@@ -9953,9 +9909,9 @@ window.SKILLHUB_DATA = {
       "author": "yucezerey",
       "repo": "yucezerey/turkish-anti-ai-skill",
       "repoUrl": "https://github.com/yucezerey/turkish-anti-ai-skill",
-      "stars": 325,
-      "updatedDays": 5,
-      "updated": "5 天前",
+      "stars": 326,
+      "updatedDays": 6,
+      "updated": "6 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -9975,7 +9931,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-11",
           "d": "索引自最近一次提交",
-          "t": "5 天前",
+          "t": "6 天前",
           "cur": true
         }
       ],
@@ -9985,7 +9941,7 @@ window.SKILLHUB_DATA = {
         "understand-anything"
       ],
       "installs": 195,
-      "rank": 226
+      "rank": 225
     },
     {
       "id": "magic",
@@ -9998,7 +9954,7 @@ window.SKILLHUB_DATA = {
       "repo": "Narwhal-Lab/MagicSkills",
       "repoUrl": "https://github.com/Narwhal-Lab/MagicSkills",
       "stars": 320,
-      "updatedDays": 222,
+      "updatedDays": 223,
       "updated": "7 个月前",
       "scan": {
         "state": "pass",
@@ -10027,7 +9983,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 192,
-      "rank": 227
+      "rank": 226
     },
     {
       "id": "ai",
@@ -10040,7 +9996,7 @@ window.SKILLHUB_DATA = {
       "repo": "MarcoNasi/AI-Skills",
       "repoUrl": "https://github.com/MarcoNasi/AI-Skills",
       "stars": 292,
-      "updatedDays": 52,
+      "updatedDays": 53,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -10071,51 +10027,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 175,
-      "rank": 228
-    },
-    {
-      "id": "writing-style",
-      "name": "writing-style",
-      "domain": "doc",
-      "desc": "可复用的写作风格 Skill 模板。内置自动学习 — 从你的修改中自动提取规则，SKILL.md 越用越准。",
-      "license": "UNKNOWN",
-      "version": "2026-03-24",
-      "author": "jzOcb",
-      "repo": "jzOcb/writing-style-skill",
-      "repoUrl": "https://github.com/jzOcb/writing-style-skill",
-      "stars": 274,
-      "updatedDays": 236,
-      "updated": "7 个月前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "\nAI 用 SKILL.md 写初稿 → 你改到满意 → diff 两版 → 提取规则 → 更新 SKILL.md → 下次更准\n\n# Claude Code\ngit clone https://github.com/jzOcb/writing-style-skill.git\ncp -r writing-style-skill ~/.claude/skills/my-writing-style\n\n# OpenClaw / ClawHub\nnpx clawhub@latest install jz-writing-style-skill\n\npython3 scripts/observe.py record-original draft.md\n# ... 你修改 ...\npython3 scripts/observe.py record-final final.md\n\npython3 scripts/improve.py auto --skill .\n\nwriting-style-skill/\n├── SKILL.md              # 你的写作风格（模板，改成你的）\n├── README.md             # 本文件\n└── scripts/\n    ├── observe.py        # 记录 original / final（零依赖）\n    └── improve.py        # 提取 / 应用 / 回滚（需要 LLM CLI）\n",
-      "readme": [
-        "AI 用 SKILL.md 写初稿 → 你改到满意 → diff 两版 → 提取规则 → 更新 SKILL.md → 下次更准",
-        "git clone https://github.com/jzOcb/writing-style-skill.git",
-        "cp -r writing-style-skill ~/.claude/skills/my-writing-style"
-      ],
-      "versions": [
-        {
-          "v": "2026-03-24",
-          "d": "索引自最近一次提交",
-          "t": "7 个月前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "rea",
-        "humanizer",
-        "academic-research"
-      ],
-      "installs": 164,
-      "rank": 229
+      "rank": 227
     },
     {
       "id": "bambu-studio-ai",
@@ -10127,8 +10039,8 @@ window.SKILLHUB_DATA = {
       "author": "heyixuan2",
       "repo": "heyixuan2/bambu-studio-ai",
       "repoUrl": "https://github.com/heyixuan2/bambu-studio-ai",
-      "stars": 273,
-      "updatedDays": 57,
+      "stars": 277,
+      "updatedDays": 58,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -10158,8 +10070,52 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
+      "installs": 166,
+      "rank": 228
+    },
+    {
+      "id": "writing-style",
+      "name": "writing-style",
+      "domain": "doc",
+      "desc": "可复用的写作风格 Skill 模板。内置自动学习 — 从你的修改中自动提取规则，SKILL.md 越用越准。",
+      "license": "UNKNOWN",
+      "version": "2026-03-24",
+      "author": "jzOcb",
+      "repo": "jzOcb/writing-style-skill",
+      "repoUrl": "https://github.com/jzOcb/writing-style-skill",
+      "stars": 273,
+      "updatedDays": 237,
+      "updated": "7 个月前",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "\nAI 用 SKILL.md 写初稿 → 你改到满意 → diff 两版 → 提取规则 → 更新 SKILL.md → 下次更准\n\n# Claude Code\ngit clone https://github.com/jzOcb/writing-style-skill.git\ncp -r writing-style-skill ~/.claude/skills/my-writing-style\n\n# OpenClaw / ClawHub\nnpx clawhub@latest install jz-writing-style-skill\n\npython3 scripts/observe.py record-original draft.md\n# ... 你修改 ...\npython3 scripts/observe.py record-final final.md\n\npython3 scripts/improve.py auto --skill .\n\nwriting-style-skill/\n├── SKILL.md              # 你的写作风格（模板，改成你的）\n├── README.md             # 本文件\n└── scripts/\n    ├── observe.py        # 记录 original / final（零依赖）\n    └── improve.py        # 提取 / 应用 / 回滚（需要 LLM CLI）\n",
+      "readme": [
+        "AI 用 SKILL.md 写初稿 → 你改到满意 → diff 两版 → 提取规则 → 更新 SKILL.md → 下次更准",
+        "git clone https://github.com/jzOcb/writing-style-skill.git",
+        "cp -r writing-style-skill ~/.claude/skills/my-writing-style"
+      ],
+      "versions": [
+        {
+          "v": "2026-03-24",
+          "d": "索引自最近一次提交",
+          "t": "7 个月前",
+          "cur": true
+        }
+      ],
+      "related": [
+        "rea",
+        "humanizer",
+        "academic-research"
+      ],
       "installs": 163,
-      "rank": 230
+      "rank": 229
     },
     {
       "id": "test-automation-skills-agents",
@@ -10167,13 +10123,13 @@ window.SKILLHUB_DATA = {
       "domain": "test",
       "desc": "A practical library of agents, instructions, and skills designed specifically for QA Automation Engineers, focusing on production-oriented s",
       "license": "MIT",
-      "version": "2026-11-09",
+      "version": "2026-11-17",
       "author": "fugazi",
       "repo": "fugazi/test-automation-skills-agents",
       "repoUrl": "https://github.com/fugazi/test-automation-skills-agents",
-      "stars": 265,
-      "updatedDays": 6,
-      "updated": "6 天前",
+      "stars": 267,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -10191,9 +10147,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-09",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "6 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -10202,8 +10158,8 @@ window.SKILLHUB_DATA = {
         "marketing",
         "agents"
       ],
-      "installs": 159,
-      "rank": 231
+      "installs": 160,
+      "rank": 230
     },
     {
       "id": "ros2-engineering",
@@ -10215,9 +10171,9 @@ window.SKILLHUB_DATA = {
       "author": "dbwls99706",
       "repo": "dbwls99706/ros2-engineering-skills",
       "repoUrl": "https://github.com/dbwls99706/ros2-engineering-skills",
-      "stars": 245,
-      "updatedDays": 4,
-      "updated": "4 天前",
+      "stars": 248,
+      "updatedDays": 5,
+      "updated": "5 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -10237,7 +10193,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-12",
           "d": "索引自最近一次提交",
-          "t": "4 天前",
+          "t": "5 天前",
           "cur": true
         }
       ],
@@ -10246,7 +10202,51 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 147,
+      "installs": 148,
+      "rank": 231
+    },
+    {
+      "id": "paper-search-pro",
+      "name": "paper-search-pro",
+      "domain": "data",
+      "desc": "Academic literature discovery as a Skill.",
+      "license": "Apache-2.0",
+      "version": "2026-11-03",
+      "author": "O0000-code",
+      "repo": "O0000-code/paper-search-pro",
+      "repoUrl": "https://github.com/O0000-code/paper-search-pro",
+      "stars": 235,
+      "updatedDays": 13,
+      "updated": "13 天前",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "\nIn your agent's chat, after install:\n\n  Find papers on working memory training in older adults\n\n# Pick ONE target directory, depending on your agent:\n#   ~/.claude/skills/paper-search-pro          # Claude Code\n#   ~/.codex/skills/paper-search-pro           # Codex CLI\n#   ~/.agents/skills/paper-search-pro          # cross-agent convention (Goose, Roo, etc.)\n#   ~/.config/opencode/skills/paper-search-pro # OpenCode\n#   ~/.codeium/windsurf/skills/paper-search-pro # Windsurf\n#   ./.claude/skills/paper-search-pro          # project-local (Cursor, etc.)\n\ngit clone https://github.com/O0000-code/paper-search-pro.git \\\n  ~/.claude/skills/paper-search-pro   # change to your chosen path\n\n# Point PSP_HOME at wherever you cloned. SKILL.md STEP 0 also auto-resolves\n# the common paths above, so this manual export is only needed for non-standard locations.\nexport PSP_HOME=\"$HOME/.claude/skills/paper-search-pro\"\n\npython3 -m pip install -r \"$PSP_HOME/scripts/requirements.txt\"\n\n# Optional: install the exact dependency versions validated by CI.\npython3 -m pip install -r \"$PSP_HOME/scripts/requirements.lock\"\n\nreport.html         Self-contained Shadcn report (opens directly in browser)\nreport.md     ",
+      "readme": [
+        "In your agent's chat, after install:",
+        "Find papers on working memory training in older adults",
+        "git clone https://github.com/O0000-code/paper-search-pro.git \\"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-03",
+          "d": "索引自最近一次提交",
+          "t": "13 天前",
+          "cur": true
+        }
+      ],
+      "related": [
+        "paperclip",
+        "archify",
+        "understand-anything"
+      ],
+      "installs": 141,
       "rank": 232
     },
     {
@@ -10260,7 +10260,7 @@ window.SKILLHUB_DATA = {
       "repo": "tigerless-labs/design-harness",
       "repoUrl": "https://github.com/tigerless-labs/design-harness",
       "stars": 235,
-      "updatedDays": 75,
+      "updatedDays": 76,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -10294,62 +10294,18 @@ window.SKILLHUB_DATA = {
       "rank": 233
     },
     {
-      "id": "paper-search-pro",
-      "name": "paper-search-pro",
-      "domain": "data",
-      "desc": "Academic literature discovery as a Skill.",
-      "license": "Apache-2.0",
-      "version": "2026-11-03",
-      "author": "O0000-code",
-      "repo": "O0000-code/paper-search-pro",
-      "repoUrl": "https://github.com/O0000-code/paper-search-pro",
-      "stars": 232,
-      "updatedDays": 12,
-      "updated": "12 天前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "\nIn your agent's chat, after install:\n\n  Find papers on working memory training in older adults\n\n# Pick ONE target directory, depending on your agent:\n#   ~/.claude/skills/paper-search-pro          # Claude Code\n#   ~/.codex/skills/paper-search-pro           # Codex CLI\n#   ~/.agents/skills/paper-search-pro          # cross-agent convention (Goose, Roo, etc.)\n#   ~/.config/opencode/skills/paper-search-pro # OpenCode\n#   ~/.codeium/windsurf/skills/paper-search-pro # Windsurf\n#   ./.claude/skills/paper-search-pro          # project-local (Cursor, etc.)\n\ngit clone https://github.com/O0000-code/paper-search-pro.git \\\n  ~/.claude/skills/paper-search-pro   # change to your chosen path\n\n# Point PSP_HOME at wherever you cloned. SKILL.md STEP 0 also auto-resolves\n# the common paths above, so this manual export is only needed for non-standard locations.\nexport PSP_HOME=\"$HOME/.claude/skills/paper-search-pro\"\n\npython3 -m pip install -r \"$PSP_HOME/scripts/requirements.txt\"\n\n# Optional: install the exact dependency versions validated by CI.\npython3 -m pip install -r \"$PSP_HOME/scripts/requirements.lock\"\n\nreport.html         Self-contained Shadcn report (opens directly in browser)\nreport.md     ",
-      "readme": [
-        "In your agent's chat, after install:",
-        "Find papers on working memory training in older adults",
-        "git clone https://github.com/O0000-code/paper-search-pro.git \\"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-03",
-          "d": "索引自最近一次提交",
-          "t": "12 天前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "paperclip",
-        "archify",
-        "understand-anything"
-      ],
-      "installs": 139,
-      "rank": 234
-    },
-    {
       "id": "dojo-101",
       "name": "Dojo-101",
       "domain": "ops",
       "desc": "DOJO-101 : Base de Connaissances Opérationnelle Cybersécurité, DevSecOps & IA Souveraine (Offline-First)",
       "license": "GPL-3.0",
-      "version": "2026-11-14",
+      "version": "2026-11-17",
       "author": "Aif4thah",
       "repo": "Aif4thah/Dojo-101",
       "repoUrl": "https://github.com/Aif4thah/Dojo-101",
       "stars": 230,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -10367,9 +10323,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-14",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -10379,7 +10335,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 138,
-      "rank": 235
+      "rank": 234
     },
     {
       "id": "forge",
@@ -10387,13 +10343,13 @@ window.SKILLHUB_DATA = {
       "domain": "ops",
       "desc": "Forge is the open-source runtime for Anthropic's Agent Skills standard — built for the agent that runs next to a service, in your environmen",
       "license": "Apache-2.0",
-      "version": "2026-11-14",
+      "version": "2026-11-17",
       "author": "initializ",
       "repo": "initializ/forge",
       "repoUrl": "https://github.com/initializ/forge",
       "stars": 230,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -10411,9 +10367,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-14",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -10423,7 +10379,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 138,
-      "rank": 236
+      "rank": 235
     },
     {
       "id": "paper-radar",
@@ -10435,8 +10391,8 @@ window.SKILLHUB_DATA = {
       "author": "tigerless-labs",
       "repo": "tigerless-labs/paper-radar",
       "repoUrl": "https://github.com/tigerless-labs/paper-radar",
-      "stars": 224,
-      "updatedDays": 75,
+      "stars": 225,
+      "updatedDays": 76,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -10466,8 +10422,8 @@ window.SKILLHUB_DATA = {
         "humanizer",
         "academic-research"
       ],
-      "installs": 134,
-      "rank": 237
+      "installs": 135,
+      "rank": 236
     },
     {
       "id": "squid",
@@ -10480,8 +10436,8 @@ window.SKILLHUB_DATA = {
       "repo": "iusztinpaul/squid",
       "repoUrl": "https://github.com/iusztinpaul/squid",
       "stars": 216,
-      "updatedDays": 20,
-      "updated": "20 天前",
+      "updatedDays": 21,
+      "updated": "21 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -10501,7 +10457,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-27",
           "d": "索引自最近一次提交",
-          "t": "20 天前",
+          "t": "21 天前",
           "cur": true
         }
       ],
@@ -10511,7 +10467,7 @@ window.SKILLHUB_DATA = {
         "agents"
       ],
       "installs": 129,
-      "rank": 238
+      "rank": 237
     },
     {
       "id": "brand-to-design-md",
@@ -10524,7 +10480,7 @@ window.SKILLHUB_DATA = {
       "repo": "shaom/brand-to-design-md-skill",
       "repoUrl": "https://github.com/shaom/brand-to-design-md-skill",
       "stars": 212,
-      "updatedDays": 100,
+      "updatedDays": 101,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -10554,7 +10510,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 127,
-      "rank": 239
+      "rank": 238
     },
     {
       "id": "drunk-claude",
@@ -10567,7 +10523,7 @@ window.SKILLHUB_DATA = {
       "repo": "KorroAi/drunk-claude",
       "repoUrl": "https://github.com/KorroAi/drunk-claude",
       "stars": 210,
-      "updatedDays": 36,
+      "updatedDays": 37,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -10597,7 +10553,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 126,
-      "rank": 240
+      "rank": 239
     },
     {
       "id": "manim",
@@ -10609,8 +10565,8 @@ window.SKILLHUB_DATA = {
       "author": "Yusuke710",
       "repo": "Yusuke710/manim-skill",
       "repoUrl": "https://github.com/Yusuke710/manim-skill",
-      "stars": 207,
-      "updatedDays": 40,
+      "stars": 210,
+      "updatedDays": 41,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -10640,8 +10596,8 @@ window.SKILLHUB_DATA = {
         "superpowers",
         "andrej-karpathy"
       ],
-      "installs": 124,
-      "rank": 241
+      "installs": 126,
+      "rank": 240
     },
     {
       "id": "frappe_claude_skill_package",
@@ -10654,7 +10610,7 @@ window.SKILLHUB_DATA = {
       "repo": "Impertio-Studio/Frappe_Claude_Skill_Package",
       "repoUrl": "https://github.com/Impertio-Studio/Frappe_Claude_Skill_Package",
       "stars": 206,
-      "updatedDays": 60,
+      "updatedDays": 61,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -10685,7 +10641,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 123,
-      "rank": 242
+      "rank": 241
     },
     {
       "id": "fusion-setup-configuration-registry",
@@ -10697,9 +10653,9 @@ window.SKILLHUB_DATA = {
       "author": "oracle",
       "repo": "oracle/Fusion-Setup-Configuration-Registry",
       "repoUrl": "https://github.com/oracle/Fusion-Setup-Configuration-Registry",
-      "stars": 196,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "stars": 199,
+      "updatedDays": 3,
+      "updated": "3 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -10719,7 +10675,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-13",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "3 天前",
           "cur": true
         }
       ],
@@ -10729,7 +10685,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 243
+      "rank": 242
     },
     {
       "id": "ultracode",
@@ -10742,7 +10698,7 @@ window.SKILLHUB_DATA = {
       "repo": "PabloNAX/ultracode-skill",
       "repoUrl": "https://github.com/PabloNAX/ultracode-skill",
       "stars": 196,
-      "updatedDays": 154,
+      "updatedDays": 155,
       "updated": "5 个月前",
       "scan": {
         "state": "pass",
@@ -10773,7 +10729,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 244
+      "rank": 243
     },
     {
       "id": "skillhone",
@@ -10785,9 +10741,9 @@ window.SKILLHUB_DATA = {
       "author": "Tencent",
       "repo": "Tencent/SkillHone",
       "repoUrl": "https://github.com/Tencent/SkillHone",
-      "stars": 195,
-      "updatedDays": 11,
-      "updated": "11 天前",
+      "stars": 196,
+      "updatedDays": 12,
+      "updated": "12 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -10805,7 +10761,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-04",
           "d": "索引自最近一次提交",
-          "t": "11 天前",
+          "t": "12 天前",
           "cur": true
         }
       ],
@@ -10815,7 +10771,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 245
+      "rank": 244
     },
     {
       "id": "roblox-brain",
@@ -10828,7 +10784,7 @@ window.SKILLHUB_DATA = {
       "repo": "TabooHarmony/roblox-brain",
       "repoUrl": "https://github.com/TabooHarmony/roblox-brain",
       "stars": 193,
-      "updatedDays": 32,
+      "updatedDays": 33,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -10859,7 +10815,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 246
+      "rank": 245
     },
     {
       "id": "awesome-gaussian",
@@ -10867,11 +10823,11 @@ window.SKILLHUB_DATA = {
       "domain": "doc",
       "desc": "You shouldn't search 20 repos for 3DGS papers. This is the only one you need.",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "jaccen",
       "repo": "jaccen/Awesome-Gaussian-Skills",
       "repoUrl": "https://github.com/jaccen/Awesome-Gaussian-Skills",
-      "stars": 186,
+      "stars": 187,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -10891,7 +10847,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -10903,7 +10859,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 247
+      "rank": 246
     },
     {
       "id": "ai-research-os-workshop",
@@ -10916,7 +10872,7 @@ window.SKILLHUB_DATA = {
       "repo": "iusztinpaul/ai-research-os-workshop",
       "repoUrl": "https://github.com/iusztinpaul/ai-research-os-workshop",
       "stars": 184,
-      "updatedDays": 142,
+      "updatedDays": 143,
       "updated": "4 个月前",
       "scan": {
         "state": "pass",
@@ -10947,7 +10903,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 248
+      "rank": 247
     },
     {
       "id": "skillfile",
@@ -10960,7 +10916,7 @@ window.SKILLHUB_DATA = {
       "repo": "eljulians/skillfile",
       "repoUrl": "https://github.com/eljulians/skillfile",
       "stars": 182,
-      "updatedDays": 42,
+      "updatedDays": 43,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -10991,6 +10947,50 @@ window.SKILLHUB_DATA = {
         "agents"
       ],
       "installs": 120,
+      "rank": 248
+    },
+    {
+      "id": "openclaw-marketing",
+      "name": "openclaw-marketing",
+      "domain": "doc",
+      "desc": "37 Battle-Tested Marketing Skills for OpenClaw Agents",
+      "license": "UNKNOWN",
+      "version": "2026-07-06",
+      "author": "davidpc007",
+      "repo": "davidpc007/openclaw-marketing-skills",
+      "repoUrl": "https://github.com/davidpc007/openclaw-marketing-skills",
+      "stars": 181,
+      "updatedDays": 134,
+      "updated": "4 个月前",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "<!-- SPONSOR -->\n<p align=\"center\">\n  <a href=\"https://myclaw.ai?utm_source=github&utm_campaign=openclaw-marketing-skills\">\n    <img src=\"https://raw.githubusercontent.com/LeoYeAI/openclaw-marketing-skills/main/sponsor/banner.svg\" alt=\"MyClaw.ai — Your OpenClaw Agent, Always On.\" width=\"700\"/>\n  </a>\n</p>\n\n<p align=\"center\">\n  <b><a href=\"https://myclaw.ai?utm_source=github&utm_campaign=openclaw-marketing-skills\">MyClaw.ai</a></b> — Run all 37 of these skills without managing a server.<br>\n  Full cloud-hosted OpenClaw · one-click setup · 24/7 uptime · your data stays on your server.<br>\n  <a href=\"https://myclaw.ai?utm_source=github&utm_campaign=openclaw-marketing-skills\"><b>Get started free →</b></a>\n</p>\n\nclawhub install LeoYeAI/openclaw-marketing-skills\n\nclawhub install LeoYeAI/openclaw-marketing-skills --skill copywriting page-cro seo-audit\n\ngit clone https://github.com/LeoYeAI/openclaw-marketing-skills.git\ncp -r openclaw-marketing-skills/skills/* ~/.agents/skills/\n\nConnect my Google Ads account\n→ uses google-ads-connect\n\nConnect Google Search Console\n→ uses search-console-connect\n\nConnect my Meta Ads account\n→ uses meta-ads-connect\n\nConnect TweetClaw for X/Twitter research\n→ u",
+      "readme": [
+        "Full cloud-hosted OpenClaw · one-click setup · 24/7 uptime · your data stays on your server.",
+        "clawhub install LeoYeAI/openclaw-marketing-skills",
+        "clawhub install LeoYeAI/openclaw-marketing-skills --skill copywriting page-cro seo-audit"
+      ],
+      "versions": [
+        {
+          "v": "2026-07-06",
+          "d": "索引自最近一次提交",
+          "t": "4 个月前",
+          "cur": true
+        }
+      ],
+      "related": [
+        "rea",
+        "humanizer",
+        "academic-research"
+      ],
+      "installs": 120,
       "rank": 249
     },
     {
@@ -11004,7 +11004,7 @@ window.SKILLHUB_DATA = {
       "repo": "anildash/better-documents",
       "repoUrl": "https://github.com/anildash/better-documents",
       "stars": 181,
-      "updatedDays": 30,
+      "updatedDays": 31,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -11038,50 +11038,6 @@ window.SKILLHUB_DATA = {
       "rank": 250
     },
     {
-      "id": "ai-toolkit",
-      "name": "ai-toolkit",
-      "domain": "code",
-      "desc": "- OpenCode V2 support. One plugin supports V2 and V1 1.18.29+, with scoped",
-      "license": "Apache-2.0",
-      "version": "2026-11-11",
-      "author": "softspark",
-      "repo": "softspark/ai-toolkit",
-      "repoUrl": "https://github.com/softspark/ai-toolkit",
-      "stars": 180,
-      "updatedDays": 5,
-      "updated": "5 天前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 1,
-        "cred": 0,
-        "low": 1
-      },
-      "skillmd": "## Install\n\n**Requirements:** Node.js >= 18 and Python >= 3.11.\n\n> **macOS:** `/usr/bin/python3` is Python 3.9 and will not run the toolkit. Install a supported one with `brew install python@3.13` and make sure `which python3` no longer points at `/usr/bin/python3`.\n\n```bash\n# Option A: install globally (once per machine)\nnpm install -g @softspark/ai-toolkit\nai-toolkit install\n\n# Option B: try without installing (npx)\nnpx @softspark/ai-toolkit install\n```\n\n**That's it.** Claude Code picks up 116 skills, 44 agents, quality hooks, and the safety constitution automatically.\n\nLanguage knowledge skills (`rust-rules`, `kotlin-patterns`, ...) are scoped to the languages your registered projects use: once you have run `ai-toolkit install --local` in at least one project, the global install turns the other languages' skills off through `skillOverrides` in `~/.claude/settings.json` so their descriptions stop loading into every session. A new project in a new language turns its skills back on. `ai-toolkit install --language-skills all` keeps every language skill on and remembers that choice; `ai-toolkit doctor` shows the resulting context budget.\n\n**Windows:** WSL is the recommended runtime. ",
-      "readme": [
-        "Requirements: Node.js = 18 and Python = 3.11.",
-        "That's it. Claude Code picks up 116 skills, 44 agents, quality hooks, and the safety constitution automatically.",
-        "Language knowledge skills (rust-rules, kotlin-patterns, ...) are scoped to the languages your registered projects use: once you have run ai-toolkit install --local in at least one project, the global "
-      ],
-      "versions": [
-        {
-          "v": "2026-11-11",
-          "d": "索引自最近一次提交",
-          "t": "5 天前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "skills",
-        "superpowers",
-        "andrej-karpathy"
-      ],
-      "installs": 120,
-      "rank": 251
-    },
-    {
       "id": "venice-chat",
       "name": "venice-chat",
       "domain": "code",
@@ -11091,7 +11047,7 @@ window.SKILLHUB_DATA = {
       "author": "veniceai",
       "repo": "veniceai/skills",
       "repoUrl": "https://github.com/veniceai/skills",
-      "stars": 172,
+      "stars": 173,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -11123,7 +11079,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 252
+      "rank": 251
     },
     {
       "id": "alpaca",
@@ -11135,9 +11091,9 @@ window.SKILLHUB_DATA = {
       "author": "alpacahq",
       "repo": "alpacahq/alpaca-skills",
       "repoUrl": "https://github.com/alpacahq/alpaca-skills",
-      "stars": 168,
-      "updatedDays": 4,
-      "updated": "4 天前",
+      "stars": 169,
+      "updatedDays": 5,
+      "updated": "5 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -11157,7 +11113,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-11",
           "d": "索引自最近一次提交",
-          "t": "4 天前",
+          "t": "5 天前",
           "cur": true
         }
       ],
@@ -11167,7 +11123,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 253
+      "rank": 252
     },
     {
       "id": "validate-skill-preview-upload",
@@ -11180,7 +11136,7 @@ window.SKILLHUB_DATA = {
       "repo": "hashgraph-online/skill-publish",
       "repoUrl": "https://github.com/hashgraph-online/skill-publish",
       "stars": 166,
-      "updatedDays": 217,
+      "updatedDays": 218,
       "updated": "7 个月前",
       "scan": {
         "state": "pass",
@@ -11211,7 +11167,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 254
+      "rank": 253
     },
     {
       "id": "design-md-figma",
@@ -11224,7 +11180,7 @@ window.SKILLHUB_DATA = {
       "repo": "bergside/design-md-figma",
       "repoUrl": "https://github.com/bergside/design-md-figma",
       "stars": 159,
-      "updatedDays": 174,
+      "updatedDays": 175,
       "updated": "5 个月前",
       "scan": {
         "state": "pass",
@@ -11255,7 +11211,7 @@ window.SKILLHUB_DATA = {
         "cherry-studio"
       ],
       "installs": 120,
-      "rank": 255
+      "rank": 254
     },
     {
       "id": "avenox",
@@ -11267,9 +11223,9 @@ window.SKILLHUB_DATA = {
       "author": "avenoxai",
       "repo": "avenoxai/avenoxskills",
       "repoUrl": "https://github.com/avenoxai/avenoxskills",
-      "stars": 150,
-      "updatedDays": 5,
-      "updated": "5 天前",
+      "stars": 152,
+      "updatedDays": 7,
+      "updated": "7 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -11289,7 +11245,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-10",
           "d": "索引自最近一次提交",
-          "t": "5 天前",
+          "t": "7 天前",
           "cur": true
         }
       ],
@@ -11299,7 +11255,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 256
+      "rank": 255
     },
     {
       "id": "skillmd",
@@ -11307,7 +11263,7 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "The registry that lints.",
       "license": "MIT",
-      "version": "2026-11-15",
+      "version": "2026-11-17",
       "author": "skillmds",
       "repo": "skillmds/SkillMD",
       "repoUrl": "https://github.com/skillmds/SkillMD",
@@ -11323,7 +11279,7 @@ window.SKILLHUB_DATA = {
         "cred": 0,
         "low": 0
       },
-      "skillmd": "- uses: skillmds/skillmd/action@v1\n  with:\n    path: .\n\n# Search the registry and install a skill into every agent on your machine\nnpx get-skill search \"pdf\"\nnpx get-skill add anthropic/pdf\n\n# Lint your own skill before you share it\nnpx get-skill lint ./my-skill\n\nskillmd lint . --format sarif > skillmd.sarif   # GitHub Code Scanning\nskillmd lint . --strict                          # warnings fail too\nskillmd add owner/repo -a claude-code -g         # one agent, global scope\nskillmd add some/skill --deny executes_scripts   # refuse skills that run code\n\n# Claude Code\nclaude mcp add skillmd -- npx -y get-skill\n\n// Claude Desktop, Cursor, VS Code, Windsurf, … (examples/mcp/ has per-client files)\n{ \"mcpServers\": { \"skillmd\": { \"command\": \"npx\", \"args\": [\"-y\", \"get-skill\"] } } }\n\nimport { lint } from \"@skillmds/core\";\n\nconst { ok, score, diagnostics, security } = lint(rawSkillMd, { slug: \"my-skill\" });\n\n- uses: skillmds/skillmd/action@v1\n  with:\n    path: .\n\nskillmd login                   # token from your skillmd.com account\nskillmd publish ./my-skill      # blocked on lint errors\nskillmd publish ./my-skill --dry-run\n\n[![SkillMD](https://skillmd.com/badge/<you>/<name>.svg)](https://sk",
+      "skillmd": "- uses: skillmds/skillmd/action@v1\n  with:\n    path: .\n\n# Search the registry and install a skill into every agent on your machine\nnpx get-skill search \"pdf\"\nnpx get-skill add anthropic/pdf\n\n# Lint your own skill before you share it\nnpx get-skill lint ./my-skill\n\nskillmd lint . --format sarif > skillmd.sarif   # GitHub Code Scanning\nskillmd lint . --strict                          # warnings fail too\nskillmd add owner/repo -a claude-code -g         # one agent, global scope\nskillmd add some/skill --deny executes_scripts   # refuse skills that run code\n\n# Claude Code\nclaude mcp add skillmd -- npx -y get-skill\n\n// Claude Desktop, Cursor, VS Code, Windsurf, … (examples/mcp/ has per-client files)\n{ \"mcpServers\": { \"skillmd\": { \"command\": \"npx\", \"args\": [\"-y\", \"get-skill\"] } } }\n\nimport { lint } from \"@skillmds/core\";\n\nconst { ok, score, diagnostics, security } = lint(rawSkillMd, { slug: \"my-skill\" });\n\n- uses: skillmds/skillmd/action@v1\n  with:\n    path: .\n\nskillmd login                   # log in from your browser (CI: set SKILLMD_TOKEN)\nskillmd publish ./my-skill      # blocked on lint errors\nskillmd publish ./my-skill --dry-run\n\n[![SkillMD](https://skillmd.com/badge/<you>/<name>.svg",
       "readme": [
         "- uses: skillmds/skillmd/action@v1",
         "npx get-skill search \"pdf\"",
@@ -11331,7 +11287,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-15",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -11343,7 +11299,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 257
+      "rank": 256
     },
     {
       "id": "lets-scroll",
@@ -11356,7 +11312,7 @@ window.SKILLHUB_DATA = {
       "repo": "AIwithhassan/lets-scroll",
       "repoUrl": "https://github.com/AIwithhassan/lets-scroll",
       "stars": 136,
-      "updatedDays": 93,
+      "updatedDays": 94,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -11387,7 +11343,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 258
+      "rank": 257
     },
     {
       "id": "gdpr-expert",
@@ -11400,7 +11356,7 @@ window.SKILLHUB_DATA = {
       "repo": "ThomasMoreAI/legal-skills-open",
       "repoUrl": "https://github.com/ThomasMoreAI/legal-skills-open",
       "stars": 136,
-      "updatedDays": 34,
+      "updatedDays": 35,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -11429,7 +11385,7 @@ window.SKILLHUB_DATA = {
         "agents"
       ],
       "installs": 120,
-      "rank": 259
+      "rank": 258
     },
     {
       "id": "arvancloud",
@@ -11442,7 +11398,7 @@ window.SKILLHUB_DATA = {
       "repo": "erfnzdeh/arvancloud-agent-skill",
       "repoUrl": "https://github.com/erfnzdeh/arvancloud-agent-skill",
       "stars": 135,
-      "updatedDays": 48,
+      "updatedDays": 49,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -11473,7 +11429,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 260
+      "rank": 259
     },
     {
       "id": "astro-conversion-kit",
@@ -11485,9 +11441,9 @@ window.SKILLHUB_DATA = {
       "author": "ethanplusai",
       "repo": "ethanplusai/astro-conversion-kit",
       "repoUrl": "https://github.com/ethanplusai/astro-conversion-kit",
-      "stars": 132,
-      "updatedDays": 15,
-      "updated": "15 天前",
+      "stars": 133,
+      "updatedDays": 16,
+      "updated": "16 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -11507,7 +11463,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-31",
           "d": "索引自最近一次提交",
-          "t": "15 天前",
+          "t": "16 天前",
           "cur": true
         }
       ],
@@ -11517,7 +11473,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 261
+      "rank": 260
     },
     {
       "id": "bazi-ziwei",
@@ -11530,7 +11486,7 @@ window.SKILLHUB_DATA = {
       "repo": "dzcmemory-web/bazi-ziwei-skills",
       "repoUrl": "https://github.com/dzcmemory-web/bazi-ziwei-skills",
       "stars": 131,
-      "updatedDays": 78,
+      "updatedDays": 79,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -11561,7 +11517,7 @@ window.SKILLHUB_DATA = {
         "understand-anything"
       ],
       "installs": 120,
-      "rank": 262
+      "rank": 261
     },
     {
       "id": "claude-orchestrator",
@@ -11574,7 +11530,7 @@ window.SKILLHUB_DATA = {
       "repo": "DylXBT/claude-orchestrator-skills",
       "repoUrl": "https://github.com/DylXBT/claude-orchestrator-skills",
       "stars": 114,
-      "updatedDays": 166,
+      "updatedDays": 168,
       "updated": "5 个月前",
       "scan": {
         "state": "pass",
@@ -11604,7 +11560,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 263
+      "rank": 262
     },
     {
       "id": "support-agent",
@@ -11617,7 +11573,7 @@ window.SKILLHUB_DATA = {
       "repo": "Helpercraft/helpercraft",
       "repoUrl": "https://github.com/Helpercraft/helpercraft",
       "stars": 109,
-      "updatedDays": 38,
+      "updatedDays": 39,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -11648,7 +11604,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 264
+      "rank": 263
     },
     {
       "id": "sail",
@@ -11661,7 +11617,7 @@ window.SKILLHUB_DATA = {
       "repo": "pillar-labs/sail-skill",
       "repoUrl": "https://github.com/pillar-labs/sail-skill",
       "stars": 108,
-      "updatedDays": 131,
+      "updatedDays": 132,
       "updated": "4 个月前",
       "scan": {
         "state": "pass",
@@ -11692,7 +11648,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 120,
-      "rank": 265
+      "rank": 264
     },
     {
       "id": "agent-skill-sync",
@@ -11705,7 +11661,7 @@ window.SKILLHUB_DATA = {
       "repo": "kina-cmd/agent-skill-sync",
       "repoUrl": "https://github.com/kina-cmd/agent-skill-sync",
       "stars": 97,
-      "updatedDays": 65,
+      "updatedDays": 66,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -11736,7 +11692,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 266
+      "rank": 265
     },
     {
       "id": "stream-coding",
@@ -11749,7 +11705,7 @@ window.SKILLHUB_DATA = {
       "repo": "frmoretto/stream-coding",
       "repoUrl": "https://github.com/frmoretto/stream-coding",
       "stars": 96,
-      "updatedDays": 262,
+      "updatedDays": 263,
       "updated": "8 个月前",
       "scan": {
         "state": "pass",
@@ -11780,7 +11736,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 267
+      "rank": 266
     },
     {
       "id": "sync",
@@ -11793,7 +11749,7 @@ window.SKILLHUB_DATA = {
       "repo": "william-garden/sync-skill",
       "repoUrl": "https://github.com/william-garden/sync-skill",
       "stars": 96,
-      "updatedDays": 110,
+      "updatedDays": 111,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -11824,7 +11780,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 268
+      "rank": 267
     },
     {
       "id": "routeros",
@@ -11868,7 +11824,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 269
+      "rank": 268
     },
     {
       "id": "claude-skill-code-cleanup",
@@ -11881,8 +11837,8 @@ window.SKILLHUB_DATA = {
       "repo": "Hao0321/claude-skill-code-cleanup",
       "repoUrl": "https://github.com/Hao0321/claude-skill-code-cleanup",
       "stars": 89,
-      "updatedDays": 24,
-      "updated": "24 天前",
+      "updatedDays": 25,
+      "updated": "25 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -11900,7 +11856,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-23",
           "d": "索引自最近一次提交",
-          "t": "24 天前",
+          "t": "25 天前",
           "cur": true
         }
       ],
@@ -11910,7 +11866,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 270
+      "rank": 269
     },
     {
       "id": "artcraft",
@@ -11922,9 +11878,9 @@ window.SKILLHUB_DATA = {
       "author": "midasmatterhorn",
       "repo": "midasmatterhorn/artcraft-skills",
       "repoUrl": "https://github.com/midasmatterhorn/artcraft-skills",
-      "stars": 83,
-      "updatedDays": 0,
-      "updated": "今天",
+      "stars": 85,
+      "updatedDays": 1,
+      "updated": "昨天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -11944,7 +11900,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "今天",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -11954,7 +11910,7 @@ window.SKILLHUB_DATA = {
         "cherry-studio"
       ],
       "installs": 120,
-      "rank": 271
+      "rank": 270
     },
     {
       "id": "open-skill-sunset",
@@ -11967,7 +11923,7 @@ window.SKILLHUB_DATA = {
       "repo": "ooocooc/open-skill-sunset",
       "repoUrl": "https://github.com/ooocooc/open-skill-sunset",
       "stars": 79,
-      "updatedDays": 75,
+      "updatedDays": 77,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -11998,7 +11954,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 120,
-      "rank": 272
+      "rank": 271
     },
     {
       "id": "serac",
@@ -12011,8 +11967,8 @@ window.SKILLHUB_DATA = {
       "repo": "serac-labs/serac",
       "repoUrl": "https://github.com/serac-labs/serac",
       "stars": 77,
-      "updatedDays": 27,
-      "updated": "27 天前",
+      "updatedDays": 28,
+      "updated": "28 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -12032,7 +11988,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-20",
           "d": "索引自最近一次提交",
-          "t": "27 天前",
+          "t": "28 天前",
           "cur": true
         }
       ],
@@ -12042,7 +11998,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 273
+      "rank": 272
     },
     {
       "id": "claude-office",
@@ -12055,7 +12011,7 @@ window.SKILLHUB_DATA = {
       "repo": "fivetaku/claude-office-skills",
       "repoUrl": "https://github.com/fivetaku/claude-office-skills",
       "stars": 73,
-      "updatedDays": 222,
+      "updatedDays": 223,
       "updated": "7 个月前",
       "scan": {
         "state": "pass",
@@ -12086,7 +12042,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 274
+      "rank": 273
     },
     {
       "id": "codex-gpt-image",
@@ -12098,9 +12054,9 @@ window.SKILLHUB_DATA = {
       "author": "ningzimu",
       "repo": "ningzimu/codex-gpt-image",
       "repoUrl": "https://github.com/ningzimu/codex-gpt-image",
-      "stars": 71,
-      "updatedDays": 9,
-      "updated": "9 天前",
+      "stars": 72,
+      "updatedDays": 10,
+      "updated": "10 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -12120,7 +12076,51 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-07",
           "d": "索引自最近一次提交",
-          "t": "9 天前",
+          "t": "10 天前",
+          "cur": true
+        }
+      ],
+      "related": [
+        "rea",
+        "humanizer",
+        "academic-research"
+      ],
+      "installs": 120,
+      "rank": 274
+    },
+    {
+      "id": "build-your-harness",
+      "name": "build-your-harness",
+      "domain": "doc",
+      "desc": "star know sync better view APQR v2.1",
+      "license": "MIT",
+      "version": "2026-11-16",
+      "author": "SpaceZephyr",
+      "repo": "SpaceZephyr/build-your-harness",
+      "repoUrl": "https://github.com/SpaceZephyr/build-your-harness",
+      "stars": 71,
+      "updatedDays": 1,
+      "updated": "昨天",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 0,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "`star` &nbsp;·&nbsp; `know` &nbsp;·&nbsp; `sync` &nbsp;·&nbsp; `better` &nbsp;·&nbsp; `view` &nbsp;·&nbsp; `APQR` &nbsp;·&nbsp; **v2.1**\n\n<br>\n\n![LICENSE](https://img.shields.io/badge/LICENSE-MIT-DFB317?style=for-the-badge&labelColor=555555)\n![AGENT SKILLS](https://img.shields.io/badge/AGENT_SKILLS-STANDARD-4CAF50?style=for-the-badge&labelColor=555555)\n![DEPENDENCIES](https://img.shields.io/badge/DEPENDENCIES-ZERO-2196F3?style=for-the-badge&labelColor=555555)\n\n![RUNTIME](https://img.shields.io/badge/RUNTIME-CLAUDE_CODE_%C2%B7_CODEX_%C2%B7_CURSOR_%C2%B7_OPENCLAW-7C3AED?style=for-the-badge&labelColor=555555)\n\n公众号 / 小红书 / B站 / 知乎：空格的键盘 &nbsp;|&nbsp; [wzfh520@gmail.com](mailto:wzfh520@gmail.com)\n\n</div>\n\ngit clone https://github.com/SpaceZephyr/build-your-harness.git\ncd build-your-harness\n\nfor s in star know sync better view; do\n  ln -s \"$(pwd)/$s-your-harness\" ~/.claude/skills/$s-your-harness\ndone\nln -s \"$(pwd)/space-APQR\" ~/.claude/skills/space-APQR\n\nfor s in star know sync better view; do\n  ln -s \"$(pwd)/$s-your-harness\" ~/.codex/skills/$s-your-harness\ndone\nln -s \"$(pwd)/space-APQR\" ~/.codex/skills/space-APQR\n\n# 体检\npython3 better-your-harness/scripts/scan.py <项目目录> -o findings.json\n",
+      "readme": [
+        "star · know · sync · better · view · APQR · v2.1",
+        "公众号 / 小红书 / B站 / 知乎：空格的键盘",
+        "git clone https://github.com/SpaceZephyr/build-your-harness.git"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-16",
+          "d": "索引自最近一次提交",
+          "t": "昨天",
           "cur": true
         }
       ],
@@ -12143,7 +12143,7 @@ window.SKILLHUB_DATA = {
       "repo": "mrSutivu/Unreal-Engine-5-C-Expert-Skills",
       "repoUrl": "https://github.com/mrSutivu/Unreal-Engine-5-C-Expert-Skills",
       "stars": 70,
-      "updatedDays": 198,
+      "updatedDays": 199,
       "updated": "6 个月前",
       "scan": {
         "state": "pass",
@@ -12187,7 +12187,7 @@ window.SKILLHUB_DATA = {
       "repo": "pickle-an/md-to-docx-skill",
       "repoUrl": "https://github.com/pickle-an/md-to-docx-skill",
       "stars": 68,
-      "updatedDays": 223,
+      "updatedDays": 224,
       "updated": "7 个月前",
       "scan": {
         "state": "pass",
@@ -12221,50 +12221,6 @@ window.SKILLHUB_DATA = {
       "rank": 277
     },
     {
-      "id": "build-your-harness",
-      "name": "build-your-harness",
-      "domain": "doc",
-      "desc": "star know sync better view APQR v2.1",
-      "license": "MIT",
-      "version": "2026-11-16",
-      "author": "SpaceZephyr",
-      "repo": "SpaceZephyr/build-your-harness",
-      "repoUrl": "https://github.com/SpaceZephyr/build-your-harness",
-      "stars": 67,
-      "updatedDays": 0,
-      "updated": "今天",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 0,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "`star` &nbsp;·&nbsp; `know` &nbsp;·&nbsp; `sync` &nbsp;·&nbsp; `better` &nbsp;·&nbsp; `view` &nbsp;·&nbsp; `APQR` &nbsp;·&nbsp; **v2.1**\n\n<br>\n\n![LICENSE](https://img.shields.io/badge/LICENSE-MIT-DFB317?style=for-the-badge&labelColor=555555)\n![AGENT SKILLS](https://img.shields.io/badge/AGENT_SKILLS-STANDARD-4CAF50?style=for-the-badge&labelColor=555555)\n![DEPENDENCIES](https://img.shields.io/badge/DEPENDENCIES-ZERO-2196F3?style=for-the-badge&labelColor=555555)\n\n![RUNTIME](https://img.shields.io/badge/RUNTIME-CLAUDE_CODE_%C2%B7_CODEX_%C2%B7_CURSOR_%C2%B7_OPENCLAW-7C3AED?style=for-the-badge&labelColor=555555)\n\n公众号 / 小红书 / B站 / 知乎：空格的键盘 &nbsp;|&nbsp; [wzfh520@gmail.com](mailto:wzfh520@gmail.com)\n\n</div>\n\ngit clone https://github.com/SpaceZephyr/build-your-harness.git\ncd build-your-harness\n\nfor s in star know sync better view; do\n  ln -s \"$(pwd)/$s-your-harness\" ~/.claude/skills/$s-your-harness\ndone\nln -s \"$(pwd)/space-APQR\" ~/.claude/skills/space-APQR\n\nfor s in star know sync better view; do\n  ln -s \"$(pwd)/$s-your-harness\" ~/.codex/skills/$s-your-harness\ndone\nln -s \"$(pwd)/space-APQR\" ~/.codex/skills/space-APQR\n\n# 体检\npython3 better-your-harness/scripts/scan.py <项目目录> -o findings.json\n",
-      "readme": [
-        "star · know · sync · better · view · APQR · v2.1",
-        "公众号 / 小红书 / B站 / 知乎：空格的键盘",
-        "git clone https://github.com/SpaceZephyr/build-your-harness.git"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-16",
-          "d": "索引自最近一次提交",
-          "t": "今天",
-          "cur": true
-        }
-      ],
-      "related": [
-        "rea",
-        "humanizer",
-        "academic-research"
-      ],
-      "installs": 120,
-      "rank": 278
-    },
-    {
       "id": "excel-analyst-pro-skill-md",
       "name": "excel-analyst-pro-skill-md",
       "domain": "code",
@@ -12275,7 +12231,7 @@ window.SKILLHUB_DATA = {
       "repo": "jeremylongshore/excel-analyst-pro-skill-md",
       "repoUrl": "https://github.com/jeremylongshore/excel-analyst-pro-skill-md",
       "stars": 61,
-      "updatedDays": 33,
+      "updatedDays": 34,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -12306,7 +12262,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 279
+      "rank": 278
     },
     {
       "id": "sensei",
@@ -12314,13 +12270,13 @@ window.SKILLHUB_DATA = {
       "domain": "code",
       "desc": "Sensei is an evidence engine for .",
       "license": "MIT",
-      "version": "2026-11-13",
+      "version": "2026-11-17",
       "author": "spboyer",
       "repo": "spboyer/sensei",
       "repoUrl": "https://github.com/spboyer/sensei",
       "stars": 60,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -12338,9 +12294,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-13",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -12350,15 +12306,15 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 280
+      "rank": 279
     },
     {
       "id": "money-atlas-intelligence-os",
       "name": "Money-Atlas-Intelligence-OS",
-      "domain": "code",
+      "domain": "data",
       "desc": "Author: Bunyawat Dechanon (ElmatadorZ)",
       "license": "Apache-2.0",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "ElmatadorZ",
       "repo": "ElmatadorZ/Money-Atlas-Intelligence-OS",
       "repoUrl": "https://github.com/ElmatadorZ/Money-Atlas-Intelligence-OS",
@@ -12374,27 +12330,27 @@ window.SKILLHUB_DATA = {
         "cred": 0,
         "low": 0
       },
-      "skillmd": "## What This Is\n\nA skill that transforms financial market questions into structured, scenario-based intelligence.\n\nNot a prediction engine.  \nNot a signal bot.  \nA thinking system — built to reason the way a disciplined analyst does.\n\nWhen you ask about BTC, gold, macro, forex, or any asset — this skill activates a multi-layer reasoning pipeline that separates what's actually happening from what the market narrative wants you to believe.\n\n📍 MARKET STRUCTURE INSIGHT\n[SMC layer + price context]\n\n📍 KEY RISK\n[What breaks the thesis]\n\n📍 STRATEGIC TAKEAWAY\n[1-2 sentence actionable insight]\n\n📍 SITUATION MAP\n📍 FIRST PRINCIPLE BREAKDOWN\n📍 SYSTEM MAP (Macro → Liquidity → Asset → Price)\n📍 SMC LAYER MAP\n📍 NARRATIVE INTELLIGENCE\n📍 SCENARIOS\n   🐂 Bull: [entry zone | target | condition]\n   🐻 Bear: [trigger | target | condition]\n   ⚖️ Base: [most probable path]\n📍 DECISION FRAMEWORK\n📍 RISK & FAILURE MODE\n   CONFIDENCE: [X%] | KEY UNKNOWNS: [list]\n\nInput (market question)\n│\n├── Genesis Protocol\n│   ├── First Principle Codex (root cause decomposition)\n│   ├── System Thinking (micro → macro chain)\n│   └── AI Fluency 4D (bias check + discernment)\n│\n├── SMC Layer Engine\n│   ├── Market structure mapping\n",
+      "skillmd": "## 📢 Update announcement — v2.1 → v2.3 (16 Nov 2026)\n\n> **New: install from the Claude Code CLI.**\n> `/plugin install money-atlas-intelligence-os --marketplace ElmatadorZ/Money-Atlas-Intelligence-OS`\n> — or see [How to Install](#how-to-install). Version 2.4.0.\n>\n> **New in 2.4: the data agent.** The plugin now also installs an MCP server that fetches live\n> prices (Binance, MetaTrader 5, Stooq, FRED), computes market snapshots and position sizes, and\n> keeps a paper-trading ledger that only a person can approve. See [Data agent (MCP)](#data-agent-mcp).\n\n\n**Why:** a blind test found that answers written **with v2.0 scored lower than answers written\nwithout any skill** (141.0 vs 152.0 of 160). v2.0 did not invent prices, but it wrapped simple\nquestions in the full framework, forced an SMC map with no chart, put unsupported percentages on\nits confidence, and refused to build trade levels from a price the user gave.\n\n**What changed:**\n\n| | Before (v2.0) | Now (v2.3) |\n|---|---|---|\n| Concept question (\"bond prices when yields rise?\") | Full market framework + \"~95% confidence\" | **DIRECT mode** — a plain answer |\n| Confidence | \"CONFIDENCE: 25%\" with no basis | **HIGH / MEDIUM / LOW + ",
       "readme": [
-        "A skill that transforms financial market questions into structured, scenario-based intelligence.",
-        "Not a prediction engine.",
-        "Not a signal bot."
+        "Why: a blind test found that answers written with v2.0 scored lower than answers written",
+        "without any skill (141.0 vs 152.0 of 160). v2.0 did not invent prices, but it wrapped simple",
+        "questions in the full framework, forced an SMC map with no chart, put unsupported percentages on"
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
         }
       ],
       "related": [
-        "skills",
-        "superpowers",
-        "andrej-karpathy"
+        "paperclip",
+        "archify",
+        "understand-anything"
       ],
       "installs": 120,
-      "rank": 281
+      "rank": 280
     },
     {
       "id": "pomodoro",
@@ -12407,7 +12363,7 @@ window.SKILLHUB_DATA = {
       "repo": "jakedahn/pomodoro",
       "repoUrl": "https://github.com/jakedahn/pomodoro",
       "stars": 56,
-      "updatedDays": 389,
+      "updatedDays": 390,
       "updated": "1 年前",
       "scan": {
         "state": "pass",
@@ -12438,7 +12394,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 282
+      "rank": 281
     },
     {
       "id": "socratic-method",
@@ -12451,7 +12407,7 @@ window.SKILLHUB_DATA = {
       "repo": "malkreide/socratic-method-skill",
       "repoUrl": "https://github.com/malkreide/socratic-method-skill",
       "stars": 55,
-      "updatedDays": 270,
+      "updatedDays": 271,
       "updated": "9 个月前",
       "scan": {
         "state": "pass",
@@ -12480,7 +12436,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 283
+      "rank": 282
     },
     {
       "id": "hermes-skill-deck",
@@ -12493,7 +12449,7 @@ window.SKILLHUB_DATA = {
       "repo": "runninwithitmarketing/hermes-skill-deck",
       "repoUrl": "https://github.com/runninwithitmarketing/hermes-skill-deck",
       "stars": 54,
-      "updatedDays": 49,
+      "updatedDays": 50,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -12524,7 +12480,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 284
+      "rank": 283
     },
     {
       "id": "healthcare-agents",
@@ -12537,8 +12493,8 @@ window.SKILLHUB_DATA = {
       "repo": "ajhcs/healthcare-agents",
       "repoUrl": "https://github.com/ajhcs/healthcare-agents",
       "stars": 54,
-      "updatedDays": 18,
-      "updated": "18 天前",
+      "updatedDays": 19,
+      "updated": "19 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -12558,7 +12514,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-28",
           "d": "索引自最近一次提交",
-          "t": "18 天前",
+          "t": "19 天前",
           "cur": true
         }
       ],
@@ -12568,7 +12524,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 285
+      "rank": 284
     },
     {
       "id": "design-md",
@@ -12581,7 +12537,7 @@ window.SKILLHUB_DATA = {
       "repo": "arumwu/design-md-skill",
       "repoUrl": "https://github.com/arumwu/design-md-skill",
       "stars": 53,
-      "updatedDays": 126,
+      "updatedDays": 127,
       "updated": "4 个月前",
       "scan": {
         "state": "pass",
@@ -12612,7 +12568,7 @@ window.SKILLHUB_DATA = {
         "cherry-studio"
       ],
       "installs": 120,
-      "rank": 286
+      "rank": 285
     },
     {
       "id": "agentskill-kit",
@@ -12625,8 +12581,8 @@ window.SKILLHUB_DATA = {
       "repo": "Lethe044/agentskill-kit",
       "repoUrl": "https://github.com/Lethe044/agentskill-kit",
       "stars": 51,
-      "updatedDays": 2,
-      "updated": "2 天前",
+      "updatedDays": 3,
+      "updated": "3 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -12646,7 +12602,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-13",
           "d": "索引自最近一次提交",
-          "t": "2 天前",
+          "t": "3 天前",
           "cur": true
         }
       ],
@@ -12656,7 +12612,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 120,
-      "rank": 287
+      "rank": 286
     },
     {
       "id": "trip-planner",
@@ -12669,7 +12625,7 @@ window.SKILLHUB_DATA = {
       "repo": "skywain/trip-planner-skill",
       "repoUrl": "https://github.com/skywain/trip-planner-skill",
       "stars": 50,
-      "updatedDays": 36,
+      "updatedDays": 37,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -12700,51 +12656,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 288
-    },
-    {
-      "id": "ai-skills-not-awesome",
-      "name": "AI-Skills-Not-Awesome",
-      "domain": "doc",
-      "desc": "A curated collection of high‑precision system prompts for LLM‑powered assistants, packaged for the ecosystem. Each skill lives in its own di",
-      "license": "UNKNOWN",
-      "version": "2026-11-15",
-      "author": "Tariux",
-      "repo": "Tariux/AI-Skills-Not-Awesome",
-      "repoUrl": "https://github.com/Tariux/AI-Skills-Not-Awesome",
-      "stars": 49,
-      "updatedDays": 0,
-      "updated": "今天",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 1,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "\nskills add https://github.com/Tariux/AI-Skills-Not-Awesome\n\n◇  Source: https://github.com/Tariux/AI-Skills-Not-Awesome.git\n│\n◇  Found 16 skills\n│\n◆  Select skills to install (space to toggle)\n│  ◼ Absolute Mode (Enforces decisive execution without confirmation requests…)\n│  ◼ Code Simplifier (Rewrites code to its simplest possible form while preserv…)\n│  ◼ Combo Developer (Automatically routes requests to the correct skill…)\n│  ◼ Debugging (Systematic root-cause isolation and minimal fix proposal…)\n│  ◼ Documentation (Generates or fills gaps in project documentation…)\n│  ◼ Freelance Bid Analyzer (Analyzes a project description and outputs a…)\n│  ◼ No-Slop (Writing engine that audits and rewrites prose for AI-resistance…)\n│  ◼ Open Source Advisor (Evaluates open-source packages: health, suitability…)\n│  ◼ Optimizer (Systems-level performance engineer: identifies hotspots…)\n│  ◼ Package Audit (Produces a rigorous, forward-looking technical audit…)\n│  ◼ Planner (Breaks down complex tasks into ordered, verifiable sub-tasks…)\n│  ◼ Project Analyzer (Produces a concise, structured analysis report…)\n│  ◼ Project Context Bridge (Builds compact project context for handoff…)\n│  ◼ Test Engine",
-      "readme": [
-        "skills add https://github.com/Tariux/AI-Skills-Not-Awesome",
-        "◇ Source: https://github.com/Tariux/AI-Skills-Not-Awesome.git",
-        "◇ Found 16 skills"
-      ],
-      "versions": [
-        {
-          "v": "2026-11-15",
-          "d": "索引自最近一次提交",
-          "t": "今天",
-          "cur": true
-        }
-      ],
-      "related": [
-        "rea",
-        "humanizer",
-        "academic-research"
-      ],
-      "installs": 120,
-      "rank": 289
+      "rank": 287
     },
     {
       "id": "openhop",
@@ -12756,9 +12668,9 @@ window.SKILLHUB_DATA = {
       "author": "naorsabag",
       "repo": "naorsabag/openhop",
       "repoUrl": "https://github.com/naorsabag/openhop",
-      "stars": 48,
-      "updatedDays": 7,
-      "updated": "7 天前",
+      "stars": 49,
+      "updatedDays": 8,
+      "updated": "8 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -12778,7 +12690,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-08",
           "d": "索引自最近一次提交",
-          "t": "7 天前",
+          "t": "8 天前",
           "cur": true
         }
       ],
@@ -12788,7 +12700,51 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 290
+      "rank": 288
+    },
+    {
+      "id": "ai-skills-not-awesome",
+      "name": "AI-Skills-Not-Awesome",
+      "domain": "doc",
+      "desc": "A curated collection of high‑precision system prompts for LLM‑powered assistants, packaged for the ecosystem. Each skill lives in its own di",
+      "license": "UNKNOWN",
+      "version": "2026-11-15",
+      "author": "Tariux",
+      "repo": "Tariux/AI-Skills-Not-Awesome",
+      "repoUrl": "https://github.com/Tariux/AI-Skills-Not-Awesome",
+      "stars": 49,
+      "updatedDays": 1,
+      "updated": "昨天",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 1,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "\nskills add https://github.com/Tariux/AI-Skills-Not-Awesome\n\n◇  Source: https://github.com/Tariux/AI-Skills-Not-Awesome.git\n│\n◇  Found 16 skills\n│\n◆  Select skills to install (space to toggle)\n│  ◼ Absolute Mode (Enforces decisive execution without confirmation requests…)\n│  ◼ Code Simplifier (Rewrites code to its simplest possible form while preserv…)\n│  ◼ Combo Developer (Automatically routes requests to the correct skill…)\n│  ◼ Debugging (Systematic root-cause isolation and minimal fix proposal…)\n│  ◼ Documentation (Generates or fills gaps in project documentation…)\n│  ◼ Freelance Bid Analyzer (Analyzes a project description and outputs a…)\n│  ◼ No-Slop (Writing engine that audits and rewrites prose for AI-resistance…)\n│  ◼ Open Source Advisor (Evaluates open-source packages: health, suitability…)\n│  ◼ Optimizer (Systems-level performance engineer: identifies hotspots…)\n│  ◼ Package Audit (Produces a rigorous, forward-looking technical audit…)\n│  ◼ Planner (Breaks down complex tasks into ordered, verifiable sub-tasks…)\n│  ◼ Project Analyzer (Produces a concise, structured analysis report…)\n│  ◼ Project Context Bridge (Builds compact project context for handoff…)\n│  ◼ Test Engine",
+      "readme": [
+        "skills add https://github.com/Tariux/AI-Skills-Not-Awesome",
+        "◇ Source: https://github.com/Tariux/AI-Skills-Not-Awesome.git",
+        "◇ Found 16 skills"
+      ],
+      "versions": [
+        {
+          "v": "2026-11-15",
+          "d": "索引自最近一次提交",
+          "t": "昨天",
+          "cur": true
+        }
+      ],
+      "related": [
+        "rea",
+        "humanizer",
+        "academic-research"
+      ],
+      "installs": 120,
+      "rank": 289
     },
     {
       "id": "awesome-copilot-cowork",
@@ -12800,9 +12756,9 @@ window.SKILLHUB_DATA = {
       "author": "kesslernity",
       "repo": "kesslernity/awesome-copilot-cowork-skills",
       "repoUrl": "https://github.com/kesslernity/awesome-copilot-cowork-skills",
-      "stars": 46,
-      "updatedDays": 13,
-      "updated": "13 天前",
+      "stars": 47,
+      "updatedDays": 14,
+      "updated": "14 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -12822,7 +12778,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-03",
           "d": "索引自最近一次提交",
-          "t": "13 天前",
+          "t": "14 天前",
           "cur": true
         }
       ],
@@ -12832,7 +12788,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 291
+      "rank": 290
     },
     {
       "id": "skill.md-inspector",
@@ -12845,7 +12801,7 @@ window.SKILLHUB_DATA = {
       "repo": "Krusty84/SKILL.md-Inspector",
       "repoUrl": "https://github.com/Krusty84/SKILL.md-Inspector",
       "stars": 45,
-      "updatedDays": 107,
+      "updatedDays": 108,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -12876,7 +12832,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 292
+      "rank": 291
     },
     {
       "id": "trade-pipeline",
@@ -12889,7 +12845,7 @@ window.SKILLHUB_DATA = {
       "repo": "Dangooy/trade-pipeline-skill",
       "repoUrl": "https://github.com/Dangooy/trade-pipeline-skill",
       "stars": 41,
-      "updatedDays": 38,
+      "updatedDays": 39,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -12920,7 +12876,7 @@ window.SKILLHUB_DATA = {
         "cherry-studio"
       ],
       "installs": 120,
-      "rank": 293
+      "rank": 292
     },
     {
       "id": "awesome-agent-conventions",
@@ -12933,7 +12889,7 @@ window.SKILLHUB_DATA = {
       "repo": "ItamarZand88/awesome-agent-conventions",
       "repoUrl": "https://github.com/ItamarZand88/awesome-agent-conventions",
       "stars": 37,
-      "updatedDays": 116,
+      "updatedDays": 117,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -12964,7 +12920,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 294
+      "rank": 293
     },
     {
       "id": "aligndev",
@@ -12977,7 +12933,7 @@ window.SKILLHUB_DATA = {
       "repo": "razr001/aligndev",
       "repoUrl": "https://github.com/razr001/aligndev",
       "stars": 36,
-      "updatedDays": 144,
+      "updatedDays": 145,
       "updated": "4 个月前",
       "scan": {
         "state": "pass",
@@ -13008,7 +12964,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 295
+      "rank": 294
     },
     {
       "id": "nixos-ai",
@@ -13016,11 +12972,11 @@ window.SKILLHUB_DATA = {
       "domain": "doc",
       "desc": "Auto-updated and documentation for AI coding assistants.",
       "license": "UNKNOWN",
-      "version": "2026-11-15",
+      "version": "2026-11-16",
       "author": "marceloeatworld",
       "repo": "marceloeatworld/nixos-ai-skill",
       "repoUrl": "https://github.com/marceloeatworld/nixos-ai-skill",
-      "stars": 35,
+      "stars": 36,
       "updatedDays": 0,
       "updated": "今天",
       "scan": {
@@ -13040,7 +12996,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-15",
+          "v": "2026-11-16",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -13052,7 +13008,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 296
+      "rank": 295
     },
     {
       "id": "md3e",
@@ -13060,13 +13016,13 @@ window.SKILLHUB_DATA = {
       "domain": "test",
       "desc": "An Agent Skill for building Android UI with Material Design 3 Expressive (MD3E) on",
       "license": "Apache-2.0",
-      "version": "2026-11-10",
+      "version": "2026-11-17",
       "author": "mfskys",
       "repo": "mfskys/md3e-skill",
       "repoUrl": "https://github.com/mfskys/md3e-skill",
-      "stars": 35,
-      "updatedDays": 6,
-      "updated": "6 天前",
+      "stars": 36,
+      "updatedDays": 0,
+      "updated": "今天",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -13084,9 +13040,9 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-10",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
-          "t": "6 天前",
+          "t": "今天",
           "cur": true
         }
       ],
@@ -13096,7 +13052,7 @@ window.SKILLHUB_DATA = {
         "agents"
       ],
       "installs": 120,
-      "rank": 297
+      "rank": 296
     },
     {
       "id": "null200ok-bug-bounty",
@@ -13108,9 +13064,9 @@ window.SKILLHUB_DATA = {
       "author": "NULL200OK",
       "repo": "NULL200OK/null200ok-bug-bounty-skill",
       "repoUrl": "https://github.com/NULL200OK/null200ok-bug-bounty-skill",
-      "stars": 34,
-      "updatedDays": 7,
-      "updated": "7 天前",
+      "stars": 35,
+      "updatedDays": 8,
+      "updated": "8 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -13128,7 +13084,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-08",
           "d": "索引自最近一次提交",
-          "t": "7 天前",
+          "t": "8 天前",
           "cur": true
         }
       ],
@@ -13138,7 +13094,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 298
+      "rank": 297
     },
     {
       "id": "accessibility.md",
@@ -13151,7 +13107,7 @@ window.SKILLHUB_DATA = {
       "repo": "KreerC/ACCESSIBILITY.md",
       "repoUrl": "https://github.com/KreerC/ACCESSIBILITY.md",
       "stars": 34,
-      "updatedDays": 180,
+      "updatedDays": 181,
       "updated": "6 个月前",
       "scan": {
         "state": "pass",
@@ -13180,7 +13136,7 @@ window.SKILLHUB_DATA = {
         "cherry-studio"
       ],
       "installs": 120,
-      "rank": 299
+      "rank": 298
     },
     {
       "id": "swift-api-design-guidelines",
@@ -13193,7 +13149,7 @@ window.SKILLHUB_DATA = {
       "repo": "Erikote04/Swift-API-Design-Guidelines-Agent-Skill",
       "repoUrl": "https://github.com/Erikote04/Swift-API-Design-Guidelines-Agent-Skill",
       "stars": 33,
-      "updatedDays": 270,
+      "updatedDays": 271,
       "updated": "9 个月前",
       "scan": {
         "state": "pass",
@@ -13224,7 +13180,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 300
+      "rank": 299
     },
     {
       "id": "vscode-agent-skill-ninja",
@@ -13237,8 +13193,8 @@ window.SKILLHUB_DATA = {
       "repo": "aktsmm/vscode-agent-skill-ninja",
       "repoUrl": "https://github.com/aktsmm/vscode-agent-skill-ninja",
       "stars": 27,
-      "updatedDays": 3,
-      "updated": "3 天前",
+      "updatedDays": 4,
+      "updated": "4 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -13258,7 +13214,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-12",
           "d": "索引自最近一次提交",
-          "t": "3 天前",
+          "t": "4 天前",
           "cur": true
         }
       ],
@@ -13268,7 +13224,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 301
+      "rank": 300
     },
     {
       "id": "doc-writer",
@@ -13281,7 +13237,7 @@ window.SKILLHUB_DATA = {
       "repo": "anilcancakir/laravel-ai-sdk-skills",
       "repoUrl": "https://github.com/anilcancakir/laravel-ai-sdk-skills",
       "stars": 27,
-      "updatedDays": 63,
+      "updatedDays": 64,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -13312,7 +13268,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 302
+      "rank": 301
     },
     {
       "id": "awesome-data-engineering",
@@ -13325,7 +13281,7 @@ window.SKILLHUB_DATA = {
       "repo": "Unknown-333/awesome-data-engineering-skills",
       "repoUrl": "https://github.com/Unknown-333/awesome-data-engineering-skills",
       "stars": 27,
-      "updatedDays": 77,
+      "updatedDays": 78,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -13356,7 +13312,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 303
+      "rank": 302
     },
     {
       "id": "vc-skills.md",
@@ -13369,7 +13325,7 @@ window.SKILLHUB_DATA = {
       "repo": "luisschmitzheadline/VC-Skills.md",
       "repoUrl": "https://github.com/luisschmitzheadline/VC-Skills.md",
       "stars": 27,
-      "updatedDays": 278,
+      "updatedDays": 279,
       "updated": "9 个月前",
       "scan": {
         "state": "pass",
@@ -13400,7 +13356,7 @@ window.SKILLHUB_DATA = {
         "understand-anything"
       ],
       "installs": 120,
-      "rank": 304
+      "rank": 303
     },
     {
       "id": "boring-engineering",
@@ -13413,7 +13369,7 @@ window.SKILLHUB_DATA = {
       "repo": "alvindemesadev/boring-engineering",
       "repoUrl": "https://github.com/alvindemesadev/boring-engineering",
       "stars": 25,
-      "updatedDays": 81,
+      "updatedDays": 82,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -13444,7 +13400,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 305
+      "rank": 304
     },
     {
       "id": "qa-skill.md-files",
@@ -13457,7 +13413,7 @@ window.SKILLHUB_DATA = {
       "repo": "govardhanrekha/QA-Skill.md-files",
       "repoUrl": "https://github.com/govardhanrekha/QA-Skill.md-files",
       "stars": 24,
-      "updatedDays": 94,
+      "updatedDays": 96,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -13488,7 +13444,7 @@ window.SKILLHUB_DATA = {
         "agents"
       ],
       "installs": 120,
-      "rank": 306
+      "rank": 305
     },
     {
       "id": "onto",
@@ -13496,7 +13452,7 @@ window.SKILLHUB_DATA = {
       "domain": "data",
       "desc": "The deterministic enterprise AI agent platform.",
       "license": "MIT",
-      "version": "2026-11-16",
+      "version": "2026-11-17",
       "author": "mareasw",
       "repo": "mareasw/ontoskills",
       "repoUrl": "https://github.com/mareasw/ontoskills",
@@ -13520,7 +13476,7 @@ window.SKILLHUB_DATA = {
       ],
       "versions": [
         {
-          "v": "2026-11-16",
+          "v": "2026-11-17",
           "d": "索引自最近一次提交",
           "t": "今天",
           "cur": true
@@ -13532,7 +13488,7 @@ window.SKILLHUB_DATA = {
         "understand-anything"
       ],
       "installs": 120,
-      "rank": 307
+      "rank": 306
     },
     {
       "id": "humanize",
@@ -13545,7 +13501,7 @@ window.SKILLHUB_DATA = {
       "repo": "shir-danishyar/humanize",
       "repoUrl": "https://github.com/shir-danishyar/humanize",
       "stars": 23,
-      "updatedDays": 74,
+      "updatedDays": 75,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -13576,7 +13532,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 308
+      "rank": 307
     },
     {
       "id": "proxyman-skill.md",
@@ -13589,7 +13545,7 @@ window.SKILLHUB_DATA = {
       "repo": "ProxymanApp/proxyman-SKILL.md",
       "repoUrl": "https://github.com/ProxymanApp/proxyman-SKILL.md",
       "stars": 23,
-      "updatedDays": 86,
+      "updatedDays": 87,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -13620,7 +13576,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 309
+      "rank": 308
     },
     {
       "id": "genedrug-automd",
@@ -13633,7 +13589,7 @@ window.SKILLHUB_DATA = {
       "repo": "a1665779280-cyber/GeneDrug-AutoMD-Skill",
       "repoUrl": "https://github.com/a1665779280-cyber/GeneDrug-AutoMD-Skill",
       "stars": 23,
-      "updatedDays": 111,
+      "updatedDays": 112,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -13664,7 +13620,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 310
+      "rank": 309
     },
     {
       "id": "pdf2md-by-mineru-api",
@@ -13677,7 +13633,7 @@ window.SKILLHUB_DATA = {
       "repo": "lilyuan258/PDF2md-by-MinerU-api-skill",
       "repoUrl": "https://github.com/lilyuan258/PDF2md-by-MinerU-api-skill",
       "stars": 23,
-      "updatedDays": 255,
+      "updatedDays": 256,
       "updated": "8 个月前",
       "scan": {
         "state": "pass",
@@ -13708,7 +13664,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 311
+      "rank": 310
     },
     {
       "id": "pattern",
@@ -13721,7 +13677,7 @@ window.SKILLHUB_DATA = {
       "repo": "spyderweb47/Vibe-Trade",
       "repoUrl": "https://github.com/spyderweb47/Vibe-Trade",
       "stars": 21,
-      "updatedDays": 208,
+      "updatedDays": 209,
       "updated": "6 个月前",
       "scan": {
         "state": "pass",
@@ -13752,7 +13708,7 @@ window.SKILLHUB_DATA = {
         "understand-anything"
       ],
       "installs": 120,
-      "rank": 312
+      "rank": 311
     },
     {
       "id": "libtv-shortdrama-storyboard",
@@ -13765,8 +13721,8 @@ window.SKILLHUB_DATA = {
       "repo": "yanshangcha01/libtv-shortdrama-storyboard",
       "repoUrl": "https://github.com/yanshangcha01/libtv-shortdrama-storyboard",
       "stars": 21,
-      "updatedDays": 119,
-      "updated": "3 个月前",
+      "updatedDays": 120,
+      "updated": "4 个月前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -13786,7 +13742,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-07-20",
           "d": "索引自最近一次提交",
-          "t": "3 个月前",
+          "t": "4 个月前",
           "cur": true
         }
       ],
@@ -13796,7 +13752,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 313
+      "rank": 312
     },
     {
       "id": "claude-design-md",
@@ -13809,7 +13765,7 @@ window.SKILLHUB_DATA = {
       "repo": "llsbet-digital/Claude-design-md-skill",
       "repoUrl": "https://github.com/llsbet-digital/Claude-design-md-skill",
       "stars": 21,
-      "updatedDays": 122,
+      "updatedDays": 123,
       "updated": "4 个月前",
       "scan": {
         "state": "pass",
@@ -13838,7 +13794,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 314
+      "rank": 313
     },
     {
       "id": "agent-skill-architecture-guide",
@@ -13851,7 +13807,7 @@ window.SKILLHUB_DATA = {
       "repo": "shane9coy/Agent-Skill-Architecture-Guide",
       "repoUrl": "https://github.com/shane9coy/Agent-Skill-Architecture-Guide",
       "stars": 20,
-      "updatedDays": 154,
+      "updatedDays": 155,
       "updated": "5 个月前",
       "scan": {
         "state": "pass",
@@ -13880,7 +13836,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 315
+      "rank": 314
     },
     {
       "id": "obsidian-skills-manager",
@@ -13893,7 +13849,7 @@ window.SKILLHUB_DATA = {
       "repo": "cbruyndoncx/obsidian-skills-manager",
       "repoUrl": "https://github.com/cbruyndoncx/obsidian-skills-manager",
       "stars": 19,
-      "updatedDays": 268,
+      "updatedDays": 269,
       "updated": "8 个月前",
       "scan": {
         "state": "pass",
@@ -13924,7 +13880,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 120,
-      "rank": 316
+      "rank": 315
     },
     {
       "id": "maji",
@@ -13937,8 +13893,8 @@ window.SKILLHUB_DATA = {
       "repo": "Ijam18/MAJI-Skills",
       "repoUrl": "https://github.com/Ijam18/MAJI-Skills",
       "stars": 19,
-      "updatedDays": 25,
-      "updated": "25 天前",
+      "updatedDays": 26,
+      "updated": "26 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -13958,7 +13914,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-21",
           "d": "索引自最近一次提交",
-          "t": "25 天前",
+          "t": "26 天前",
           "cur": true
         }
       ],
@@ -13968,7 +13924,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 317
+      "rank": 316
     },
     {
       "id": "superpowers-design-workflow-skill.md",
@@ -13981,7 +13937,7 @@ window.SKILLHUB_DATA = {
       "repo": "seanxwcz/-superpowers-design-workflow-SKILL.md",
       "repoUrl": "https://github.com/seanxwcz/-superpowers-design-workflow-SKILL.md",
       "stars": 18,
-      "updatedDays": 169,
+      "updatedDays": 170,
       "updated": "5 个月前",
       "scan": {
         "state": "pass",
@@ -14012,7 +13968,7 @@ window.SKILLHUB_DATA = {
         "cherry-studio"
       ],
       "installs": 120,
-      "rank": 318
+      "rank": 317
     },
     {
       "id": "md2",
@@ -14025,8 +13981,8 @@ window.SKILLHUB_DATA = {
       "repo": "dromlakhani/MD2SKILL",
       "repoUrl": "https://github.com/dromlakhani/MD2SKILL",
       "stars": 14,
-      "updatedDays": 1,
-      "updated": "昨天",
+      "updatedDays": 2,
+      "updated": "2 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -14046,7 +14002,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-15",
           "d": "索引自最近一次提交",
-          "t": "昨天",
+          "t": "2 天前",
           "cur": true
         }
       ],
@@ -14056,7 +14012,7 @@ window.SKILLHUB_DATA = {
         "understand-anything"
       ],
       "installs": 120,
-      "rank": 319
+      "rank": 318
     },
     {
       "id": "codex-skill-awesome-design-md",
@@ -14069,8 +14025,8 @@ window.SKILLHUB_DATA = {
       "repo": "taffy-owo/codex-skill-awesome-design-md",
       "repoUrl": "https://github.com/taffy-owo/codex-skill-awesome-design-md",
       "stars": 14,
-      "updatedDays": 5,
-      "updated": "5 天前",
+      "updatedDays": 6,
+      "updated": "6 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -14090,7 +14046,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-11-10",
           "d": "索引自最近一次提交",
-          "t": "5 天前",
+          "t": "6 天前",
           "cur": true
         }
       ],
@@ -14100,7 +14056,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 320
+      "rank": 319
     },
     {
       "id": "marker-pdf2md",
@@ -14113,7 +14069,7 @@ window.SKILLHUB_DATA = {
       "repo": "duration97/marker-pdf2md-skills",
       "repoUrl": "https://github.com/duration97/marker-pdf2md-skills",
       "stars": 10,
-      "updatedDays": 30,
+      "updatedDays": 31,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -14144,6 +14100,50 @@ window.SKILLHUB_DATA = {
         "understand-anything"
       ],
       "installs": 120,
+      "rank": 320
+    },
+    {
+      "id": "better-md",
+      "name": "better-md",
+      "domain": "doc",
+      "desc": "Better-md-skill is a Markdown documentation engineering skill for AI coding agents. It creates, improves, restructures, audits, and validate",
+      "license": "MIT",
+      "version": "2026-08-15",
+      "author": "FrekiJoms",
+      "repo": "FrekiJoms/better-md-skill",
+      "repoUrl": "https://github.com/FrekiJoms/better-md-skill",
+      "stars": 8,
+      "updatedDays": 93,
+      "updated": "3 个月前",
+      "scan": {
+        "state": "pass",
+        "scanned": "刚刚",
+        "ruleSet": "r2026.10",
+        "high": 0,
+        "ext": 1,
+        "cred": 0,
+        "low": 0
+      },
+      "skillmd": "\nImprove this README using Better-md-skill.\n\n> Audit this Markdown without changing it.\n> \nnpm install -g https://github.com/FrekiJoms/better-md-skill/archive/refs/heads/main.tar.gz\n\n> # From a local checkout via the skills CLI\n> npx skills add ./better-md-skill --skill better-md-skill -g --copy -y\n>\n> # From GitHub via the skills CLI\n> npx skills add FrekiJoms/better-md-skill --skill better-md-skill -g --copy -y\n>\n> # From a checkout, manually\n> npm run install:skills          # install to all supported agents\n> npm run install:skills:dry      # preview without writing\n> node scripts/install.mjs --agents opencode claude-code\n> node scripts/install.mjs --list\n> \nnode scripts/install.mjs --uninstall\nnpm run uninstall:skills          # same command\nnode scripts/install.mjs --uninstall --agents opencode claude-code\n\nImprove this README using Better-md-skill.\n\nImprove the structure but preserve all content.\n\nMake this GitHub README more polished and add appropriate technology icons.\n",
+      "readme": [
+        "Improve this README using Better-md-skill.",
+        "npm install -g https://github.com/FrekiJoms/better-md-skill/archive/refs/heads/main.tar.gz",
+        "node scripts/install.mjs --uninstall"
+      ],
+      "versions": [
+        {
+          "v": "2026-08-15",
+          "d": "索引自最近一次提交",
+          "t": "3 个月前",
+          "cur": true
+        }
+      ],
+      "related": [
+        "rea",
+        "humanizer",
+        "academic-research"
+      ],
+      "installs": 120,
       "rank": 321
     },
     {
@@ -14157,7 +14157,7 @@ window.SKILLHUB_DATA = {
       "repo": "RedondoK/claude-md-skill",
       "repoUrl": "https://github.com/RedondoK/claude-md-skill",
       "stars": 8,
-      "updatedDays": 296,
+      "updatedDays": 297,
       "updated": "9 个月前",
       "scan": {
         "state": "pass",
@@ -14191,50 +14191,6 @@ window.SKILLHUB_DATA = {
       "rank": 322
     },
     {
-      "id": "better-md",
-      "name": "better-md",
-      "domain": "doc",
-      "desc": "Better-md-skill is a Markdown documentation engineering skill for AI coding agents. It creates, improves, restructures, audits, and validate",
-      "license": "MIT",
-      "version": "2026-08-15",
-      "author": "FrekiJoms",
-      "repo": "FrekiJoms/better-md-skill",
-      "repoUrl": "https://github.com/FrekiJoms/better-md-skill",
-      "stars": 8,
-      "updatedDays": 92,
-      "updated": "3 个月前",
-      "scan": {
-        "state": "pass",
-        "scanned": "刚刚",
-        "ruleSet": "r2026.10",
-        "high": 0,
-        "ext": 1,
-        "cred": 0,
-        "low": 0
-      },
-      "skillmd": "\nImprove this README using Better-md-skill.\n\n> Audit this Markdown without changing it.\n> \nnpm install -g https://github.com/FrekiJoms/better-md-skill/archive/refs/heads/main.tar.gz\n\n> # From a local checkout via the skills CLI\n> npx skills add ./better-md-skill --skill better-md-skill -g --copy -y\n>\n> # From GitHub via the skills CLI\n> npx skills add FrekiJoms/better-md-skill --skill better-md-skill -g --copy -y\n>\n> # From a checkout, manually\n> npm run install:skills          # install to all supported agents\n> npm run install:skills:dry      # preview without writing\n> node scripts/install.mjs --agents opencode claude-code\n> node scripts/install.mjs --list\n> \nnode scripts/install.mjs --uninstall\nnpm run uninstall:skills          # same command\nnode scripts/install.mjs --uninstall --agents opencode claude-code\n\nImprove this README using Better-md-skill.\n\nImprove the structure but preserve all content.\n\nMake this GitHub README more polished and add appropriate technology icons.\n",
-      "readme": [
-        "Improve this README using Better-md-skill.",
-        "npm install -g https://github.com/FrekiJoms/better-md-skill/archive/refs/heads/main.tar.gz",
-        "node scripts/install.mjs --uninstall"
-      ],
-      "versions": [
-        {
-          "v": "2026-08-15",
-          "d": "索引自最近一次提交",
-          "t": "3 个月前",
-          "cur": true
-        }
-      ],
-      "related": [
-        "rea",
-        "humanizer",
-        "academic-research"
-      ],
-      "installs": 120,
-      "rank": 323
-    },
-    {
       "id": "pdf2md",
       "name": "pdf2md",
       "domain": "design",
@@ -14245,7 +14201,7 @@ window.SKILLHUB_DATA = {
       "repo": "taotaoboom/pdf2md-agent-skill",
       "repoUrl": "https://github.com/taotaoboom/pdf2md-agent-skill",
       "stars": 8,
-      "updatedDays": 113,
+      "updatedDays": 114,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -14276,7 +14232,7 @@ window.SKILLHUB_DATA = {
         "cherry-studio"
       ],
       "installs": 120,
-      "rank": 324
+      "rank": 323
     },
     {
       "id": "mdsel",
@@ -14289,7 +14245,7 @@ window.SKILLHUB_DATA = {
       "repo": "dabstractor/mdsel-skill",
       "repoUrl": "https://github.com/dabstractor/mdsel-skill",
       "stars": 7,
-      "updatedDays": 150,
+      "updatedDays": 151,
       "updated": "5 个月前",
       "scan": {
         "state": "pass",
@@ -14320,7 +14276,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 325
+      "rank": 324
     },
     {
       "id": "bake-claude-md-files",
@@ -14333,7 +14289,7 @@ window.SKILLHUB_DATA = {
       "repo": "publicala/bake-claude-md-files-skill",
       "repoUrl": "https://github.com/publicala/bake-claude-md-files-skill",
       "stars": 7,
-      "updatedDays": 83,
+      "updatedDays": 84,
       "updated": "2 个月前",
       "scan": {
         "state": "pass",
@@ -14364,7 +14320,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 326
+      "rank": 325
     },
     {
       "id": "skill.md",
@@ -14377,7 +14333,7 @@ window.SKILLHUB_DATA = {
       "repo": "garyblankenship/SKILL.md",
       "repoUrl": "https://github.com/garyblankenship/SKILL.md",
       "stars": 6,
-      "updatedDays": 184,
+      "updatedDays": 185,
       "updated": "6 个月前",
       "scan": {
         "state": "pass",
@@ -14408,7 +14364,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 327
+      "rank": 326
     },
     {
       "id": "api",
@@ -14421,7 +14377,7 @@ window.SKILLHUB_DATA = {
       "repo": "Sanix-Darker/skill-md.dev",
       "repoUrl": "https://github.com/Sanix-Darker/skill-md.dev",
       "stars": 6,
-      "updatedDays": 105,
+      "updatedDays": 106,
       "updated": "3 个月前",
       "scan": {
         "state": "pass",
@@ -14452,7 +14408,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 120,
-      "rank": 328
+      "rank": 327
     },
     {
       "id": "awesome-skill-md",
@@ -14465,8 +14421,8 @@ window.SKILLHUB_DATA = {
       "repo": "appssemble/awesome-skill-md",
       "repoUrl": "https://github.com/appssemble/awesome-skill-md",
       "stars": 6,
-      "updatedDays": 20,
-      "updated": "20 天前",
+      "updatedDays": 21,
+      "updated": "21 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -14484,7 +14440,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-27",
           "d": "索引自最近一次提交",
-          "t": "20 天前",
+          "t": "21 天前",
           "cur": true
         }
       ],
@@ -14494,7 +14450,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 329
+      "rank": 328
     },
     {
       "id": "sis-md-security-intelligence-skillmd",
@@ -14507,7 +14463,7 @@ window.SKILLHUB_DATA = {
       "repo": "prize22/SIS-MD-Security-Intelligence-SkillMD-",
       "repoUrl": "https://github.com/prize22/SIS-MD-Security-Intelligence-SkillMD-",
       "stars": 5,
-      "updatedDays": 126,
+      "updatedDays": 127,
       "updated": "4 个月前",
       "scan": {
         "state": "pass",
@@ -14536,7 +14492,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 120,
-      "rank": 330
+      "rank": 329
     },
     {
       "id": "md",
@@ -14549,7 +14505,7 @@ window.SKILLHUB_DATA = {
       "repo": "Ling-MD/md-agent-skills",
       "repoUrl": "https://github.com/Ling-MD/md-agent-skills",
       "stars": 5,
-      "updatedDays": 164,
+      "updatedDays": 165,
       "updated": "5 个月前",
       "scan": {
         "state": "pass",
@@ -14580,7 +14536,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 331
+      "rank": 330
     },
     {
       "id": "claude-skill-design-md",
@@ -14593,7 +14549,7 @@ window.SKILLHUB_DATA = {
       "repo": "moesuito/claude-skill-design-md",
       "repoUrl": "https://github.com/moesuito/claude-skill-design-md",
       "stars": 4,
-      "updatedDays": 193,
+      "updatedDays": 194,
       "updated": "6 个月前",
       "scan": {
         "state": "pass",
@@ -14624,7 +14580,7 @@ window.SKILLHUB_DATA = {
         "cherry-studio"
       ],
       "installs": 120,
-      "rank": 332
+      "rank": 331
     },
     {
       "id": "mdriver",
@@ -14637,7 +14593,7 @@ window.SKILLHUB_DATA = {
       "repo": "LZF1111/MDriver_skill",
       "repoUrl": "https://github.com/LZF1111/MDriver_skill",
       "stars": 4,
-      "updatedDays": 124,
+      "updatedDays": 125,
       "updated": "4 个月前",
       "scan": {
         "state": "pass",
@@ -14668,7 +14624,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 333
+      "rank": 332
     },
     {
       "id": "error-handling",
@@ -14681,7 +14637,7 @@ window.SKILLHUB_DATA = {
       "repo": "navfa/skills-md-graph",
       "repoUrl": "https://github.com/navfa/skills-md-graph",
       "stars": 4,
-      "updatedDays": 230,
+      "updatedDays": 231,
       "updated": "7 个月前",
       "scan": {
         "state": "pass",
@@ -14712,7 +14668,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 334
+      "rank": 333
     },
     {
       "id": "md-craft",
@@ -14725,7 +14681,7 @@ window.SKILLHUB_DATA = {
       "repo": "valetivivek/md-craft-skill",
       "repoUrl": "https://github.com/valetivivek/md-craft-skill",
       "stars": 4,
-      "updatedDays": 199,
+      "updatedDays": 200,
       "updated": "6 个月前",
       "scan": {
         "state": "pass",
@@ -14756,7 +14712,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 335
+      "rank": 334
     },
     {
       "id": "mdn-test-your",
@@ -14769,7 +14725,7 @@ window.SKILLHUB_DATA = {
       "repo": "jdegand/mdn-test-your-skills",
       "repoUrl": "https://github.com/jdegand/mdn-test-your-skills",
       "stars": 4,
-      "updatedDays": 2188,
+      "updatedDays": 2189,
       "updated": "1 年前",
       "scan": {
         "state": "pass",
@@ -14798,7 +14754,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 336
+      "rank": 335
     },
     {
       "id": "md-to-wiki-docs",
@@ -14811,7 +14767,7 @@ window.SKILLHUB_DATA = {
       "repo": "abertanha/md-to-wiki-docs-skills",
       "repoUrl": "https://github.com/abertanha/md-to-wiki-docs-skills",
       "stars": 4,
-      "updatedDays": 45,
+      "updatedDays": 46,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -14842,7 +14798,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 337
+      "rank": 336
     },
     {
       "id": "md-to-x-article",
@@ -14855,7 +14811,7 @@ window.SKILLHUB_DATA = {
       "repo": "shaom/md-to-x-article-skill",
       "repoUrl": "https://github.com/shaom/md-to-x-article-skill",
       "stars": 4,
-      "updatedDays": 160,
+      "updatedDays": 161,
       "updated": "5 个月前",
       "scan": {
         "state": "pass",
@@ -14884,7 +14840,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 338
+      "rank": 337
     },
     {
       "id": "grading-claude-agents-md-agentic",
@@ -14897,7 +14853,7 @@ window.SKILLHUB_DATA = {
       "repo": "SpillwaveSolutions/grading-claude-agents-md-agentic-skill",
       "repoUrl": "https://github.com/SpillwaveSolutions/grading-claude-agents-md-agentic-skill",
       "stars": 4,
-      "updatedDays": 315,
+      "updatedDays": 316,
       "updated": "10 个月前",
       "scan": {
         "state": "pass",
@@ -14928,7 +14884,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 339
+      "rank": 338
     },
     {
       "id": "skills.md",
@@ -14941,8 +14897,8 @@ window.SKILLHUB_DATA = {
       "repo": "bitwikiorg/skills.md",
       "repoUrl": "https://github.com/bitwikiorg/skills.md",
       "stars": 3,
-      "updatedDays": 299,
-      "updated": "9 个月前",
+      "updatedDays": 300,
+      "updated": "10 个月前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -14960,7 +14916,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-01-20",
           "d": "索引自最近一次提交",
-          "t": "9 个月前",
+          "t": "10 个月前",
           "cur": true
         }
       ],
@@ -14970,7 +14926,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 340
+      "rank": 339
     },
     {
       "id": "my",
@@ -14983,7 +14939,7 @@ window.SKILLHUB_DATA = {
       "repo": "BadMenFinance/awesome-skill-md",
       "repoUrl": "https://github.com/BadMenFinance/awesome-skill-md",
       "stars": 3,
-      "updatedDays": 218,
+      "updatedDays": 219,
       "updated": "7 个月前",
       "scan": {
         "state": "pass",
@@ -15014,7 +14970,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 341
+      "rank": 340
     },
     {
       "id": "skills-md",
@@ -15027,8 +14983,8 @@ window.SKILLHUB_DATA = {
       "repo": "2001056/skills-md",
       "repoUrl": "https://github.com/2001056/skills-md",
       "stars": 3,
-      "updatedDays": 21,
-      "updated": "21 天前",
+      "updatedDays": 22,
+      "updated": "22 天前",
       "scan": {
         "state": "pass",
         "scanned": "刚刚",
@@ -15048,7 +15004,7 @@ window.SKILLHUB_DATA = {
         {
           "v": "2026-10-26",
           "d": "索引自最近一次提交",
-          "t": "21 天前",
+          "t": "22 天前",
           "cur": true
         }
       ],
@@ -15058,7 +15014,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 120,
-      "rank": 342
+      "rank": 341
     },
     {
       "id": "mdbase",
@@ -15071,7 +15027,7 @@ window.SKILLHUB_DATA = {
       "repo": "callumalpass/mdbase-skill",
       "repoUrl": "https://github.com/callumalpass/mdbase-skill",
       "stars": 3,
-      "updatedDays": 50,
+      "updatedDays": 51,
       "updated": "1 个月前",
       "scan": {
         "state": "pass",
@@ -15102,7 +15058,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 343
+      "rank": 342
     },
     {
       "id": "agent-skills-md",
@@ -15115,7 +15071,7 @@ window.SKILLHUB_DATA = {
       "repo": "gali-leilei/agent-skills-md",
       "repoUrl": "https://github.com/gali-leilei/agent-skills-md",
       "stars": 3,
-      "updatedDays": 294,
+      "updatedDays": 295,
       "updated": "9 个月前",
       "scan": {
         "state": "pass",
@@ -15144,7 +15100,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 344
+      "rank": 343
     },
     {
       "id": "md-translate",
@@ -15157,7 +15113,7 @@ window.SKILLHUB_DATA = {
       "repo": "jinshihui/md-translate-skill",
       "repoUrl": "https://github.com/jinshihui/md-translate-skill",
       "stars": 3,
-      "updatedDays": 172,
+      "updatedDays": 174,
       "updated": "5 个月前",
       "scan": {
         "state": "pass",
@@ -15188,7 +15144,7 @@ window.SKILLHUB_DATA = {
         "academic-research"
       ],
       "installs": 120,
-      "rank": 345
+      "rank": 344
     },
     {
       "id": "skill.md-generator",
@@ -15201,7 +15157,7 @@ window.SKILLHUB_DATA = {
       "repo": "oykunehir/SKILL.md-Generator",
       "repoUrl": "https://github.com/oykunehir/SKILL.md-Generator",
       "stars": 3,
-      "updatedDays": 202,
+      "updatedDays": 203,
       "updated": "6 个月前",
       "scan": {
         "state": "pass",
@@ -15232,7 +15188,7 @@ window.SKILLHUB_DATA = {
         "cowagent"
       ],
       "installs": 120,
-      "rank": 346
+      "rank": 345
     },
     {
       "id": "claude-md-builder",
@@ -15245,7 +15201,7 @@ window.SKILLHUB_DATA = {
       "repo": "xiaopu-ai/claude-md-builder-skill",
       "repoUrl": "https://github.com/xiaopu-ai/claude-md-builder-skill",
       "stars": 3,
-      "updatedDays": 187,
+      "updatedDays": 188,
       "updated": "6 个月前",
       "scan": {
         "state": "pass",
@@ -15276,7 +15232,7 @@ window.SKILLHUB_DATA = {
         "andrej-karpathy"
       ],
       "installs": 120,
-      "rank": 347
+      "rank": 346
     }
   ],
   "BLOCKED": [
@@ -15512,12 +15468,12 @@ window.SKILLHUB_DATA = {
   ],
   "META": {
     "source": "github",
-    "collectedAt": "2026-11-16T11:06:30.072949+00:00",
-    "total": 347,
+    "collectedAt": "2026-11-17T11:48:14.933486+00:00",
+    "total": 346,
     "blocked": 24,
     "offline": false,
     "rateLimited": false,
-    "generatedAt": "2026-11-16T11:06:30.120270+00:00"
+    "generatedAt": "2026-11-17T11:48:14.995920+00:00"
   }
 };
 
